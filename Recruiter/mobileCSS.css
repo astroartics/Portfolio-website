@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #464646;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: #242424;
+}
+
+h3 {
+    width: max-content;
+    max-width: 60vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: #242424;
+    margin: 3.3vw auto;
+    padding: 2vw 4vw;
+    background-color: #F0CFBA;
+}
+
+#showNav {
+    width: 100%;
+    background-color: #df7f82;
+    position: fixed;
+    top: 0;
+}
+
+#show {
+    margin: 2vw auto;
+}
+
+div ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+div ul li {
+    width: 100%;
+    margin: 0;
+}
+
+div ul li a {
+    width: 100%;
+    height: 1.5vw;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #242424;
+    background-color: #DF7F83;
+    scroll-behavior: smooth;
+}
+
+div ul li a:hover {
+    background-color: #f9cacc;
+}
+
+#container {
+    margin-top: 5vw;
+    background-color: white;
+}
+
+hr {
+    width: 65vw;
+    border-radius: 50%;
+}
+
+@media screen and (orientation: portrait) {
+
+    img {
+        max-width: 80vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 4.5vw;
+    }
+
+    div ul li a {
+        font-size: 3vw;
+        padding: 4vw 0vw;
+    }
+
+    #show {
+        font-size: 4vw;
+        margin: 2vw auto;
+    }
+
+    #photoAndName,
+    #about,
+    #skills,
+    #projects,
+    #projects1,
+    #projects2 {
+        padding: 10vw 3vw;
+    }
+
+    p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (orientation: landscape) {
+
+    img {
+        max-width: 50vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+        margin-top: 0;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    div ul li a {
+        font-size: 2vw;
+        padding: 2vw 0;
+    }
+
+    #show {
+        font-size: 2.2vw;
+        margin: 2vw auto;
+    }
+
+    #photoAndName,
+    #about,
+    #skills,
+    #projects,
+    #projects1,
+    #projects2 {
+        padding: 4vw 3vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+}

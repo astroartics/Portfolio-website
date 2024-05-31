@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    background-color: #fefefe;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    max-width: 95vw;
+    grid-area: video;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    width: 100vw;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    background-color: rgb(67, 141, 116);
+    color: white;
+    grid-area: heading;
+    margin: 0;
+}
+
+h2 {
+    width: max-content;
+    max-height: max-content;
+    background-color: #DF7F83;
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#recruiter {
+    grid-area: recruiter;
+}
+
+#student {
+    grid-area: student;
+}
+
+#other {
+    grid-area: other;
+}
+
+#recruiter,
+#other,
+#student {
+    text-align: center;
+    padding: 5%;
+    transition: 0.3s;
+    border-radius: 3%;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#recruiter:hover,
+#other:hover,
+#student:hover {
+    cursor: pointer;
+    background-color: #F2E9D9;
+}
+
+#info {
+    grid-area: info;
+}
+
+#time {
+    width: 100vw;
+    height: max-content;
+    margin: 0%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: rgb(233, 233, 233);
+}
+
+#container {
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 'heading' 'video' 'info';
+    row-gap: 10%;
+    justify-items: center;
+    position: absolute;
+    top: 0%;
+}
+
+#whoIsThis {
+    max-width: 100vw;
+    display: grid;
+    justify-items: center;
+    background-color: #464646;
+    overflow: hidden;
+}
+
+#footer {
+    width: 100vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #464646;
+}
+
+@media screen and (orientation: portrait) {
+
+    #time {
+        padding: 1.5% 0%;
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+        padding: 12% 0% 5% 0%;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+        padding: 2% 5%;
+    }
+
+    #recruiter,
+    #other,
+    #student {
+        width: 110%;
+    }
+
+    #whoIsThis {
+        grid-template-areas: ". recruiter ." "student . other";
+        padding: 3% 5%;
+    }
+
+    #footer {
+        display: block;
+    }
+}
+
+@media screen and (orientation: landscape) {
+
+    #time {
+        padding: 0.5% 0%;
+        font-size: 2vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+        padding: 5.5% 0% 2% 0%;
+    }
+
+    h2 {
+        font-size: 3vw;
+        padding: 1.5% 4%;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    #recruiter,
+    #other,
+    #student {
+        width: 60%;
+    }
+
+    #whoIsThis {
+        grid-template-areas: "recruiter student other";
+        padding: 2% 5%;
+    }
+
+    #footer {
+        display: none;
+    }
+}

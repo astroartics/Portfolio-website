@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- <h1>Recruiter Page</h1> -->
+    <div id="showNav">
+        <button id="show">&#8801</button>
+        <ul id="navBarForPhone">
+            <li><a href="../index.html" style="background-color : #e0b9ba;">Home</a></li>
+            <li><a href="#about" style="background-color : #e2a7a9;">About Me</a></li>
+            <li><a style="background-color : #e39a9c;">Projects</a></li>
+            <li><a style="background-color : #e78a8e;">Skills</a></li>
+            <li><a style="background-color : #e27478;">Resume</a></li>
+        </ul>
+    </div>
+
+    <ul id="navBarForPC">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a>Projects</a></li>
+        <li><a>Skills</a></li>
+        <li><a>Resumé</a></li>
+    </ul>
+
+    <div id="container">
+        <div id="photoAndName">
+            <img src="photo.png">
+            <h2 id="introductionAnim"> </h2>
+        </div>
+        <hr />
+        <div id="about">
+            <h3>About Me</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non a cumque iusto. Voluptatum,
+                aperiam
+                doloribus! Velit, illum debitis. Fugiat quaerat excepturi alias deleniti quam vel obcaecati consectetur
+                debitis assumenda?
+            </p>
+        </div>
+        <hr />
+        <div id="skills">
+            <h3>Projects</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non a cumque iusto. Voluptatum,
+                aperiam
+                doloribus! Velit, illum debitis. Fugiat quaerat excepturi alias deleniti quam vel obcaecati consectetur
+                debitis assumenda?
+            </p>
+        </div>
+        <hr />
+        <div id="projects">
+            <h3>Skills</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non a cumque iusto. Voluptatum,
+                aperiam
+                doloribus! Velit, illum debitis. Fugiat quaerat excepturi alias deleniti quam vel obcaecati consectetur
+                debitis assumenda?
+            </p>
+        </div>
+        <hr />
+        <div id="projects1">
+            <h3>Resumé</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non a cumque iusto. Voluptatum,
+                aperiam
+                doloribus! Velit, illum debitis. Fugiat quaerat excepturi alias deleniti quam vel obcaecati consectetur
+                debitis assumenda?
+            </p>
+        </div>
+        <hr />
+        <div id="projects2">
+            <h3>In case you're bored reviewing portfolios all day</h3>
+            <p>
+                <a id="toGame" onclick="goToGame()" style="text-decoration: underline; color : rgb(81, 81, 230)">Play a
+                    2D game!</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        This is the footer.
+    </footer>
+    <script src="recJS.js"></script>
+
+    <script>
+
+        // $('body').addClass('transitionOut');
+        // $(document).ready(function () {
+        //     $('body').addClass('transitionIn');
+        // });
+
+        $(document).ready(function () {
+            $('body').hide().fadeIn(300);
+        });
+
+        function goToGame() {
+            $(document).ready(function () {
+                setInterval(function () {
+                    window.location = "../Game/Game.html";
+                }, 300);
+                $('body').addClass('transitionOut');
+            });
+        }
+
+    </script>
+</body>
+
+</html>

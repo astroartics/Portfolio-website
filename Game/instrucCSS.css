@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    border: 0;
+    background-color: rgb(235, 221, 203);
+    background-image: url('instrucBack.png');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    padding: 5px 10px;
+    color: white;
+}
+
+#back {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    padding: 3px 5px;
+}
+
+#container {
+    width: max-content;
+    height: max-content;
+    max-width: 90%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    border-radius: 5%;
+}

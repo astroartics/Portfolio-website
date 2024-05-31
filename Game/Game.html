@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Sedan+SC&family=Special+Elite&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="appCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="settings">
+        <button id="switch" class="set" value=1 title="View virtual keys">Enable virtual keys</button>
+        <button id="restart" class="set" title="Restart the game">Restart</button>
+        <button id="instructions" class="set" title="Game details"><a href="instructions.html"
+                id="help">Help</a></button>
+        <button id="level">Level : -    Score : -</button>
+        <button id="back" title="Back to portfolio" onclick="backToPortfolio()">&#8676;</button>
+        <button id="close" title="Quit">&#10006;</button>
+    </div>
+
+    <div style="display:none;">
+        <img id="background" width="1700" height="300" src="down.jpeg">
+    </div>
+
+    <div id="Game">
+        <canvas id="canvas1">Your browser does not support canvas, try using a different browser...</canvas>
+        <canvas id="fakeCanvas2"></canvas>
+        <div id="fakeCanvas"><img src="start.png" id="startGame" title="Start Game"></div>
+        <div id="buttons">
+            <img id="upArr" class="up key" src="Up.jpeg">
+            <img id="downArr" class="down key" src="down.jpeg">
+            <img id="leftArr" class="left key" src="left.jpeg">
+            <img id="rightArr" class="right key" src="right.jpeg">
+        </div>
+    </div>
+
+    <p id="tiltScreen">Tilt your screen</p>
+
+    <script src="appJS.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('body').hide().fadeIn(200);
+        });
+
+        function backToPortfolio() {
+            $(document).ready(function () {
+                setInterval(function () {
+                    window.location = "../Recruiter/";
+                }, 300);
+                $('body').addClass('transitionOut');
+            });
+        }
+    </script>
+</body>
+
+</html>

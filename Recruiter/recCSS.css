@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #464646;
+}
+
+#showNav {
+    display: none;
+}
+
+img {
+    max-width: 40vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: #242424;
+}
+
+h3 {
+    width: max-content;
+    max-width: 50vw;
+    font-size: 1.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: #242424;
+    margin: 3vw auto;
+    padding: 0.8vw 3vw;
+    background-color: #F0CFBA;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+li {
+    width: 20%;
+    float: left;
+    margin: 0;
+}
+
+li a {
+    width: 100%;
+    height: 1.5vw;
+    display: block;
+    padding: 1.2vw 0 1.2vw 0;
+    font-size: 1.2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: #242424;
+    background-color: #f79fa1;
+    scroll-behavior: smooth;
+}
+
+#navBarForPC li:hover {
+    cursor: pointer;
+}
+
+#navBarForPC li a:hover {
+    color: white;
+    background-color: #ea8488;
+}
+
+#photoAndName,
+#about,
+#skills,
+#projects,
+#projects1,
+#projects2 {
+    max-width: 70vw;
+    padding: 6vw 3vw 7vw 3vw;
+    margin: auto;
+}
+
+#container {
+    max-width: 90vw;
+    height: max-content;
+    text-align: center;
+    margin: 6.5vw auto 3vw auto;
+    background-color: white;
+}
+
+.transitionOut {
+    transform: translateX(100%);
+}
+
+.transitionIn {
+    transform: translateX(0%);
+    transition: 400ms;
+}
+
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #F0CFBA;
+}
+
+hr {
+    width: 50vw;
+    border-radius: 50%;
+}
+
+.transitionOut {
+    transform: translateX(-100%);
+    transition: 400ms;
+}
+
+#toGame:hover {
+    cursor: pointer;
+}

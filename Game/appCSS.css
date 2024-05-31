@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+}
+
+#startGame {
+    width: 8%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#startGame:hover {
+    width: 7.5%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#canvas1,
+#fakeCanvas,
+#fakeCanvas2 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid black;
+    background-color: rgb(255, 225, 136);
+    grid-area: canvas;
+    margin: 0;
+}
+
+#fakeCanvas2 {
+    display: none;
+}
+
+.key {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 20%;
+    background-color: rgb(64, 64, 64);
+}
+
+.up {
+    grid-area: up;
+}
+
+.down {
+    grid-area: down;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.set {
+    margin: 0;
+    border: 0;
+    padding: 1% 3%;
+    border: 1px solid rgb(198, 197, 197);
+}
+
+.set:hover {
+    background-color: rgb(206, 206, 206);
+    cursor: pointer;
+}
+
+button {
+    font-size: 1rem;
+}
+
+#switch {
+    background-color: rgb(163, 247, 163);
+    grid-area: switch;
+    padding: 10px 0px;
+    color: black;
+}
+
+#restart {
+    grid-area: restart;
+    padding: 10px 0px;
+    background-color: beige;
+    color: black;
+}
+
+
+#close {
+    grid-area: close;
+    border: 0px;
+    background-color: rgb(246, 152, 152);
+    font-weight: 100;
+}
+
+#close:hover,
+#back:hover {
+    cursor: pointer;
+}
+
+#level {
+    grid-area: level;
+    padding: 5px 0px;
+    background-color: black;
+    border: 0px;
+    color: white;
+    border: 1px solid white;
+}
+
+#back {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    grid-area: back;
+    border: 0px;
+    font-weight: 600;
+}
+
+#instructions {
+    grid-area: instruc;
+    background-color: beige;
+}
+
+#settings {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "switch switch restart restart instruc instruc level level level level back close";
+    background-color: black;
+    padding: 5px 5px 0px 5px;
+}
+
+#buttons {
+    width: max-content;
+    height: max-content;
+    grid-area: keys;
+    display: grid;
+    grid-gap: 10%;
+    grid-auto-columns: max-content;
+    grid-template-areas: ". up ." "left down right";
+    justify-self: center;
+    padding: 1.5% 0% 2.5% 0%;
+    visibility: hidden;
+}
+
+#Game {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: ". canvas ." ". keys .";
+}
+
+
+.transitionOut {
+    transform: translateX(100%);
+    transition: 400ms;
+}
+
+#tiltScreen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+    #tiltScreen {
+        display: block;
+        font-size: 5vw;
+        animation: blink 750ms ease-in-out infinite;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 50;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #tiltScreen {
+        display: none;
+    }
+}

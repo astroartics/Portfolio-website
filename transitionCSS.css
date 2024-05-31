@@ -1,0 +1,4 @@
+.transitionOut {
+    transform: translateX(-100%);
+    transition: 400ms;
+}
