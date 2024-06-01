@@ -36,3 +36,9 @@ li {
     text-align: start;
     border-radius: 5%;
 }
+
+@media screen and (orientation: landscape) {
+    #container {
+        overflow: scroll;
+    }
+}
