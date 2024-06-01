@@ -76,10 +76,21 @@ hr {
     border-radius: 50%;
 }
 
+#viewProject{
+    display: block;
+    margin: 3vw auto 0vw auto;
+    padding: 1vw 3vw;
+}
+
 @media screen and (orientation: portrait) {
 
     img {
         max-width: 80vw;
+    }
+
+    #aboutMeImage {
+        max-width: 55vw;
+        border: 0.5px solid black;
     }
 
     h2 {
@@ -104,13 +115,14 @@ hr {
     #about,
     #skills,
     #projects,
-    #projects1,
+    #resume,
     #projects2 {
-        padding: 10vw 3vw;
+        padding: 10vw 5vw;
     }
 
     p {
         font-size: 3.5vw;
+        padding: 5vw 0vw;
     }
 }
 
@@ -118,6 +130,11 @@ hr {
 
     img {
         max-width: 50vw;
+    }
+
+    #aboutMeImage {
+        max-width: 30vw;
+        border: 0.5px solid black;
     }
 
     h2 {
@@ -145,10 +162,11 @@ hr {
     #projects,
     #projects1,
     #projects2 {
-        padding: 4vw 3vw;
+        padding: 4vw 5vw;
     }
 
     p {
         font-size: 2vw;
+        padding: 2vw 0vw;
     }
 }

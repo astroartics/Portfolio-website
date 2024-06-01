@@ -9,7 +9,7 @@ let navDisplay = 0;
 let i = 0;
 
 function introAnim() {
-    let text = "Hi, I am Sanjana.";
+    let text = "Hello, I am Sanjana.";
 
     setInterval(function () {
         if (i == (text.length)) {
@@ -18,7 +18,7 @@ function introAnim() {
         }
 
         introductionAnim.innerText += text[i++];
-    }, 230);
+    }, 200);
 }
 
 function showNavBar() {

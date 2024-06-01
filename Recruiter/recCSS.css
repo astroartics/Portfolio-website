@@ -15,6 +15,11 @@ img {
     max-width: 40vw;
 }
 
+#aboutMeImage {
+    max-width: 20vw;
+    border: 0.5px solid black;
+}
+
 h2 {
     font-size: 2.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -36,10 +41,13 @@ h3 {
 
 p {
     font-size: 1.5vw;
+    padding: 2vw 0vw;
+    margin-top: 0;
 }
 
 ul {
     width: 100%;
+    height: 5vw;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -51,13 +59,14 @@ ul {
 
 li {
     width: 20%;
+    max-height: 100%;
     float: left;
     margin: 0;
 }
 
 li a {
     width: 100%;
-    height: 1.5vw;
+    max-height: 100%;
     display: block;
     padding: 1.2vw 0 1.2vw 0;
     font-size: 1.2vw;
@@ -69,10 +78,6 @@ li a {
     scroll-behavior: smooth;
 }
 
-#navBarForPC li:hover {
-    cursor: pointer;
-}
-
 #navBarForPC li a:hover {
     color: white;
     background-color: #ea8488;
@@ -82,11 +87,17 @@ li a {
 #about,
 #skills,
 #projects,
-#projects1,
+#resume,
 #projects2 {
     max-width: 70vw;
     padding: 6vw 3vw 7vw 3vw;
-    margin: auto;
+    margin: 0 auto;
+}
+
+#viewProject {
+    display: block;
+    margin: 3vw auto 0vw auto;
+    padding: 0.5vw 3vw;
 }
 
 #container {
@@ -123,6 +134,8 @@ hr {
     transition: 400ms;
 }
 
-#toGame:hover {
+#toGame:hover,
+#viewProject:hover,
+#navBarForPC li:hover {
     cursor: pointer;
 }
