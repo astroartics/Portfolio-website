@@ -95,7 +95,7 @@ function VirtualKeys(showHide) {
     if (showHide == 0) {
         buttons.style.visibility = "hidden";
         switchToKeyboard.value = "1";
-        Game.style.backgroundColor = "white";
+        Game.style.backgroundColor = "#464646";
         window.scrollTo(0, 0);
         switchToKeyboard.innerText = "Enable virtual keys";
         switchToKeyboard.style.backgroundColor = "rgb(163, 247, 163)";

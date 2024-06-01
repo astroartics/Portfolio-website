@@ -162,6 +162,7 @@ button {
     height: 100%;
     display: grid;
     grid-template-areas: ". canvas ." ". keys .";
+    background-color: #464646;
 }
 
 
