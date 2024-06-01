@@ -76,10 +76,13 @@ hr {
     border-radius: 50%;
 }
 
-#viewProject{
+#viewTicTacToe {
     display: block;
     margin: 3vw auto 0vw auto;
-    padding: 1vw 3vw;
+    padding: 2vw 10vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('TicTacToe.jpg');
+    background-size: contain;
+    background-repeat: no-repeat center;
 }
 
 @media screen and (orientation: portrait) {

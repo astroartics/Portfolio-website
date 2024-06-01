@@ -55,8 +55,27 @@
                 <b style="color : #464646">•</b> Features : <i>3x3 and 4x4 grids, Dark mode, Last high score,
                     Customizable
                     player names, Fun facts and tips on loading screen</i>
-
-                <button id="viewProject">View</button>
+                <button id="viewTicTacToe" onClick="toGitHub(1)" title="View TicTacToe Project">View</button><br />
+            </p>
+            <hr style="width: 35vw;" /><br />
+            <p>
+                2)  Android Studio : Unit Converter<br /><br />
+                <b style="color : #464646">•</b> Programming language : <i>Java</i><br />
+                <b style="color : #464646">•</b> Features : More than 5 units included, Easy to use<i></i>
+            </p>
+            <hr style="width: 35vw;" /><br />
+            <p>
+                3)  Website : Leisure ActiviTEAs<br /><br />
+                <b style="color : #464646">•</b> Programming language : <i>JavaScript, HTML, CSS, PHP,
+                    PostgreSQL</i><br />
+                <b style="color : #464646">•</b> Framework used : <i>Bootstrap</i><br />
+                <b style="color : #464646">•</b> Features : <i>Login/Sign up options, Image buttons, Easy to
+                    navigate, Availability of a lot of options under a specific domain</i><br />
+                <b style="color : #464646">•</b> About : <i>We have tried to include the things that are searched the
+                    most related to the 5 most common hobby fields namely Art, Music, Sports, Food, Photography under a
+                    single domain.</i>
+                <button id="viewLeisure" onClick="toGitHub(2)"
+                    title="View Leisure ActiviTEAs Project">View</button><br />
             </p>
         </div>
         <hr />
@@ -112,6 +131,14 @@
                 }, 300);
                 $('body').addClass('transitionOut');
             });
+        }
+
+        function toGitHub(projectNo) {
+            if (projectNo == 1) {
+                window.location = "https://github.com/astroartics/TicTacToe_App";
+            } else if (projectNo == 2) {
+                window.location = "https://github.com/astroartics/Leisure-ActiviTEAs";
+            }
         }
 
     </script>

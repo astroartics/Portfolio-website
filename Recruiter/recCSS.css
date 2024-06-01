@@ -94,12 +94,6 @@ li a {
     margin: 0 auto;
 }
 
-#viewProject {
-    display: block;
-    margin: 3vw auto 0vw auto;
-    padding: 0.5vw 3vw;
-}
-
 #container {
     max-width: 90vw;
     height: max-content;
@@ -135,7 +129,32 @@ hr {
 }
 
 #toGame:hover,
-#viewProject:hover,
 #navBarForPC li:hover {
     cursor: pointer;
+}
+
+#viewTicTacToe,
+#viewLeisure {
+    display: block;
+    margin: 3vw auto 0vw auto;
+    padding: 0.5vw 3vw;
+    background-color: rgb(154, 215, 251);
+}
+
+#viewTicTacToe:hover,
+#viewLeisure:hover {
+    cursor: pointer;
+    padding: 1.3vw 3vw;
+    background-size: contain;
+    background-repeat: no-repeat center;
+    transition: 400ms;
+    font-size: 1.2vw;
+}
+
+#viewTicTacToe:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('TicTacToe.jpg');
+}
+
+#viewLeisure:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('LeisureActiviteas.png');
 }
