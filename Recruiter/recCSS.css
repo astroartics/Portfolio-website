@@ -139,6 +139,7 @@ hr {
     margin: 3vw auto 0vw auto;
     padding: 0.5vw 3vw;
     background-color: rgb(154, 215, 251);
+    font-size: 1vw;
 }
 
 #viewTicTacToe:hover,

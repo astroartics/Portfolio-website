@@ -21,7 +21,7 @@ h3 {
     font-weight: 400;
     color: #242424;
     margin: 3.3vw auto;
-    padding: 2vw 4vw;
+    padding: 2vw 10vw;
     background-color: #F0CFBA;
 }
 
@@ -83,6 +83,7 @@ hr {
     padding: 2vw 10vw;
     background-size: contain;
     background-repeat: no-repeat center;
+    font-size: 3vw;
 }
 
 #viewTicTacToe {
@@ -128,12 +129,17 @@ hr {
     #projects,
     #resume,
     #projects2 {
-        padding: 10vw 5vw;
+        padding: 15vw 5vw;
     }
 
     p {
         font-size: 3.5vw;
         padding: 5vw 0vw;
+    }
+
+    #viewTicTacToe,
+    #viewLeisure {
+        font-size: 3vw;
     }
 }
 
@@ -154,7 +160,7 @@ hr {
     }
 
     h3 {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     div ul li a {
@@ -179,5 +185,10 @@ hr {
     p {
         font-size: 2vw;
         padding: 2vw 0vw;
+    }
+
+    #viewTicTacToe,
+    #viewLeisure {
+        font-size: 1.5vw;
     }
 }
