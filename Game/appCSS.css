@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+body {
+    background-color: #464646;
+}
+
 h1 {
     text-align: center;
     font-size: 1.5rem;
@@ -171,6 +175,8 @@ button {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 }
 
 @media screen and (orientation: portrait) {

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     border: 0;
@@ -28,21 +32,24 @@ li {
 #container {
     width: max-content;
     height: max-content;
-    max-width: 90%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: start;
-    border-radius: 5%;
+    position: absolute;
+}
+
+@media screen and (orientation: portrait) {
+    #container {
+        max-width: 90%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media screen and (orientation: landscape) {
-    body {
-        overflow: scroll;
-    }
-
     #container {
-        top: 50%;
+        max-width: 70%;
+        font-size: 1.5vw;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
 }
