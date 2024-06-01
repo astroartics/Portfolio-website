@@ -96,7 +96,6 @@ h2 {
     display: grid;
     justify-items: center;
     background-color: #464646;
-    overflow: hidden;
 }
 
 #footer {
