@@ -29,6 +29,10 @@ li {
     padding: 3px 5px;
 }
 
+#back:hover{
+    cursor: pointer;
+}
+
 #container {
     width: max-content;
     height: max-content;
@@ -47,7 +51,7 @@ li {
 
 @media screen and (orientation: landscape) {
     #container {
-        max-width: 70%;
+        max-width: 65%;
         font-size: 1.5vw;
         left: 50%;
         transform: translate(-50%, 0%);
