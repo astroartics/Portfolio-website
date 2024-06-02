@@ -79,19 +79,26 @@ hr {
 #viewTicTacToe,
 #viewLeisure {
     display: block;
-    margin: 3vw auto 0vw auto;
-    padding: 2vw 10vw;
+    margin: 5vw auto 0vw auto;
     background-size: contain;
     background-repeat: no-repeat center;
     font-size: 3vw;
+    background-color: rgb(154, 215, 251);
 }
 
+/*
 #viewTicTacToe {
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('TicTacToe.jpg');
 }
 
 #viewLeisure {
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('LeisureActiviteas.png');
+}
+*/
+
+#projects p {
+    background-color: #fdf4dd;
+    padding: 8vw 10vw;
 }
 
 @media screen and (orientation: portrait) {
@@ -140,6 +147,7 @@ hr {
     #viewTicTacToe,
     #viewLeisure {
         font-size: 3vw;
+        padding: 2vw 10vw;
     }
 }
 
@@ -190,5 +198,10 @@ hr {
     #viewTicTacToe,
     #viewLeisure {
         font-size: 1.5vw;
+        padding: 1.5vw 7vw;
     }
+}
+
+#projects {
+    text-align: start;
 }
