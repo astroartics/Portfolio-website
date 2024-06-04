@@ -1,0 +1,32 @@
+body {
+    background-color: #464646;
+}
+
+button {
+    max-width: fit-content;
+    font-size: 1vw;
+    padding: 0.5vw 2vw;
+    grid-area: back;
+    margin: auto;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ababab;
+}
+
+iframe {
+    width: 60vw;
+    height: 40vw;
+    grid-area: pdf;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 'pdf' 'back';
+    row-gap: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

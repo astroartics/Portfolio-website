@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-color: #464646;
+}
+
+button {
+    max-width: fit-content;
+    padding: 0.5vw 2vw;
+    grid-area: back;
+    margin: auto;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ababab;
+}
+
+img {
+    max-width: 100%;
+    grid-area: image;
+    margin: auto;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 'image' 'back';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+    button {
+        font-size: 4vw;
+    }
+
+    #container {
+        width: 90vw;
+        row-gap: 5vw;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    button {
+        font-size: 1.5vw;
+    }
+
+    #container {
+        width: 40vw;
+        row-gap: 2vw;
+    }
+}

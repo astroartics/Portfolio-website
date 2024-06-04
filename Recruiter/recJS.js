@@ -4,6 +4,8 @@ const showNavDiv = document.querySelector('#showNav');
 const navBarPhone = document.querySelector('#navBarForPhone');
 const navBarPC = document.querySelector('#navBarForPC');
 const introductionAnim = document.querySelector('#introductionAnim');
+const resumeImg = document.querySelector('#resumeImg');
+const resumeHoverDiv = document.querySelector('#resumeHover');
 
 let navDisplay = 0;
 let i = 0;
@@ -47,6 +49,18 @@ function showNavBar() {
     });
 }
 
+function resumeHover() {
+    resumeImg.addEventListener('mouseover', function () {
+        resumeImg.style.display = "none";
+        resumeHoverDiv.style.display = "block";
+    });
+
+    resumeHoverDiv.addEventListener('mouseout', function () {
+        resumeImg.style.display = "block";
+        resumeHoverDiv.style.display = "none";
+    });
+}
+
 window.addEventListener('load', function () {
     let details = navigator.userAgent;
     let regexp = /android|iphone|kindle|ipad/i;
@@ -57,6 +71,7 @@ window.addEventListener('load', function () {
 
     if (!isMobileDevice) {
         link.setAttribute('href', 'recCSS.css');
+        resumeHover();
     } else {
         link.setAttribute('href', 'mobileCSS.css');
         showNavBar();
@@ -64,4 +79,8 @@ window.addEventListener('load', function () {
 
     document.querySelector('head').appendChild(link);
     introAnim();
+
+    resumeHoverDiv.addEventListener('click', function () {
+        window.location = "resume.html";
+    });
 });

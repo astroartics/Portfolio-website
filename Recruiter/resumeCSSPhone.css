@@ -1,0 +1,59 @@
+body {
+    background-color: #464646;
+}
+
+button {
+    max-width: fit-content;
+    font-size: 1vw;
+    padding: 0.5vw 2vw;
+    grid-area: back;
+    margin: auto;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ababab;
+}
+
+iframe {
+    grid-area: pdf;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 'pdf' 'back';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+    button {
+        font-size: 4vw;
+    }
+
+    #container {
+        row-gap: 5vw;
+    }
+
+    iframe {
+        width: 80vw;
+        height: 80vw;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    button {
+        font-size: 1.5vw;
+    }
+
+    #container {
+        row-gap: 2vw;
+    }
+
+    iframe {
+        width: 50vw;
+        height: 30vw;
+    }
+}

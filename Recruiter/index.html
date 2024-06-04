@@ -17,7 +17,7 @@
             <li><a href="../index.html" style="background-color : #e0b9ba;">Home</a></li>
             <li><a href="#about" style="background-color : #e2a7a9;">About Me</a></li>
             <li><a href="#projects" style="background-color : #e39a9c;">Projects</a></li>
-            <li><a href="#skills" style="background-color : #e78a8e;">Skills</a></li>
+            <li><a href="#skills" style="background-color : #e78a8e;">Relevant Coursework</a></li>
             <li><a href="#resume" style="background-color : #e27478;">Resumé</a></li>
         </ul>
     </div>
@@ -26,7 +26,7 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#skills">Relevant Coursework</a></li>
         <li><a href="#resume">Resumé</a></li>
     </ul>
 
@@ -76,33 +76,56 @@
                     single domain.</i> -->
                 <button id="viewLeisure" onClick="toGitHub(2)" title="View Leisure ActiviTEAs Project">View</button>
             </p>
+
+            <p>
+                <big>4)  Website : Portfolio Website</big><br /><br />
+                <b style="color : #464646">•</b> Programming language : <i>JavaScript, HTML, CSS</i><br />
+                <b style="color : #464646">•</b> Features : <i>Responsive design, Use of CSS animations and transitions,
+                    2D game, Easy to navigate</i><br />
+                <!-- <b style="color : #464646">•</b> About : <i>We have tried to include the things that are searched the
+                    most related to the 5 most common hobby fields namely Art, Music, Sports, Food, Photography under a
+                    single domain.</i> -->
+                <button id="viewPortfolio" onClick="toGitHub(3)" title="View Portfolio Website">View</button>
+                <!-- <button id="viewPortfolioCode" onClick="toGitHub(4)" title="View Project On Github">View Code</button> -->
+            </p>
+
+            <p>
+                <big>5)  2D Game : Using HTML Canvas</big><br /><br />
+                <b style="color : #464646">•</b> Programming language : <i>JavaScript, HTML, CSS</i><br />
+                <b style="color : #464646">•</b> Features : <i>Responsive design, Virtual keys, Guide, Game restart and
+                    quit options</i><br />
+                <!-- <b style="color : #464646">•</b> About : <i>We have tried to include the things that are searched the
+                    most related to the 5 most common hobby fields namely Art, Music, Sports, Food, Photography under a
+                    single domain.</i> -->
+                <button id="view2DGame" onClick="toGitHub(4)" title="View 2D Game">View</button>
+            </p>
         </div>
         <hr />
         <div id="skills">
-            <h3>Skills</h3>
+            <h3>Relevant Coursework</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non a cumque iusto. Voluptatum,
-                aperiam
-                doloribus! Velit, illum debitis. Fugiat quaerat excepturi alias deleniti quam vel obcaecati consectetur
-                debitis assumenda?
+                Source : <i>Udemy</i><br /><br /><br />
+                1)  The Web Developer Bootcamp &nbsp;- <button class="viewCert" onclick="gotoCert(1)">View
+                    certificate</button><br /><br />
+                2)  REST API Testing (Automation)&nbsp;- <button class="viewCert" onclick="gotoCert(2)">View
+                    certificate</button>
             </p>
         </div>
         <hr />
         <div id="resume">
             <h3>Resumé</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non a cumque iusto. Voluptatum,
-                aperiam
-                doloribus! Velit, illum debitis. Fugiat quaerat excepturi alias deleniti quam vel obcaecati consectetur
-                debitis assumenda?
-            </p>
+            <img id="resumeImg" src="Resume_preview.png">
+            <div id="resumeHover" class="resumeHoverClass">
+                <h5 style=" margin: 0 auto; background-color: #e2a7a9; color: black; padding: 1vw 0;">View Resumé</h5>
+                <img src="Resume_preview.png">
+            </div>
         </div>
         <hr />
         <div id="projects2">
             <h3>In case you're bored reviewing portfolios all day</h3>
             <p>
-                <a id="toGame" onclick="goToGame()" style="text-decoration: underline; color : rgb(81, 81, 230)">Play a
-                    2D game!</a>
+                <img id="toGameImage" src="toGameBack.png" onclick="goToGame()"><br />
+                <button id="toGame" onclick="goToGame()">Play a 2D game!</button>
             </p>
         </div>
     </div>
@@ -137,6 +160,18 @@
                 window.location = "https://github.com/astroartics/TicTacToe_App";
             } else if (projectNo == 2) {
                 window.location = "https://github.com/astroartics/Leisure-ActiviTEAs";
+            } else if (projectNo == 3) {
+                window.location = "../index.html";
+            } else if (projectNo == 4) {
+                window.location = "../Game/Game.html";
+            }
+        }
+
+        function gotoCert(certNo) {
+            if (certNo == 1) {
+                window.location = "certificate1.html";
+            } else if (certNo == 2) {
+                window.location = "certificate2.html";
             }
         }
 

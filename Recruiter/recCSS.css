@@ -39,6 +39,10 @@ h3 {
     background-color: #F0CFBA;
 }
 
+h5 {
+    max-width: 40vw;
+}
+
 p {
     font-size: 1.5vw;
     padding: 2vw 0vw;
@@ -129,12 +133,21 @@ hr {
 }
 
 #toGame:hover,
-#navBarForPC li:hover {
+#navBarForPC li:hover,
+.viewCert:hover,
+#toGameImage:hover,
+#resumeHover:hover {
     cursor: pointer;
 }
 
+#toGameImage:hover {
+    opacity: 0.8;
+}
+
 #viewTicTacToe,
-#viewLeisure {
+#viewLeisure,
+#viewPortfolio,
+#view2DGame {
     display: block;
     margin: 3vw auto 0vw auto;
     padding: 0.5vw 3vw;
@@ -142,8 +155,15 @@ hr {
     font-size: 1vw;
 }
 
+#viewPortfolioCode {
+    margin: 1vw auto 0vw auto;
+    padding: 0.5vw 3.35vw;
+}
+
 #viewTicTacToe:hover,
-#viewLeisure:hover {
+#viewLeisure:hover,
+#viewPortfolio:hover,
+#view2DGame:hover {
     cursor: pointer;
     padding: 1.3vw 3vw;
     background-size: contain;
@@ -160,6 +180,17 @@ hr {
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('LeisureActiviteas.png');
 }
 
+#viewPortfolio:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('portfolioBtnBack.png');
+}
+
+#view2DGame:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('toGameBack.png');
+    padding: 1vw 3vw;
+}
+
+
+
 #projects {
     text-align: start;
 }
@@ -167,4 +198,44 @@ hr {
 #projects p {
     background-color: #fdf4dd;
     padding: 8vw 10vw;
+}
+
+#skills {
+    max-width: 35vw;
+}
+
+.viewCert {
+    font-size: 1vw;
+}
+
+.viewCert:hover {
+    background-color: #bbbbbb;
+}
+
+#toGame {
+    width: 40vw;
+    font-size: 1vw;
+    padding: 0.5vw 0vw;
+    background-color: black;
+    text-decoration: underline;
+    color: rgb(157, 157, 242)
+}
+
+#toGame:hover {
+    background-color: rgb(68, 67, 67);
+    color: rgb(194, 194, 247);
+}
+
+#resumeImg {
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+#resumeHover {
+    display: none;
+    margin: 0 auto;
+}
+
+.resumeHoverClass {
+    opacity: 0.9;
 }

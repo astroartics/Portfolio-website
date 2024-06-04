@@ -77,7 +77,9 @@ hr {
 }
 
 #viewTicTacToe,
-#viewLeisure {
+#viewLeisure,
+#viewPortfolio,
+#view2DGame {
     display: block;
     margin: 5vw auto 0vw auto;
     background-size: contain;
@@ -101,6 +103,13 @@ hr {
     padding: 8vw 10vw;
 }
 
+#toGame {
+    padding: 0.5vw 0vw;
+    background-color: #464646;
+    text-decoration: underline;
+    color: rgb(255, 255, 255)
+}
+
 @media screen and (orientation: portrait) {
 
     img {
@@ -118,6 +127,10 @@ hr {
 
     h3 {
         font-size: 4.5vw;
+    }
+
+    h5 {
+        max-width: 80vw;
     }
 
     div ul li a {
@@ -145,9 +158,16 @@ hr {
     }
 
     #viewTicTacToe,
-    #viewLeisure {
+    #viewLeisure,
+    #viewPortfolio,
+    #view2DGame {
         font-size: 3vw;
         padding: 2vw 10vw;
+    }
+
+    #toGame {
+        width: 80vw;
+        font-size: 3vw;
     }
 }
 
@@ -169,6 +189,10 @@ hr {
 
     h3 {
         font-size: 2.5vw;
+    }
+
+    h5 {
+        max-width: 50vw;
     }
 
     div ul li a {
@@ -196,12 +220,29 @@ hr {
     }
 
     #viewTicTacToe,
-    #viewLeisure {
+    #viewLeisure,
+    #viewPortfolio,
+    #view2DGame {
         font-size: 1.5vw;
         padding: 1.5vw 7vw;
+    }
+
+    #toGame {
+        width: 50vw;
+        font-size: 1.5vw;
     }
 }
 
 #projects {
     text-align: start;
+}
+
+#resumeImg {
+    display: none;
+    opacity: 0.9;
+}
+
+#resumeHover {
+    margin: 0 auto;
+    padding: 3vw 0 5vw 0;
 }
