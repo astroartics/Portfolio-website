@@ -111,6 +111,13 @@ hr {
     color: rgb(255, 255, 255)
 }
 
+#p2,
+#p3,
+#p4,
+#p5 {
+    display: none;
+}
+
 @media screen and (orientation: portrait) {
 
     img {
@@ -238,6 +245,11 @@ hr {
 
 #projects {
     text-align: start;
+}
+
+
+#showProjects {
+    padding: 0.5vw;
 }
 
 #resumeImg {

@@ -136,7 +136,8 @@ hr {
 #navBarForPC li:hover,
 .viewCert:hover,
 #toGameImage:hover,
-#resumeHover:hover {
+#resumeHover:hover,
+#showProjects:hover {
     cursor: pointer;
 }
 
@@ -154,6 +155,17 @@ hr {
     padding: 0.5vw 3vw;
     background-color: rgb(154, 215, 251);
     font-size: 1vw;
+}
+
+#p2,
+#p3,
+#p4,
+#p5 {
+    display: none;
+}
+
+#showProjects {
+    padding: 0.5vw;
 }
 
 #viewPortfolioCode {

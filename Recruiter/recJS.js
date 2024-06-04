@@ -6,9 +6,11 @@ const navBarPC = document.querySelector('#navBarForPC');
 const introductionAnim = document.querySelector('#introductionAnim');
 const resumeImg = document.querySelector('#resumeImg');
 const resumeHoverDiv = document.querySelector('#resumeHover');
+const showProjects = document.querySelector('#showProjects');
 
 let navDisplay = 0;
 let i = 0;
+let projectsHidden = 1;
 
 function introAnim() {
     let text = "Hello, I am Sanjana.";
@@ -82,5 +84,30 @@ window.addEventListener('load', function () {
 
     resumeHoverDiv.addEventListener('click', function () {
         window.location = "resume.html";
+    });
+
+    showProjects.addEventListener('click', function () {
+        const p2 = document.querySelector('#p2');
+        const p3 = document.querySelector('#p3');
+        const p4 = document.querySelector('#p4');
+        const p5 = document.querySelector('#p5');
+
+        if (projectsHidden == 1) {
+            p2.style.display = "block";
+            p3.style.display = "block";
+            p4.style.display = "block";
+            p5.style.display = "block";
+
+            showProjects.innerText = "Show less";
+            projectsHidden = 0;
+        } else {
+            p2.style.display = "none";
+            p3.style.display = "none";
+            p4.style.display = "none";
+            p5.style.display = "none";
+
+            showProjects.innerText = "Show more";
+            projectsHidden = 1;
+        }
     });
 });
