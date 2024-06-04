@@ -62,6 +62,7 @@
                 <big>2)  Android Studio : Unit Converter</big><br /><br />
                 <b style="color : #464646">•</b> Programming language : <i>Java</i><br />
                 <b style="color : #464646">•</b> Features : <i>More than 5 units included, Easy to use</i>
+                <button id="viewConverter" onClick="toGitHub(2)" title="View Unit Converter Project">View</button>
             </p>
             <!-- <hr style="width: 35vw;" /> -->
             <p>
@@ -74,7 +75,7 @@
                 <!-- <b style="color : #464646">•</b> About : <i>We have tried to include the things that are searched the
                     most related to the 5 most common hobby fields namely Art, Music, Sports, Food, Photography under a
                     single domain.</i> -->
-                <button id="viewLeisure" onClick="toGitHub(2)" title="View Leisure ActiviTEAs Project">View</button>
+                <button id="viewLeisure" onClick="toGitHub(3)" title="View Leisure ActiviTEAs Project">View</button>
             </p>
 
             <p>
@@ -85,7 +86,7 @@
                 <!-- <b style="color : #464646">•</b> About : <i>We have tried to include the things that are searched the
                     most related to the 5 most common hobby fields namely Art, Music, Sports, Food, Photography under a
                     single domain.</i> -->
-                <button id="viewPortfolio" onClick="toGitHub(3)" title="View Portfolio Website">View</button>
+                <button id="viewPortfolio" onClick="toGitHub(4)" title="View Portfolio Website">View</button>
                 <!-- <button id="viewPortfolioCode" onClick="toGitHub(4)" title="View Project On Github">View Code</button> -->
             </p>
 
@@ -97,7 +98,7 @@
                 <!-- <b style="color : #464646">•</b> About : <i>We have tried to include the things that are searched the
                     most related to the 5 most common hobby fields namely Art, Music, Sports, Food, Photography under a
                     single domain.</i> -->
-                <button id="view2DGame" onClick="toGitHub(4)" title="View 2D Game">View</button>
+                <button id="view2DGame" onClick="toGitHub(5)" title="View 2D Game">View</button>
             </p>
         </div>
         <hr />
@@ -159,19 +160,21 @@
             if (projectNo == 1) {
                 window.location = "https://github.com/astroartics/TicTacToe_App";
             } else if (projectNo == 2) {
-                window.location = "https://github.com/astroartics/Leisure-ActiviTEAs";
+                window.location = "https://github.com/astroartics/Unit-Converter";
             } else if (projectNo == 3) {
-                window.location = "../index.html";
+                window.location = "https://github.com/astroartics/Leisure-ActiviTEAs";
             } else if (projectNo == 4) {
+                window.location = "../index.html";
+            } else if (projectNo == 5) {
                 window.location = "../Game/Game.html";
             }
         }
 
         function gotoCert(certNo) {
             if (certNo == 1) {
-                window.location = "certificate1.html";
+                window.location = "Certificates/certificate1.html";
             } else if (certNo == 2) {
-                window.location = "certificate2.html";
+                window.location = "Certificates/certificate2.html";
             }
         }
 

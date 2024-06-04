@@ -145,6 +145,7 @@ hr {
 }
 
 #viewTicTacToe,
+#viewConverter,
 #viewLeisure,
 #viewPortfolio,
 #view2DGame {
@@ -161,6 +162,7 @@ hr {
 }
 
 #viewTicTacToe:hover,
+#viewConverter:hover,
 #viewLeisure:hover,
 #viewPortfolio:hover,
 #view2DGame:hover {
@@ -187,6 +189,10 @@ hr {
 #view2DGame:hover {
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('toGameBack.png');
     padding: 1vw 3vw;
+}
+
+#viewConverter:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('converterBack.jpg');
 }
 
 
