@@ -41,6 +41,9 @@ h3 {
 
 h5 {
     max-width: 40vw;
+    font-size: 0.9vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
 }
 
 p {
@@ -115,13 +118,6 @@ li a {
     transition: 400ms;
 }
 
-
-footer {
-    width: 100%;
-    height: 30vh;
-    background-color: #F0CFBA;
-}
-
 hr {
     width: 50vw;
     border-radius: 50%;
@@ -137,7 +133,9 @@ hr {
 .viewCert:hover,
 #toGameImage:hover,
 #resumeHover:hover,
-#showProjects:hover {
+#showProjects:hover,
+#gmailImg:hover,
+#linkedInImg:hover {
     cursor: pointer;
 }
 
@@ -251,4 +249,61 @@ hr {
 #resumeHover {
     display: none;
     margin: 0 auto;
+}
+
+
+
+#gmail {
+    grid-area: gmail;
+    padding: 2vw 2vw 1vw 2vw;
+}
+
+#linkedIn {
+    grid-area: linkedIn;
+    padding: 1vw 2vw 2vw 2vw;
+}
+
+#footerTitle {
+    grid-area: footerTitle;
+    margin: 0;
+    padding: 2.5vw;
+    max-width: 13vw;
+    font-size: 2vw;
+    color: white;
+    background-color: rgb(209, 151, 118);
+}
+
+#moreLinksTitle {
+    grid-area: moreLinksTitle;
+    margin: 0;
+    font-size: 1.2vw;
+    background-color: rgb(255, 216, 193);
+    margin: auto;
+}
+
+#footerLinks {
+    max-width: max-content;
+    grid-area: footerLinks;
+    background-color: rgb(255, 216, 193);
+}
+
+
+#footerContainer {
+    display: grid;
+    grid-template-areas: 'gmail' 'linkedIn';
+    justify-items: center;
+    grid-area: footerSymbols;
+    background-color: rgb(231, 181, 152);
+}
+
+footer {
+    width: 100%;
+    height: max-content;
+    border-top: 0.1vw solid rgb(200, 192, 192);
+    background-color: rgb(232, 208, 194);
+    background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.537)), url('footerBack.jpg');
+    background-size: contain;
+    display: grid;
+    grid-template-areas: 'footerTitle footerSymbols footerLinks . . . . .';
+    grid-template-columns: max-content auto;
 }
