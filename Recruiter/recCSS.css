@@ -141,10 +141,6 @@ hr {
     cursor: pointer;
 }
 
-#toGameImage:hover {
-    opacity: 0.8;
-}
-
 #viewTicTacToe,
 #viewConverter,
 #viewLeisure,
@@ -166,6 +162,7 @@ hr {
 
 #showProjects {
     padding: 0.5vw;
+    font-size: 1vw;
 }
 
 #viewPortfolioCode {
@@ -215,7 +212,9 @@ hr {
 
 #projects p {
     background-color: #fdf4dd;
-    padding: 8vw 10vw;
+    padding: 8vw 8vw;
+    border-radius: 2vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #skills {
@@ -252,8 +251,4 @@ hr {
 #resumeHover {
     display: none;
     margin: 0 auto;
-}
-
-.resumeHoverClass {
-    opacity: 0.9;
 }
