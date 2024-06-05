@@ -7,6 +7,8 @@ const introductionAnim = document.querySelector('#introductionAnim');
 const resumeImg = document.querySelector('#resumeImg');
 const resumeHoverDiv = document.querySelector('#resumeHover');
 const showProjects = document.querySelector('#showProjects');
+const gmail = document.querySelector('#gmailImg');
+const linkedIn = document.querySelector('#linkedInImg');
 
 let navDisplay = 0;
 let i = 0;
@@ -62,6 +64,13 @@ function resumeHover() {
         resumeHoverDiv.style.display = "none";
     });
 }
+function reachMe(platform) {
+    if (platform == 'gmail') {
+        window.location = "https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com";
+    } else if (platform == 'linkedIn') {
+        window.location = "http://www.linkedin.com/in/sanjana-joshi-533853278";
+    }
+}
 
 window.addEventListener('load', function () {
     let details = navigator.userAgent;
@@ -110,4 +119,12 @@ window.addEventListener('load', function () {
             projectsHidden = 1;
         }
     });
+
+    gmail.addEventListener('click', function () {
+        reachMe('gmail');
+    });
+
+    linkedIn.addEventListener('click', function () {
+        reachMe('linkedIn');
+    })
 });
