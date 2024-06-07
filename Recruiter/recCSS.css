@@ -258,6 +258,12 @@ hr {
     padding: 2vw 2vw 1vw 2vw;
 }
 
+#gmailImg,
+#linkedInImg {
+    max-width: 3vw;
+    border-radius: 0.5vw;
+}
+
 #linkedIn {
     grid-area: linkedIn;
     padding: 1vw 2vw 2vw 2vw;
@@ -271,20 +277,28 @@ hr {
     font-size: 2vw;
     color: white;
     background-color: rgb(209, 151, 118);
+    text-align: center;
 }
 
 #moreLinksTitle {
     grid-area: moreLinksTitle;
-    margin: 0;
     font-size: 1.2vw;
     background-color: rgb(255, 216, 193);
     margin: auto;
+    padding: 1.5vw;
 }
 
 #footerLinks {
     max-width: max-content;
     grid-area: footerLinks;
     background-color: rgb(255, 216, 193);
+    padding: 2vw 0vw;
+    text-align: center;
+}
+
+.footerH5 {
+    padding: 0vw 3vw;
+    margin: 0.2vw;
 }
 
 

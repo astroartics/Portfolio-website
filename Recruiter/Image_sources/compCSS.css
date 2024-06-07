@@ -1,0 +1,45 @@
+body {
+    background-color: #464646;
+    color: white;
+    text-align: center;
+}
+
+hr {
+    max-width: 50%;
+    grid-area: hr;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 'Img1 link1' 'Img2 link2' 'Img3 link3' 'Img4 link4' 'Img5 link5' 'Img6 link6';
+    grid-template-columns: 30% 60%;
+}
+
+h3 {
+    max-width: 100%;
+    word-wrap: break-word;
+    margin: auto;
+    padding: 2vw;
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+img {
+    max-width: 10vw;
+    grid-area: img;
+    padding: 2vw;
+    margin: 1vw auto;
+    background-color: #ebebeb;
+    border-radius: 5%;
+}
+
+button {
+    max-width: max-content;
+    font-size: 1.2vw;
+    margin: 3vw 0vw;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ababab;
+}

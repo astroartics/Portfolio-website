@@ -120,11 +120,71 @@ hr {
     display: none;
 }
 
+
+
+
+
+
+#gmail {
+    grid-area: gmail;
+}
+
+#linkedIn {
+    grid-area: linkedIn;
+}
+
+#gmailImg,
+#linkedInImg {
+    border-radius: 0.5vw;
+}
+
+#footerTitle {
+    grid-area: footerTitle;
+    margin: 0;
+    color: white;
+    background-color: rgb(209, 151, 118);
+}
+
+#moreLinksTitle {
+    grid-area: moreLinksTitle;
+    background-color: rgb(245, 192, 162);
+}
+
+#footerLinks {
+    grid-area: footerLinks;
+    background-color: rgb(245, 192, 162);
+    padding: 2vw;
+}
+
+.footerH5 {
+    padding: 0vw 3vw;
+    margin: 0.3vw;
+}
+
+
+#footerContainer {
+    display: grid;
+    grid-template-areas: 'gmail' 'linkedIn';
+    justify-items: center;
+    grid-area: footerSymbols;
+    background-color: rgb(233, 175, 142);
+}
+
 footer {
     width: 100%;
-    height: 30vh;
-    background-color: #464646;
+    height: max-content;
+    border-top: 0.1vw solid rgb(200, 192, 192);
+    background-color: rgb(245, 192, 162);
+    display: grid;
+    grid-template-areas: 'footerTitle footerSymbols footerLinks';
+    grid-template-columns: max-content auto;
 }
+
+
+
+
+
+
 
 @media screen and (orientation: portrait) {
 
@@ -185,6 +245,28 @@ footer {
     #toGame {
         width: 80vw;
         font-size: 3vw;
+    }
+
+    #gmailImg,
+    #linkedInImg {
+        max-width: 5vw;
+    }
+
+    #footerTitle {
+        font-size: 3vw;
+        padding: 10vw 8vw;
+    }
+
+    #moreLinksTitle {
+        font-size: 3vw;
+    }
+
+    .footerH5 {
+        font-size: 2vw;
+    }
+
+    #gmail {
+        padding: 5vw;
     }
 }
 
@@ -248,6 +330,29 @@ footer {
     #toGame {
         width: 50vw;
         font-size: 1.5vw;
+    }
+
+    #gmailImg,
+    #linkedInImg {
+        max-width: 4vw;
+    }
+
+    #footerTitle {
+        font-size: 2.5vw;
+        padding: 10vw 8vw;
+    }
+
+    #moreLinksTitle {
+        font-size: 2vw;
+        padding: 2vw;
+    }
+
+    .footerH5 {
+        font-size: 1.5vw;
+    }
+
+    #gmail {
+        padding: 5vw;
     }
 }
 

@@ -92,7 +92,7 @@ window.addEventListener('load', function () {
     introAnim();
 
     resumeHoverDiv.addEventListener('click', function () {
-        window.location = "resume.html";
+        window.location = "Resume/resume.html";
     });
 
     showProjects.addEventListener('click', function () {
