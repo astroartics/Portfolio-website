@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="laptopCSS.css">
+</head>
+
+<body>
+    <h2 id="title"><button onclick="back()" id="back">Back</button>Tic Tac Toe</h2>
+    <div id="container">
+        <video controls autoplay id="video">
+            <source src="TicTacToe_video.mp4" type="video/mp4">
+        </video>
+
+        <h3>Go to GitHub repository : <button id="goToGithub" onclick="toGitHub()" title="View code for TicTacToe"><img
+                    src="github.png" id="github"></button></h3>
+    </div>
+
+    <script>
+        function back() {
+            window.location = "../index.html"
+        }
+
+        function toGitHub() {
+            window.location = "https://github.com/astroartics/TicTacToe_App";
+        }
+    </script>
+</body>
+
+</html>
