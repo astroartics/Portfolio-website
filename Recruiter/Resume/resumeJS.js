@@ -1,3 +1,5 @@
+const iframe = document.querySelector('iframe');
+
 window.addEventListener('load', function () {
     let details = navigator.userAgent;
     let regexp = /android|iphone|kindle|ipad/i;

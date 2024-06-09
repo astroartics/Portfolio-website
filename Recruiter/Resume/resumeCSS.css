@@ -21,6 +21,10 @@ iframe {
     grid-area: pdf;
 }
 
+img {
+    display: none;
+}
+
 #container {
     display: grid;
     grid-template-areas: 'pdf' 'back';

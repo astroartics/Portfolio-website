@@ -135,7 +135,9 @@ hr {
 #resumeHover:hover,
 #showProjects:hover,
 #gmailImg:hover,
-#linkedInImg:hover {
+#linkedInImg:hover,
+#hideTicTacToe:hover,
+#goToGithub:hover {
     cursor: pointer;
 }
 
@@ -149,6 +151,34 @@ hr {
     padding: 0.5vw 3vw;
     background-color: rgb(154, 215, 251);
     font-size: 1vw;
+}
+
+#hideTicTacToe {
+    width: 7%;
+    display: none;
+    background-color: #0a0a0a;
+    color: white;
+    margin: 5% 32% 0% auto;
+    border: 0;
+    font-size: 1vw;
+    padding: 0.5vw;
+}
+
+#hideTicTacToe:hover {
+    background-color: #fe7d83;
+    color: #181818;
+    transition: 200ms;
+}
+
+#github {
+    max-width: 1.5vw;
+}
+
+#goToGithub {
+    max-width: max-content;
+    max-height: max-content;
+    background-color: white;
+    border-radius: 10%;
 }
 
 #p2,
@@ -311,7 +341,7 @@ hr {
 }
 
 footer {
-    width: 100%;
+    max-width: 100%;
     height: max-content;
     border-top: 0.1vw solid rgb(200, 192, 192);
     background-color: rgb(232, 208, 194);
@@ -320,4 +350,12 @@ footer {
     display: grid;
     grid-template-areas: 'footerTitle footerSymbols footerLinks . . . . .';
     grid-template-columns: max-content auto;
+    overflow: hidden;
+}
+
+#p1_video {
+    max-width: 36%;
+    height: auto;
+    padding: 0% 32%;
+    display: none;
 }

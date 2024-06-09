@@ -171,16 +171,34 @@ hr {
 }
 
 footer {
-    width: 100%;
+    max-width: 100%;
     height: max-content;
     border-top: 0.1vw solid rgb(200, 192, 192);
     background-color: rgb(245, 192, 162);
     display: grid;
     grid-template-areas: 'footerTitle footerSymbols footerLinks';
     grid-template-columns: max-content auto;
+    overflow: hidden;
 }
 
 
+
+#p1_video {
+    display: none;
+}
+
+#goToGithub {
+    max-width: max-content;
+    max-height: max-content;
+    background-color: white;
+    border-radius: 10%;
+}
+
+#hideTicTacToe {
+    display: none;
+    background-color: #e3787d;
+    color: white;
+}
 
 
 
@@ -268,6 +286,23 @@ footer {
     #gmail {
         padding: 5vw;
     }
+
+    #p1_video {
+        max-width: 90%;
+        height: auto;
+        padding: 0% 5%;
+    }
+
+    #github {
+        max-width: 5vw;
+    }
+
+    #hideTicTacToe {
+        width: 40%;
+        margin: 7% auto 1% auto;
+        font-size: 3vw;
+        padding: 1.5vw;
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -353,6 +388,23 @@ footer {
 
     #gmail {
         padding: 5vw;
+    }
+
+    #p1_video {
+        max-width: 50%;
+        height: auto;
+        padding: 0% 25%;
+    }
+
+    #github {
+        max-width: 3vw;
+    }
+
+    #hideTicTacToe {
+        width: 20%;
+        margin: 4% auto 1% auto;
+        font-size: 1.7vw;
+        padding: 1vw;
     }
 }
 

@@ -55,8 +55,17 @@
                 <b style="color : #464646">•</b> Programming language : <i>Java</i><br />
                 <b style="color : #464646">•</b> Features : <i>3x3 and 4x4 grids, Dark mode, High score till date,
                     Customizable
-                    player names, Fun facts and tips on loading screen</i>
-                <button id="viewTicTacToe" onClick="toGitHub(1)" title="View TicTacToe Project">View</button>
+                    player names, Fun facts and tips on loading screen</i><br /><br />
+                &#10147; Go to GitHub repository : <button id="goToGithub" onclick="toGitHub(1)"
+                    title="View code for TicTacToe"><img src="github.png" id="github"></button>
+                <button id="viewTicTacToe" title="View TicTacToe Project">View</button>
+
+
+                <button id="hideTicTacToe" title="Hide TicTacToe Project">Close</button>
+                <video controls autoplay id="p1_video" muted>
+                    <source src="TicTacToe_video.mp4" type="video/mp4">
+                </video>
+
             </p>
             <!-- <hr style="width: 35vw;" /> -->
             <p id="p2">
@@ -176,8 +185,7 @@
 
         function toGitHub(projectNo) {
             if (projectNo == 1) {
-                // window.location = "https://github.com/astroartics/TicTacToe_App";
-                window.location = "TicTacToe_project";
+                window.location = "https://github.com/astroartics/TicTacToe_App";
             } else if (projectNo == 2) {
                 window.location = "https://github.com/astroartics/Unit-Converter";
             } else if (projectNo == 3) {

@@ -9,6 +9,8 @@ const resumeHoverDiv = document.querySelector('#resumeHover');
 const showProjects = document.querySelector('#showProjects');
 const gmail = document.querySelector('#gmailImg');
 const linkedIn = document.querySelector('#linkedInImg');
+const viewTicTacToe = document.querySelector('#viewTicTacToe');
+const hideTicTacToe = document.querySelector('#hideTicTacToe');
 
 let navDisplay = 0;
 let i = 0;
@@ -127,4 +129,18 @@ window.addEventListener('load', function () {
     linkedIn.addEventListener('click', function () {
         reachMe('linkedIn');
     })
+
+    viewTicTacToe.addEventListener('click', function () {
+        const TicTacToe = document.querySelector('#p1_video');
+        TicTacToe.style.display = "block";
+        viewTicTacToe.style.display = 'none';
+        hideTicTacToe.style.display = 'block';
+    });
+
+    hideTicTacToe.addEventListener('click', function () {
+        const TicTacToe = document.querySelector('#p1_video');
+        TicTacToe.style.display = "none";
+        viewTicTacToe.style.display = 'block';
+        hideTicTacToe.style.display = 'none';
+    });
 });
