@@ -172,13 +172,25 @@ hr {
 
 #github {
     max-width: 1.5vw;
+    margin: 0 auto;
+}
+
+#toGitText {
+    display: block;
+    width: max-content;
+    font-size: 1.3vw;
+    background-color: #fdf4dd;
+    border: 1px solid #fdf4dd;
+    margin: 0 auto;
 }
 
 #goToGithub {
+    display: block;
     max-width: max-content;
     max-height: max-content;
     background-color: white;
     border-radius: 10%;
+    margin: 0 auto;
 }
 
 #p2,
