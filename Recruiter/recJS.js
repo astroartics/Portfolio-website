@@ -14,7 +14,7 @@ const hideTicTacToe = document.querySelector('#hideTicTacToe');
 
 let navDisplay = 0;
 let i = 0;
-let projectsHidden = 1;
+let projectsHidden = 0;
 
 function introAnim() {
     let text = "Hello, I am Sanjana.";

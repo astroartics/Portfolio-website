@@ -193,13 +193,6 @@ hr {
     margin: 0 auto;
 }
 
-#p2,
-#p3,
-#p4,
-#p5 {
-    display: none;
-}
-
 #showProjects {
     padding: 0.5vw;
     font-size: 1vw;
