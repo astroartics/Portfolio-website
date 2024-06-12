@@ -11,6 +11,8 @@ const gmail = document.querySelector('#gmailImg');
 const linkedIn = document.querySelector('#linkedInImg');
 const viewTicTacToe = document.querySelector('#viewTicTacToe');
 const hideTicTacToe = document.querySelector('#hideTicTacToe');
+const viewLeisure = document.querySelector('#viewLeisure');
+const hideLeisure = document.querySelector('#hideLeisureActiviteas');
 
 let navDisplay = 0;
 let i = 0;
@@ -68,9 +70,9 @@ function resumeHover() {
 }
 function reachMe(platform) {
     if (platform == 'gmail') {
-        window.location = "https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com";
+        window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com", '_blank');
     } else if (platform == 'linkedIn') {
-        window.location = "http://www.linkedin.com/in/sanjana-joshi-533853278";
+        window.open("http://www.linkedin.com/in/sanjana-joshi-533853278", '_blank');
     }
 }
 
@@ -130,17 +132,30 @@ window.addEventListener('load', function () {
         reachMe('linkedIn');
     })
 
+    const TicTacToe = document.querySelector('#p1_video');
     viewTicTacToe.addEventListener('click', function () {
-        const TicTacToe = document.querySelector('#p1_video');
         TicTacToe.style.display = "block";
         viewTicTacToe.style.display = 'none';
         hideTicTacToe.style.display = 'block';
     });
 
     hideTicTacToe.addEventListener('click', function () {
-        const TicTacToe = document.querySelector('#p1_video');
         TicTacToe.style.display = "none";
         viewTicTacToe.style.display = 'block';
         hideTicTacToe.style.display = 'none';
+    });
+
+
+    const Leisure = document.querySelector('#p2_video');
+    viewLeisure.addEventListener('click', function () {
+        Leisure.style.display = "block";
+        viewLeisure.style.display = 'none';
+        hideLeisure.style.display = 'block';
+    });
+
+    hideLeisure.addEventListener('click', function () {
+        Leisure.style.display = "none";
+        viewLeisure.style.display = 'block';
+        hideLeisure.style.display = 'none';
     });
 });

@@ -56,8 +56,8 @@
                 <b style="color : #464646">•</b> Features : <i>3x3 and 4x4 grids, Dark mode, High score till date,
                     Customizable
                     player names, Fun facts and tips on loading screen</i><br /><br />
-                <button id="toGitText">&#10147; Go to GitHub repository</button><button id="goToGithub"
-                    onclick="toGitHub(1)" title="View code for TicTacToe"><img src="github.png" id="github"></button>
+                <button class="toGitText">&#10147; Go to GitHub repository</button><button class="goToGithub"
+                    onclick="toGitHub(1)" title="View code for TicTacToe"><img src="github.png" class="github"></button>
                 <button id="viewTicTacToe" title="View TicTacToe Project">View</button>
 
 
@@ -85,7 +85,17 @@
                 <!-- <b style="color : #464646">•</b> About : <i>We have tried to include the things that are searched the
                     most related to the 5 most common hobby fields namely Art, Music, Sports, Food, Photography under a
                     single domain.</i> -->
-                <button id="viewLeisure" onClick="toGitHub(3)" title="View Leisure ActiviTEAs Project">View</button>
+
+                <button style="margin-top:2vw;" class="toGitText">&#10147; Go to GitHub repository</button><button
+                    class="goToGithub" onclick="toGitHub(3)" title="View code for Leisure ActiviTEAs"><img
+                        src="github.png" class="github"></button>
+                <button id="viewLeisure" title="View Leisure ActiviTEAs Project">View</button>
+
+
+                <button id="hideLeisureActiviteas" title="Hide Leisure ActiviTEAs Project">Close</button>
+                <video controls autoplay id="p2_video" muted>
+                    <source src="Leisure_activiteas_video.mp4" type="video/mp4">
+                </video>
             </p>
 
             <p id="p4">
@@ -155,7 +165,8 @@
         </div>
         <div id="footerLinks">
             <h3 id="moreLinksTitle" style="color: #2d2d2d;">More links</h3>
-            <h5 class="footerH5" title="Check out my Github profile"><a href="https://github.com/astroartics">Github
+            <h5 class="footerH5" title="Check out my Github profile"><a href="https://github.com/astroartics"
+                    target="_blank">Github
                     profile</a>
             </h5>
             <h5 class="footerH5" title="View image sources"><a href="Image_sources/index.html">Image sources</a></h5>
@@ -185,11 +196,11 @@
 
         function toGitHub(projectNo) {
             if (projectNo == 1) {
-                window.location = "https://github.com/astroartics/TicTacToe_App";
+                window.open("https://github.com/astroartics/TicTacToe_App", '_blank');
             } else if (projectNo == 2) {
-                window.location = "https://github.com/astroartics/Unit-Converter";
+                window.open("https://github.com/astroartics/Unit-Converter", '_blank');
             } else if (projectNo == 3) {
-                window.location = "https://github.com/astroartics/Leisure-ActiviTEAs";
+                window.open("https://github.com/astroartics/Leisure-ActiviTEAs", '_blank');
             } else if (projectNo == 4) {
                 window.location = "../index.html";
             } else if (projectNo == 5) {

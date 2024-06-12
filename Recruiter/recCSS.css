@@ -137,7 +137,8 @@ hr {
 #gmailImg:hover,
 #linkedInImg:hover,
 #hideTicTacToe:hover,
-#goToGithub:hover {
+#hideLeisureActiviteas:hover,
+.goToGithub:hover {
     cursor: pointer;
 }
 
@@ -153,38 +154,47 @@ hr {
     font-size: 1vw;
 }
 
-#hideTicTacToe {
+#hideTicTacToe,
+#hideLeisureActiviteas {
     width: 7%;
     display: none;
     background-color: #0a0a0a;
     color: white;
-    margin: 5% 32% 0% auto;
     border: 0;
     font-size: 1vw;
     padding: 0.5vw;
 }
 
-#hideTicTacToe:hover {
+#hideTicTacToe {
+    margin: 5% 32% 0% auto;
+}
+
+#hideLeisureActiviteas {
+    margin: 5% 10% 0% auto;
+}
+
+#hideTicTacToe:hover,
+#hideLeisureActiviteas:hover {
     background-color: #fe7d83;
     color: #181818;
     transition: 200ms;
 }
 
-#github {
+.github {
     max-width: 1.5vw;
     margin: 0 auto;
 }
 
-#toGitText {
+.toGitText {
     display: block;
     width: max-content;
     font-size: 1.3vw;
     background-color: #fdf4dd;
     border: 1px solid #fdf4dd;
-    margin: 0 auto;
+    margin: 1vw auto 0vw auto;
 }
 
-#goToGithub {
+.goToGithub {
     display: block;
     max-width: max-content;
     max-height: max-content;
@@ -362,5 +372,12 @@ footer {
     max-width: 36%;
     height: auto;
     padding: 0% 32%;
+    display: none;
+}
+
+#p2_video {
+    max-width: 80%;
+    height: auto;
+    padding: 0% 10%;
     display: none;
 }

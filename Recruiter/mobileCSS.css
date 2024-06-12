@@ -175,12 +175,12 @@ footer {
 }
 
 
-
-#p1_video {
+#p1_video,
+#p2_video {
     display: none;
 }
 
-#goToGithub {
+.goToGithub {
     display: block;
     max-width: max-content;
     max-height: max-content;
@@ -189,15 +189,16 @@ footer {
     margin: 0 auto;
 }
 
-#toGitText {
+.toGitText {
     display: block;
     width: max-content;
     background-color: #fdf4dd;
     border: 1px solid #fdf4dd;
-    margin: 0 auto;
+    margin: 1vw auto;
 }
 
-#hideTicTacToe {
+#hideTicTacToe,
+#hideLeisureActiviteas {
     display: none;
     background-color: #e3787d;
     color: white;
@@ -296,15 +297,22 @@ footer {
         padding: 0% 5%;
     }
 
-    #github {
+    #p2_video {
+        max-width: 100%;
+        height: auto;
+        padding: 0%;
+    }
+
+    .github {
         max-width: 5vw;
     }
 
-    #toGitText {
+    .toGitText {
         font-size: 3.5vw;
     }
 
-    #hideTicTacToe {
+    #hideTicTacToe,
+    #hideLeisureActiviteas {
         width: 40%;
         margin: 7% auto 1% auto;
         font-size: 3vw;
@@ -403,15 +411,22 @@ footer {
         padding: 0% 25%;
     }
 
-    #github {
+    #p2_video {
+        max-width: 100%;
+        height: auto;
+        padding: 0%;
+    }
+
+    .github {
         max-width: 3vw;
     }
 
-    #toGitText {
+    .toGitText {
         font-size: 2vw;
     }
 
-    #hideTicTacToe {
+    #hideTicTacToe,
+    #hideLeisureActiviteas {
         width: 20%;
         margin: 4% auto 1% auto;
         font-size: 1.7vw;
