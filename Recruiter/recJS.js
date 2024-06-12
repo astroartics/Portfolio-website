@@ -68,9 +68,9 @@ function resumeHover() {
 }
 function reachMe(platform) {
     if (platform == 'gmail') {
-        window.location = "https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com";
+        window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com", '_blank');
     } else if (platform == 'linkedIn') {
-        window.location = "http://www.linkedin.com/in/sanjana-joshi-533853278";
+        window.open("http://www.linkedin.com/in/sanjana-joshi-533853278", '_blank');
     }
 }
 
