@@ -1,8 +1,2 @@
-About Me :-
-    I consider myself to be a "learner for life." I am constantly looking for opportunities to gain more knowledge regarding anything that comes my way. In a field that requires maximum use of the left brain for logical thinking, I try to do things the creative way. An opportunity that will help me enhance my skills and add new ones to my list is what I'm looking for.
-
-Projects :-
-    1) Android Studio : Tic Tac Toe
-    2) Unit Converter
-    3) Leisure ActiviTEAs
-    4) Portfolio website
+Git pull command : git pull Portfolio master
+*Max limit for files on Git is 100MB.    
