@@ -248,6 +248,7 @@ footer {
     #resume,
     #projects2 {
         padding: 15vw 5vw;
+        margin: 0 auto;
     }
 
     p {
@@ -361,6 +362,7 @@ footer {
     #projects1,
     #projects2 {
         padding: 4vw 5vw;
+        margin: 0 auto;
     }
 
     p {
