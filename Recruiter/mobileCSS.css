@@ -77,7 +77,7 @@ hr {
 }
 
 #viewTicTacToe,
-#viewConverter,
+#viewUnitConverter,
 #viewLeisure,
 #viewPortfolio,
 #view2DGame {
@@ -176,7 +176,8 @@ footer {
 
 
 #p1_video,
-#p2_video {
+#p2_video,
+#p3_video {
     display: none;
 }
 
@@ -198,6 +199,7 @@ footer {
 }
 
 #hideTicTacToe,
+#hideUnitConverter,
 #hideLeisureActiviteas {
     display: none;
     background-color: #e3787d;
@@ -257,7 +259,7 @@ footer {
     }
 
     #viewTicTacToe,
-    #viewConverter,
+    #viewUnitConverter,
     #viewLeisure,
     #viewPortfolio,
     #view2DGame {
@@ -292,13 +294,14 @@ footer {
         padding: 5vw;
     }
 
-    #p1_video {
+    #p1_video,
+    #p2_video {
         max-width: 90%;
         height: auto;
         padding: 0% 5%;
     }
 
-    #p2_video {
+    #p3_video {
         max-width: 100%;
         height: auto;
         padding: 0%;
@@ -313,6 +316,7 @@ footer {
     }
 
     #hideTicTacToe,
+    #hideUnitConverter,
     #hideLeisureActiviteas {
         width: 40%;
         margin: 7% auto 1% auto;
@@ -371,7 +375,7 @@ footer {
     }
 
     #viewTicTacToe,
-    #viewConverter,
+    #viewUnitConverter,
     #viewLeisure,
     #viewPortfolio,
     #view2DGame {
@@ -407,13 +411,14 @@ footer {
         padding: 5vw;
     }
 
-    #p1_video {
+    #p1_video,
+    #p2_video {
         max-width: 50%;
         height: auto;
         padding: 0% 25%;
     }
 
-    #p2_video {
+    #p3_video {
         max-width: 100%;
         height: auto;
         padding: 0%;
@@ -428,6 +433,7 @@ footer {
     }
 
     #hideTicTacToe,
+    #hideUnitConverter,
     #hideLeisureActiviteas {
         width: 20%;
         margin: 4% auto 1% auto;

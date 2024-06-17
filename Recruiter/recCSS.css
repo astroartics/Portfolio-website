@@ -137,13 +137,14 @@ hr {
 #gmailImg:hover,
 #linkedInImg:hover,
 #hideTicTacToe:hover,
+#hideUnitConverter:hover,
 #hideLeisureActiviteas:hover,
 .goToGithub:hover {
     cursor: pointer;
 }
 
 #viewTicTacToe,
-#viewConverter,
+#viewUnitConverter,
 #viewLeisure,
 #viewPortfolio,
 #view2DGame {
@@ -155,7 +156,8 @@ hr {
 }
 
 #hideTicTacToe,
-#hideLeisureActiviteas {
+#hideLeisureActiviteas,
+#hideUnitConverter {
     width: 7%;
     display: none;
     background-color: #0a0a0a;
@@ -165,7 +167,8 @@ hr {
     padding: 0.5vw;
 }
 
-#hideTicTacToe {
+#hideTicTacToe,
+#hideUnitConverter {
     margin: 5% 32% 0% auto;
 }
 
@@ -174,7 +177,8 @@ hr {
 }
 
 #hideTicTacToe:hover,
-#hideLeisureActiviteas:hover {
+#hideLeisureActiviteas:hover,
+#hideUnitConverter:hover {
     background-color: #fe7d83;
     color: #181818;
     transition: 200ms;
@@ -214,7 +218,7 @@ hr {
 }
 
 #viewTicTacToe:hover,
-#viewConverter:hover,
+#viewUnitConverter:hover,
 #viewLeisure:hover,
 #viewPortfolio:hover,
 #view2DGame:hover {
@@ -243,7 +247,7 @@ hr {
     padding: 1vw 3vw;
 }
 
-#viewConverter:hover {
+#viewUnitConverter:hover {
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('converterBack.jpg');
 }
 
@@ -368,14 +372,15 @@ footer {
     overflow: hidden;
 }
 
-#p1_video {
+#p1_video,
+#p2_video {
     max-width: 36%;
     height: auto;
     padding: 0% 32%;
     display: none;
 }
 
-#p2_video {
+#p3_video {
     max-width: 80%;
     height: auto;
     padding: 0% 10%;

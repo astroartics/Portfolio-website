@@ -13,6 +13,8 @@ const viewTicTacToe = document.querySelector('#viewTicTacToe');
 const hideTicTacToe = document.querySelector('#hideTicTacToe');
 const viewLeisure = document.querySelector('#viewLeisure');
 const hideLeisure = document.querySelector('#hideLeisureActiviteas');
+const viewUnitConverter = document.querySelector('#viewUnitConverter');
+const hideUnitConverter = document.querySelector('#hideUnitConverter');
 
 let navDisplay = 0;
 let i = 0;
@@ -146,7 +148,21 @@ window.addEventListener('load', function () {
     });
 
 
-    const Leisure = document.querySelector('#p2_video');
+    const UnitConverter = document.querySelector('#p2_video');
+    viewUnitConverter.addEventListener('click', function () {
+        UnitConverter.style.display = "block";
+        viewUnitConverter.style.display = 'none';
+        hideUnitConverter.style.display = 'block';
+    });
+
+    hideUnitConverter.addEventListener('click', function () {
+        UnitConverter.style.display = "none";
+        viewUnitConverter.style.display = 'block';
+        hideUnitConverter.style.display = 'none';
+    });
+
+
+    const Leisure = document.querySelector('#p3_video');
     viewLeisure.addEventListener('click', function () {
         Leisure.style.display = "block";
         viewLeisure.style.display = 'none';
