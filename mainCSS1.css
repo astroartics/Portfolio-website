@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: #fefefe;
     max-height: 100vh;
 }
 
@@ -8,8 +7,9 @@ video {
     max-width: 85%;
     grid-area: video;
     object-fit: fill;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     margin-top: -1%;
+    border: 1vw solid white;
 }
 
 h1 {
@@ -101,6 +101,8 @@ h2 {
 
 #container {
     width: 100%;
+    background-image: url('body_background.jpg');
+    background-size: 30vw;
     display: grid;
     grid-template-areas: 'heading' 'video' 'info';
     row-gap: 10%;

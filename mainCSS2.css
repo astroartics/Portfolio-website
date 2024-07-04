@@ -8,7 +8,7 @@ body {
 video {
     max-width: 95vw;
     grid-area: video;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 h1 {
@@ -83,6 +83,8 @@ h2 {
 
 #container {
     width: 100%;
+    background-image: url('body_background.jpg');
+    background-size: 70vw;
     display: grid;
     grid-template-areas: 'heading' 'video' 'info';
     row-gap: 10%;
