@@ -83,6 +83,7 @@ li a {
     color: #242424;
     background-color: #f79fa1;
     scroll-behavior: smooth;
+    transition: 100ms;
 }
 
 #navBarForPC li a:hover {

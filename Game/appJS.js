@@ -4,7 +4,6 @@ const fakeCanvas2 = document.querySelector('#fakeCanvas2');
 const settings = document.querySelector('#settings');
 const buttons = document.querySelector('#buttons');
 const close = document.querySelector('#close');
-const back = document.querySelector('#back');
 const instructions = document.querySelector('#instructions');
 const help = document.querySelector('#help');
 const levelText = document.querySelector('#level');
