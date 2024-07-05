@@ -10,6 +10,7 @@ const levelText = document.querySelector('#level');
 const Game = document.querySelector('#Game');
 const switchToKeyboard = document.querySelector('#switch');
 const restart = document.querySelector('#restart');
+const tiltScreen = document.querySelector('#tiltScreen');
 let audio = new Audio();
 const canvas = document.querySelector('#canvas1');
 const context = canvas.getContext('2d');

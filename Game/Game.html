@@ -43,12 +43,22 @@
         </div>
     </div>
 
-    <p id="tiltScreen">Tilt the screen of your phone</p>
+    <p id="tiltScreen">Tilt your phone</p>
 
     <script src="appJS.js"></script>
     <script>
         $(document).ready(function () {
             $('body').hide().fadeIn(200);
+        });
+
+        window.addEventListener('load', function () {
+            let details = navigator.userAgent;
+            let regexp = /android|iphone|kindle|ipad/i;
+            let isMobileDevice = regexp.test(details);
+
+            if (!isMobileDevice) {
+                document.querySelector('#tiltScreen').style.display = "none";
+            }
         });
 
         function backToPortfolio() {
