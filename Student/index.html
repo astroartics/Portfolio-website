@@ -5,10 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Home</title>
+
+    <link rel="stylesheet" href="laptopCSS.css">
 </head>
 
 <body>
-    <h1>Student page</h1>
+    <button id="home" onclick="window.location.href = '../index.html'" title="Go back to Home Page">↸</button>
+    <h1 id="hello">
+        <div class="hola" id="ex1"><small>¡</small></div>
+        <div class="hola" id="H">H</div>
+        <div class="hola" id="O">O</div>
+        <div class="hola" id="L">L</div>
+        <div class="hola" id="A">A</div>
+        <div class="hola" id="ex2"><small>!</small></div>
+    </h1>
+
+    <div id="letsLearn">
+        <h2>Let's learn and build together...</h2>
+    </div>
+
+    <script>
+        document.querySelector("#hello").addEventListener('click', function () {
+            document.getAnimations().forEach(function (anim) {
+                anim.cancel();
+                anim.play();
+            })
+        })
+
+        function toHome() {
+            window.location.href = "../";
+        }
+    </script>
 </body>
 
 </html>
