@@ -102,7 +102,7 @@ p {
     animation: enter .4s linear forwards 1s;
 }
 
-@-webkit-keyframes enter {
+@keyframes enter {
     0% {
         transform: translateX(200%);
         opacity: 0;
