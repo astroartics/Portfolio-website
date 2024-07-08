@@ -10,7 +10,7 @@ video {
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     margin-top: -1%;
     outline: 4px solid white;
-    outline-offset: -4px;
+    outline-offset: -3px;
 }
 
 h1 {

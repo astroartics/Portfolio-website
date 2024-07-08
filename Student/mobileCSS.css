@@ -39,15 +39,6 @@ p {
     text-align: center;
 }
 
-video {
-    max-width: 50vw;
-    outline: 4px solid #5d5c5c;
-    outline-offset: -3px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
 .hola {
     display: inline;
     opacity: 0;
@@ -151,6 +142,15 @@ video {
     p {
         font-size: 3.5vw;
     }
+
+    video {
+        max-width: 90vw;
+        outline: 4px solid #5d5c5c;
+        outline-offset: -3px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -176,7 +176,7 @@ video {
 
     #letsLearn,
     #projects {
-        max-width: 73vw;
+        max-width: 55vw;
         background-color: rgb(249, 242, 234);
         position: relative;
         left: 100%;
@@ -185,13 +185,22 @@ video {
     }
 
     #sources {
-        max-width: 73vw;
+        max-width: 55vw;
         background-color: rgb(249, 242, 234);
         border: 0.02vw solid #605f5f;
     }
 
     p {
         font-size: 2vw;
+    }
+
+    video {
+        position: absolute;
+        left: 1.5vw;
+        top: 55%;
+        max-width: 40vw;
+        outline: 4px solid #5d5c5c;
+        outline-offset: -4px;
     }
 }
 

@@ -59,9 +59,9 @@ h2 {
 video {
     position: absolute;
     left: 10vw;
-    max-width: 30vw;
+    max-width: 25vw;
     outline: 4px solid #5d5c5c;
-    outline-offset: -4px;
+    outline-offset: -3px;
 }
 
 #sources {
