@@ -4,20 +4,20 @@ body {
 
 #home {
     position: absolute;
-    left: 0.3vw;
-    top: 0.3vw;
+    left: 0;
+    top: 0;
     font-size: 2vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
-    color: #242424;
-    padding: 1.3vw 2vw;
-    background-color: #f5dcb1;
+    color: rgb(204, 202, 202);
+    padding: 1.35vw 2vw;
+    background-color: #232323;
     border: 0;
 }
 
 #home:hover {
     cursor: pointer;
-    background-color: rgb(216, 186, 148);
+    background-color: rgb(21, 21, 21);
     transition: 200ms;
 }
 
@@ -32,11 +32,10 @@ h1 {
     color: #242424;
     padding: 0.7vw 2vw;
     background-color: #F2E9D9;
-    border: 0.3vw solid rgb(114, 92, 63);
+    /* border: 0.3vw solid rgb(114, 92, 63); */
 }
 
 h2 {
-    max-width: 50vw;
     margin: 0;
     font-size: 1.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -49,15 +48,26 @@ h2 {
 
 #letsLearn,
 #projects {
+    width: 53vw;
     max-width: 53vw;
     background-color: rgb(249, 242, 234);
     position: relative;
-    left: 47vw;
+    left: 100%;
+    transform: translate(-100%, 0);
+}
+
+video {
+    position: absolute;
+    left: 10vw;
+    max-width: 30vw;
+    outline: 4px solid #5d5c5c;
+    outline-offset: -4px;
 }
 
 #sources {
     max-width: 53vw;
     background-color: rgb(249, 242, 234);
+    border: 0.02vw solid #605f5f;
 }
 
 p {
@@ -136,18 +146,13 @@ p {
     }
 }
 
-
-.darkBack,
-.lightBack {
-    width: 100%;
-    background-color: #464646;
-    padding: 1.5vw 0vw;
-}
-
 .darkBack {
-    background-color: #464646;
+    background-color: #5d5c5c;
+    padding: 3vw 2vw;
 }
 
 .lightBack {
     background-image: url('../body_background.jpg');
+    background-size: 30vw;
+    padding: 3vw 2vw;
 }

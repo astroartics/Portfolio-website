@@ -9,7 +9,8 @@ video {
     object-fit: fill;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     margin-top: -1%;
-    border: 1vw solid white;
+    outline: 4px solid white;
+    outline-offset: -4px;
 }
 
 h1 {
