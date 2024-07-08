@@ -11,13 +11,14 @@ body {
     font-weight: 100;
     color: #242424;
     padding: 1.3vw 2vw;
-    background-color: rgb(235, 204, 163);
+    background-color: #f5dcb1;
     border: 0;
 }
 
 #home:hover {
     cursor: pointer;
-    background-color: rgb(215, 185, 145);
+    background-color: rgb(216, 186, 148);
+    transition: 200ms;
 }
 
 h1 {
@@ -30,7 +31,7 @@ h1 {
     font-weight: 100;
     color: #242424;
     padding: 0.7vw 2vw;
-    background-color: antiquewhite;
+    background-color: #F2E9D9;
     border: 0.3vw solid rgb(114, 92, 63);
 }
 
@@ -40,21 +41,18 @@ h2 {
     font-size: 1.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
-    color: #242424;
+    color: #0f0f0f;
     padding: 1.5vw 10vw;
-    background-color: #fbbebf;
+    background-color: #ec8c8f;
     text-align: center;
 }
 
-#container {
-    padding: 1vw;
-}
-
-#letsLearn {
+#letsLearn,
+#projects {
     max-width: 53vw;
     background-color: rgb(249, 242, 234);
     position: relative;
-    left: 45vw;
+    left: 47vw;
 }
 
 #sources {
@@ -66,6 +64,8 @@ p {
     padding: 4vw;
     font-size: 1.2vw;
     text-align: center;
+    background-color: #f7e0d3;
+    margin: 0;
 }
 
 .hola {
@@ -134,4 +134,20 @@ p {
         transform: translateX(0%);
         opacity: 1;
     }
+}
+
+
+.darkBack,
+.lightBack {
+    width: 100%;
+    background-color: #464646;
+    padding: 1.5vw 0vw;
+}
+
+.darkBack {
+    background-color: #464646;
+}
+
+.lightBack {
+    background-color: white;
 }
