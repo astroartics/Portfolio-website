@@ -129,13 +129,15 @@ p {
 
     #letsLearn,
     #projects,
-    #sources {
+    #sources,
+    #game {
         max-width: 90vw;
         background-color: rgb(249, 242, 234);
         margin: 3.5vw auto;
     }
 
-    #sources {
+    #sources,
+    #game {
         border: 0.02vw solid #605f5f;
     }
 
@@ -184,7 +186,8 @@ p {
         margin: 1vw 0;
     }
 
-    #sources {
+    #sources,
+    #game {
         max-width: 55vw;
         background-color: rgb(249, 242, 234);
         border: 0.02vw solid #605f5f;

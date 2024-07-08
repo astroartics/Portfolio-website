@@ -64,7 +64,8 @@ video {
     outline-offset: -3px;
 }
 
-#sources {
+#sources,
+#game {
     max-width: 53vw;
     background-color: rgb(249, 242, 234);
     border: 0.02vw solid #605f5f;
