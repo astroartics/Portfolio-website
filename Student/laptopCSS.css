@@ -149,5 +149,5 @@ p {
 }
 
 .lightBack {
-    background-color: white;
+    background-image: url('../body_background.jpg');
 }
