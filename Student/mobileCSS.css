@@ -6,11 +6,9 @@ body {
     position: absolute;
     left: 0.3vw;
     top: 0.3vw;
-    font-size: 2vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     color: #242424;
-    padding: 1.3vw 2vw;
     background-color: rgb(235, 204, 163);
     border: 0;
 }
@@ -25,46 +23,24 @@ h1 {
     margin: 0;
     display: flex;
     justify-content: center;
-    font-size: 2.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     color: #242424;
-    padding: 0.7vw 2vw;
     background-color: antiquewhite;
     border: 0.3vw solid rgb(114, 92, 63);
 }
 
 h2 {
-    max-width: 50vw;
     margin: 0;
-    font-size: 1.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    color: #242424;
-    padding: 1.5vw 10vw;
+    font-weight: 400;
+    color: #4a4a4a;
     background-color: #fbbebf;
     text-align: center;
 }
 
-#container {
-    padding: 1vw;
-}
-
-#letsLearn {
-    max-width: 53vw;
-    background-color: rgb(249, 242, 234);
-    position: relative;
-    left: 45vw;
-}
-
-#sources {
-    max-width: 53vw;
-    background-color: rgb(249, 242, 234);
-}
-
 p {
-    padding: 4vw;
-    font-size: 1.2vw;
+    padding: 5vw;
     text-align: center;
 }
 
@@ -133,5 +109,80 @@ p {
     100% {
         transform: translateX(0%);
         opacity: 1;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #home {
+        font-size: 4vw;
+        padding: 5.1vw 4vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+        padding: 4vw 0vw;
+    }
+
+    h2 {
+        max-width: 90vw;
+        font-size: 4.5vw;
+        padding: 1.5vw 1vw;
+    }
+
+    #container {
+        width: 90vw;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 3.5vw 0vw;
+    }
+
+    #letsLearn,
+    #sources {
+        max-width: 90vw;
+        background-color: rgb(249, 242, 234);
+    }
+
+    p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #home {
+        font-size: 3vw;
+        padding: 3.65vw 3.5vw;
+    }
+
+    h1 {
+        font-size: 4vw;
+        padding: 3vw 0vw;
+    }
+
+    h2 {
+        max-width: 53vw;
+        font-size: 2.5vw;
+        padding: 1.5vw 10vw;
+    }
+
+    #container {
+        max-width: 100%;
+        padding: 3vw 0vw;
+    }
+
+    #letsLearn {
+        max-width: 53vw;
+        background-color: rgb(249, 242, 234);
+        position: relative;
+        left: 47vw;
+    }
+
+    #sources {
+        max-width: 53vw;
+        background-color: rgb(249, 242, 234);
+    }
+
+    p {
+        font-size: 2vw;
     }
 }
