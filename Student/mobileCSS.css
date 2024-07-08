@@ -39,6 +39,11 @@ p {
     text-align: center;
 }
 
+#sources>p {
+    text-align: start;
+    padding-left: 25%;
+}
+
 .hola {
     display: inline;
     opacity: 0;

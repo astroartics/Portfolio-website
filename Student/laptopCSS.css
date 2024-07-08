@@ -79,6 +79,11 @@ p {
     margin: 0;
 }
 
+#sources>p {
+    text-align: start;
+    padding-left: 35%;
+}
+
 .hola {
     display: inline;
     opacity: 0;
