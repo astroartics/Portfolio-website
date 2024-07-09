@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+hr {
+    display: none;
+}
+
 body {
     margin: 0;
     background-image: url('../body_background.jpg');
