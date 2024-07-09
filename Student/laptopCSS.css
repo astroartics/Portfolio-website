@@ -125,7 +125,7 @@ video {
     position: absolute;
     left: 10vw;
     max-width: 26vw;
-    outline: 4px solid #dbccbd;
+    outline: 4px solid antiquewhite;
     outline-offset: -3px;
 }
 
@@ -221,12 +221,10 @@ p {
 }
 
 .darkBack {
-    background-color: #dbccbd;
+    background-color: antiquewhite;
     padding: 3vw 2vw;
 }
 
 .lightBack {
-    background-image: url('../body_background.jpg');
-    background-size: 30vw;
     padding: 3vw 2vw;
 }

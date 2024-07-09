@@ -18,7 +18,6 @@ function showNavBar() {
     document.querySelector('#main').addEventListener('click', function () {
         if (navDisplay) {
             showNavBtn.style.display = "block";
-            // showNavBtn.style.margin = "2vw auto";
             showNavDiv.style.padding = "1vw 0";
             navBar.style.display = "none";
             navDisplay = 0;
@@ -27,7 +26,6 @@ function showNavBar() {
 
     navBar.addEventListener('click', function () {
         showNavBtn.style.display = "block";
-        // showNavBtn.style.margin = "2vw auto";
         showNavDiv.style.padding = "1vw 0";
         navBar.style.display = "none";
         navDisplay = 0;
