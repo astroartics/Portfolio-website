@@ -110,7 +110,8 @@ h2 {
 }
 
 #letsLearn,
-#projects {
+#projects,
+#csAsOption {
     width: 53vw;
     max-width: 53vw;
     background-color: rgb(249, 242, 234);
