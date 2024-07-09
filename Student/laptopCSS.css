@@ -10,7 +10,9 @@ body {
 
 #showNav {
     width: 100%;
-    background-color: #df7f82;
+    background-color: #e8878a;
+    /* background-color: #fcb68e; */
+    /* background-color: #c1825e; */
 }
 
 #show {
@@ -46,7 +48,6 @@ div ul li a {
     font-weight: 400;
     text-decoration: none;
     color: #242424;
-    background-color: #DF7F83;
     scroll-behavior: smooth;
     padding: 1vw;
 }
@@ -75,7 +76,7 @@ h1 {
 #popUp {
     max-width: 45vw;
     position: relative;
-    top: 5vw;
+    top: 4vw;
     left: 45%;
     transform: translate(-50%, 0);
 }
@@ -88,13 +89,14 @@ h1 {
     grid-template-areas: 'image' 'message';
     justify-content: center;
     position: absolute;
-    top: 5vw;
+    top: 4vw;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 #welcome {
     position: relative;
+    right: 21vw;
 }
 
 h2 {
@@ -120,6 +122,10 @@ h2 {
     transform: translate(-100%, 0);
     border: 0.3vw solid #343434;
     border-radius: 0.8vw;
+}
+
+#learn {
+    display: grid;
 }
 
 video {
@@ -180,10 +186,13 @@ p {
 }
 
 #H,
-#O,
-#L,
-#A {
+#L {
     color: #F87472;
+}
+
+#O,
+#A {
+    color: #ff995e;
 }
 
 #ex2 {

@@ -6,7 +6,7 @@ let navDisplay = 0;
 
 function showNavBar() {
     navBar.style.display = 'none';
-    showNavDiv.style.padding = "1vw 0";
+    showNavDiv.style.padding = "1.5vw 0";
     console.log(navDisplay);
     showNavBtn.addEventListener('click', function () {
         showNavBtn.style.display = "none";
@@ -18,7 +18,7 @@ function showNavBar() {
     document.querySelector('#main').addEventListener('click', function () {
         if (navDisplay) {
             showNavBtn.style.display = "block";
-            showNavDiv.style.padding = "1vw 0";
+            showNavDiv.style.padding = "1.5vw 0";
             navBar.style.display = "none";
             navDisplay = 0;
         }
@@ -26,7 +26,7 @@ function showNavBar() {
 
     navBar.addEventListener('click', function () {
         showNavBtn.style.display = "block";
-        showNavDiv.style.padding = "1vw 0";
+        showNavDiv.style.padding = "1.5vw 0";
         navBar.style.display = "none";
         navDisplay = 0;
     });
@@ -43,10 +43,10 @@ window.addEventListener('load', function () {
 
     if (!isMobileDevice) {
         link.setAttribute('href', 'laptopCSS.css');
-        showNavBar();
     } else {
         link.setAttribute('href', 'mobileCSS.css');
     }
 
     document.querySelector('head').appendChild(link);
+    showNavBar();
 });
