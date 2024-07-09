@@ -9,15 +9,14 @@ body {
     font-size: 2vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
-    color: rgb(204, 202, 202);
-    padding: 1.35vw 2vw;
-    background-color: #232323;
-    border: 0;
+    color: black;
+    padding: 1.3vw 2vw;
+    border: 0.1vw solid #8e8d8d;
 }
 
 #home:hover {
     cursor: pointer;
-    background-color: rgb(21, 21, 21);
+    background-color: #d6d6d6;
     transition: 200ms;
 }
 
@@ -29,9 +28,8 @@ h1 {
     font-size: 2.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
-    color: #242424;
     padding: 0.7vw 2vw;
-    background-color: #F2E9D9;
+    /* background-color: #F2E9D9; */
     /* border: 0.3vw solid rgb(114, 92, 63); */
 }
 
@@ -44,6 +42,7 @@ h2 {
     padding: 1.5vw 10vw;
     background-color: #ec8c8f;
     text-align: center;
+    border-radius: 0.5vw;
 }
 
 #letsLearn,
@@ -54,13 +53,15 @@ h2 {
     position: relative;
     left: 100%;
     transform: translate(-100%, 0);
+    border: 0.3vw solid #343434;
+    border-radius: 0.8vw;
 }
 
 video {
     position: absolute;
     left: 10vw;
-    max-width: 25vw;
-    outline: 4px solid #5d5c5c;
+    max-width: 26vw;
+    outline: 4px solid #dbccbd;
     outline-offset: -3px;
 }
 
@@ -68,15 +69,18 @@ video {
 #game {
     max-width: 53vw;
     background-color: rgb(249, 242, 234);
-    border: 0.02vw solid #605f5f;
+    border: 0.3vw solid #8f8f8f;
+    border-radius: 0.8vw;
 }
 
 p {
     padding: 4vw;
     font-size: 1.2vw;
     text-align: center;
-    background-color: #f7e0d3;
+    /* background-color: #f7e0d3; */
+    background-color: white;
     margin: 0;
+    border-radius: 0.5vw;
 }
 
 #sources>p {
@@ -114,7 +118,7 @@ p {
 #O,
 #L,
 #A {
-    color: rgb(154, 102, 39);
+    color: #F87472;
 }
 
 #ex2 {
@@ -153,7 +157,7 @@ p {
 }
 
 .darkBack {
-    background-color: #5d5c5c;
+    background-color: #dbccbd;
     padding: 3vw 2vw;
 }
 
