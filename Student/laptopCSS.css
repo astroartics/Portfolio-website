@@ -20,6 +20,13 @@ body {
     transition: 200ms;
 }
 
+
+#vector {
+    max-width: 13vw;
+    grid-area: image;
+    margin: auto;
+}
+
 h1 {
     max-width: 100%;
     margin: 0;
@@ -28,9 +35,31 @@ h1 {
     font-size: 2.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
-    padding: 0.7vw 2vw;
+    padding: 1.5vw 2vw;
     /* background-color: #F2E9D9; */
     /* border: 0.3vw solid rgb(114, 92, 63); */
+    grid-area: message;
+}
+
+#popUp {
+    max-width: 45vw;
+    position: relative;
+    top: 5vw;
+    left: 45%;
+    transform: translate(-50%, 0);
+}
+
+#welcomeMsg {
+    max-width: max-content;
+    margin: auto;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas: 'image' 'message';
+    justify-content: center;
+    position: absolute;
+    top: 5vw;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 h2 {
@@ -42,7 +71,7 @@ h2 {
     padding: 1.5vw 10vw;
     background-color: #ec8c8f;
     text-align: center;
-    border-radius: 0.5vw;
+    border-radius: 0.5vw 0.5vw 0 0;
 }
 
 #letsLearn,
@@ -69,7 +98,7 @@ video {
 #game {
     max-width: 53vw;
     background-color: rgb(249, 242, 234);
-    border: 0.3vw solid #8f8f8f;
+    border: 0.3vw solid #7f7f7f;
     border-radius: 0.8vw;
 }
 
