@@ -62,10 +62,6 @@ div ul li a {
     scroll-behavior: smooth;
 }
 
-div ul li a:hover {
-    background-color: #f9cacc;
-}
-
 #container {
     margin-top: 5vw;
     background-color: white;

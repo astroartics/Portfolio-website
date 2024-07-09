@@ -47,7 +47,7 @@ function showNavBar() {
             showNavBtn.style.display = "block";
             showNavBtn.style.margin = "2vw auto";
             navBarPhone.style.display = "none";
-            navDisplay = 1;
+            navDisplay = 0;
         }
     });
 
@@ -55,7 +55,7 @@ function showNavBar() {
         showNavBtn.style.display = "block";
         showNavBtn.style.margin = "2vw auto";
         navBarPhone.style.display = "none";
-        navDisplay = 1;
+        navDisplay = 0;
     });
 }
 
