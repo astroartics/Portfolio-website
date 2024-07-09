@@ -114,8 +114,8 @@ h2 {
 #letsLearn,
 #projects,
 #csAsOption {
-    width: 53vw;
-    max-width: 53vw;
+    width: 60vw;
+    max-width: 60vw;
     background-color: white;
     position: relative;
     left: 100%;
@@ -131,29 +131,27 @@ video {
     left: 50%;
     transform: translate(-50%, 0);
     max-width: 25vw;
-    margin-bottom: 4vw;
+    margin-bottom: 2vw;
     outline: 4px solid white;
     outline-offset: -3px;
 }
 
 #sources,
 #game {
-    max-width: 53vw;
+    max-width: 60vw;
     background-color: rgb(250, 246, 241);
     border: 0.3vw solid #7f7f7f;
     border-radius: 0.8vw;
 }
 
 #wordcloud {
-    max-width: 30%;
+    max-width: 5vw;
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    padding: 2vw 2vw 4vw 2vw;
+    padding-top: 1vw;
 }
 
 p {
-    padding: 4vw;
+    padding: 2vw;
     font-size: 1.2vw;
     text-align: center;
     background-color: white;
@@ -161,7 +159,6 @@ p {
     border-radius: 0.5vw;
 }
 
-#sources>p,
 #game>p {
     max-width: max-content;
     text-align: start;
@@ -170,6 +167,27 @@ p {
     transform: translate(-50%, 0);
     padding-bottom: 2vw;
     background-color: rgb(250, 246, 241);
+}
+
+#sourceP1 {
+    width: 50%;
+    grid-area: sourceP1;
+    text-align: start;
+    background-color: rgb(250, 246, 241);
+}
+
+#sourceP2 {
+    width: 50%;
+    grid-area: sourceP2;
+    text-align: start;
+    background-color: rgb(250, 246, 241);
+}
+
+#sourceInfo {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'sourceP1 sourceP2';
+    justify-items: center;
 }
 
 .hola {
