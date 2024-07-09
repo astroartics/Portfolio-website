@@ -66,31 +66,13 @@ div ul li a {
     scroll-behavior: smooth;
 }
 
-#popUp {
-    max-width: 55vw;
-    position: relative;
-    top: 10vw;
-    left: 28%;
-    transform: translate(-50%, 0);
-}
-
-#vector {
-    max-width: 16vw;
-    grid-area: image;
-    margin: auto;
-}
-
 #welcomeMsg {
     max-width: max-content;
-    margin: auto;
     background-repeat: no-repeat;
     display: grid;
     grid-template-areas: 'image' 'message';
     justify-content: center;
     position: absolute;
-    top: 9vw;
-    left: 35%;
-    transform: translate(-50%, 0);
 }
 
 #welcome {
@@ -100,6 +82,7 @@ div ul li a {
 p {
     padding: 5vw;
     text-align: center;
+    background-color: white;
 }
 
 #sources>p {
@@ -205,7 +188,7 @@ p {
     #game,
     #csAsOption {
         max-width: 90vw;
-        background-color: rgb(249, 242, 234);
+        background-color: white;
         margin: 3.5vw auto;
         border: 0.5vw solid #343434;
         border-radius: 3vw;
@@ -217,21 +200,55 @@ p {
 
     #sources,
     #game {
+        background-color: rgb(250, 246, 241);
         border: 0.5vw solid #7f7f7f;
+    }
+
+    #sources>p,
+    #game>p {
+        background-color: rgb(250, 246, 241);
     }
 
     p {
         font-size: 3.5vw;
     }
 
-    video {
-        max-width: 60vw;
-        outline: 4px solid antiquewhite;
-        outline-offset: -3px;
+    #popUp {
+        max-width: 70vw;
         position: relative;
+        top: 10vw;
+        left: 43%;
+        transform: translate(-50%, 0);
+    }
+    
+    #vector {
+        max-width: 20vw;
+        grid-area: image;
+        margin: auto;
+    }
+
+    #welcomeMsg {
         top: 10vw;
         left: 50%;
         transform: translate(-50%, 0);
+    }
+
+    video {
+        max-width: 60vw;
+        outline: 4px solid white;
+        outline-offset: -3px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 6vw;
+    }
+
+    #wordcloud {
+        max-width: 50%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 6vw;
     }
 
     div ul li a {
@@ -251,7 +268,7 @@ p {
     }
 
     h1 {
-        font-size: 4vw;
+        font-size: 3vw;
         padding: 3vw 0vw;
     }
 
@@ -270,7 +287,7 @@ p {
     #projects,
     #csAsOption {
         max-width: 55vw;
-        background-color: rgb(249, 242, 234);
+        background-color: white;
         position: relative;
         left: 100%;
         transform: translate(-100%, 0);
@@ -280,30 +297,63 @@ p {
     }
 
     #letsLearn {
-        margin: -15vw 0 -10vw 0;
+        margin: 8vw 0 -8vw 0;
     }
 
     #sources,
     #game {
         max-width: 55vw;
-        background-color: rgb(249, 242, 234);
+        background-color: rgb(250, 246, 241);
         border: 0.02vw solid #605f5f;
         margin: -7vw 0;
         border: 0.4vw solid #7f7f7f;
         border-radius: 3vw;
     }
 
+    #sources>p,
+    #game>p {
+        background-color: rgb(250, 246, 241);
+    }
+
     p {
         font-size: 2vw;
     }
 
+    #popUp {
+        max-width: 50vw;
+        position: relative;
+        top: 10vw;
+        left: 25%;
+        transform: translate(-50%, 0);
+    }
+    
+    #vector {
+        max-width: 15vw;
+        grid-area: image;
+        margin: auto;
+    }
+
+    #welcomeMsg {
+        top: 9vw;
+        left: 24%;
+    }
+
     video {
         position: relative;
-        top: 16vw;
-        left: 2vw;
+        left: 50%;
+        transform: translate(-50%, 0);
         max-width: 35vw;
-        outline: 4px solid antiquewhite;
-        outline-offset: -4px;
+        outline: 4px solid white;
+        outline-offset: -3px;
+        margin-bottom: 6vw;
+    }
+
+    #wordcloud {
+        max-width: 40%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 6vw;
     }
 
     div ul li a {

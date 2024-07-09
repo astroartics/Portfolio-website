@@ -116,7 +116,7 @@ h2 {
 #csAsOption {
     width: 53vw;
     max-width: 53vw;
-    background-color: rgb(249, 242, 234);
+    background-color: white;
     position: relative;
     left: 100%;
     transform: translate(-100%, 0);
@@ -124,14 +124,14 @@ h2 {
     border-radius: 0.8vw;
 }
 
-#learn {
-    display: grid;
-}
-
 video {
-    position: absolute;
-    left: 10vw;
-    max-width: 26vw;
+    /* position: absolute;
+    left: 10vw; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 25vw;
+    margin-bottom: 4vw;
     outline: 4px solid antiquewhite;
     outline-offset: -3px;
 }
@@ -139,24 +139,37 @@ video {
 #sources,
 #game {
     max-width: 53vw;
-    background-color: rgb(249, 242, 234);
+    background-color: rgb(250, 246, 241);
     border: 0.3vw solid #7f7f7f;
     border-radius: 0.8vw;
+}
+
+#wordcloud {
+    max-width: 30%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 2vw 2vw 4vw 2vw;
 }
 
 p {
     padding: 4vw;
     font-size: 1.2vw;
     text-align: center;
-    /* background-color: #f7e0d3; */
     background-color: white;
     margin: 0;
     border-radius: 0.5vw;
 }
 
-#sources>p {
+#sources>p,
+#game>p {
+    max-width: max-content;
     text-align: start;
-    padding-left: 35%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-bottom: 2vw;
+    background-color: rgb(250, 246, 241);
 }
 
 .hola {
@@ -232,9 +245,9 @@ p {
 
 .darkBack {
     background-color: antiquewhite;
-    padding: 3vw 2vw;
+    padding: 4vw 2vw;
 }
 
 .lightBack {
-    padding: 3vw 2vw;
+    padding: 4vw 2vw;
 }
