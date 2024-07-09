@@ -132,7 +132,7 @@ video {
     transform: translate(-50%, 0);
     max-width: 25vw;
     margin-bottom: 4vw;
-    outline: 4px solid antiquewhite;
+    outline: 4px solid white;
     outline-offset: -3px;
 }
 
