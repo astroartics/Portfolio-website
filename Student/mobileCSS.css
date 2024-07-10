@@ -452,4 +452,5 @@ p {
             rgba(255, 255, 255, 0.7)), url('videoBack.png');
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10%;
 }

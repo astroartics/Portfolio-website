@@ -1,6 +1,8 @@
 const showNavBtn = document.querySelector('#show');
 const showNavDiv = document.querySelector('#showNav');
 const navBar = document.querySelector('#navBar');
+const gmail = document.querySelector('#gmail');
+const linkedIn = document.querySelector('#linkedIn');
 
 let navDisplay = 0;
 
@@ -32,6 +34,14 @@ function showNavBar() {
     });
 }
 
+function reachMe(platform) {
+    if (platform == 'gmail') {
+        window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Asanjanajoshi2023%40gmail.com", '_blank');
+    } else if (platform == 'linkedIn') {
+        window.open("http://www.linkedin.com/in/sanjana-joshi-533853278", '_blank');
+    }
+}
+
 
 window.addEventListener('load', function () {
     let details = navigator.userAgent;
@@ -49,4 +59,12 @@ window.addEventListener('load', function () {
 
     document.querySelector('head').appendChild(link);
     showNavBar();
+
+    gmail.addEventListener('click', function () {
+        reachMe('gmail');
+    });
+
+    linkedIn.addEventListener('click', function () {
+        reachMe('linkedIn');
+    })
 });

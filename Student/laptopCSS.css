@@ -155,6 +155,7 @@ video {
             rgba(255, 255, 255, 0.7)), url('videoBack.png');
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10%;
 }
 
 /* video {
@@ -322,4 +323,20 @@ p {
     align-items: center;
     justify-items: center;
     font-size: 1.2vw;
+}
+
+#projects {
+    max-width: 55vw;
+}
+
+#projects>p {
+    text-align: start;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 25%;
+    background-image: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.3)), url('projectsBack.png');
+    background-size: 55vw 28vw;
+    background-repeat: no-repeat;
 }

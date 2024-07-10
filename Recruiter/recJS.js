@@ -70,6 +70,7 @@ function resumeHover() {
         resumeHoverDiv.style.display = "none";
     });
 }
+
 function reachMe(platform) {
     if (platform == 'gmail') {
         window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com", '_blank');
