@@ -249,6 +249,7 @@ p {
         left: 50%;
         transform: translate(-50%, 0);
         margin-bottom: 6vw;
+        padding-top: 6vw;
     }
 
     #wordcloud {
@@ -271,7 +272,7 @@ p {
         height: 6vw;
     }
 
-    #contact{
+    #contact {
         grid-template-rows: 4.5vw;
     }
 }
@@ -407,7 +408,7 @@ p {
         height: 3.5vw;
     }
 
-    #contact{
+    #contact {
         grid-template-rows: 3.5vw;
     }
 }
@@ -428,6 +429,10 @@ p {
     border-radius: 20%;
 }
 
+#linkedIn {
+    margin-bottom: 3vw;
+}
+
 #contact {
     width: max-content;
     margin: 0 auto;
@@ -437,4 +442,14 @@ p {
     justify-items: center;
     text-align: start;
     font-size: 1.2vw;
+}
+
+#videoBack {
+    width: 100%;
+    height: max-content;
+    background-image: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.7)), url('videoBack.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }

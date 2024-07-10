@@ -152,7 +152,7 @@ video {
     height: max-content;
     background-image: linear-gradient(180deg,
             rgba(255, 255, 255, 0.5),
-            rgba(255, 255, 255, 0.75)), url('videoBack.png');
+            rgba(255, 255, 255, 0.7)), url('videoBack.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -303,8 +303,8 @@ p {
 
 #gmail,
 #linkedIn {
-    width: 2vw;
-    height: 2vw;
+    width: 2.3vw;
+    height: 2.3vw;
     border: 0.1vw solid #464646;
     margin: 0.3vw;
     border-radius: 20%;
