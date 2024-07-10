@@ -264,6 +264,16 @@ p {
     #show {
         font-size: 4vw;
     }
+
+    #gmail,
+    #linkedIn {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    #contact{
+        grid-template-rows: 4.5vw;
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -374,6 +384,7 @@ p {
         outline: 4px solid white;
         outline-offset: -3px;
         margin-bottom: 6vw;
+        margin-top: 3vw;
     }
 
     #wordcloud {
@@ -389,6 +400,16 @@ p {
     #show {
         font-size: 2.2vw;
     }
+
+    #gmail,
+    #linkedIn {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    #contact{
+        grid-template-rows: 3.5vw;
+    }
 }
 
 
@@ -399,4 +420,21 @@ p {
 
 .lightBack {
     padding: 15vw 2vw;
+}
+
+#gmail,
+#linkedIn {
+    border: 0.1vw solid #464646;
+    border-radius: 20%;
+}
+
+#contact {
+    width: max-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 'dropEmail gmail' 'connect LI';
+    align-items: center;
+    justify-items: center;
+    text-align: start;
+    font-size: 1.2vw;
 }
