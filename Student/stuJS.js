@@ -56,13 +56,13 @@ function reachMe(platform) {
 function opacityAndGlow(image, show, isLink, link) {
     if (show == 1 && isLink == 1) {
         image.style.opacity = 1;
-        image.style.boxShadow = '0 0 10px black';
+        image.style.boxShadow = '0 0 0.5vw black';
         image.style.transition = '400ms';
     } else if (show == 0 && isLink == 1) {
         image.style.opacity = 0.5;
         image.style.boxShadow = 'none';
     } else if (show == 1 && isLink == 0) {
-        link.style.backgroundColor = "yellow";
+        link.style.backgroundColor = "#fef284";
         link.style.transition = '200ms';
     } else if (show == 0 && isLink == 0) {
         link.style.backgroundColor = "white";

@@ -329,6 +329,7 @@ p {
     overflow: hidden;
     align-items: center;
     grid-template-areas: 'projectTitle projectTitle projectTitle' 'projectPara projectPara toGame' 'projectPara projectPara tictactoe' 'projectPara projectPara portfolio' 'leisure unitConverter portfolio';
+    /* grid-template-areas: 'projectTitle projectTitle' 'portfolio toGame' 'portfolio unitConverter' 'tictactoe leisure' 'projectPara projectPara ' 'projectPara projectPara'; */
 }
 
 #toGame,

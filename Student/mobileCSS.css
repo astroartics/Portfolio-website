@@ -86,15 +86,19 @@ p {
     background-color: white;
 }
 
-#sources>p {
-    text-align: start;
-    padding-left: 25%;
-}
-
 .hola {
     display: inline;
     opacity: 0;
     padding: 0.5vw;
+}
+
+#sources>div {
+    max-width: 100%;
+}
+
+#sources>div>p {
+    max-width: 100%;
+    text-align: start;
 }
 
 #ex1 {
@@ -202,10 +206,6 @@ p {
         border-radius: 3vw;
     }
 
-    #projects {
-        grid-template-areas: 'projectTitle projectTitle' 'toGame tictactoe' 'projectPara projectPara ' 'projectPara projectPara' 'portfolio portfolio' 'leisure unitConverter';
-    }
-
     #toGame,
     #tictactoe,
     #portfolio,
@@ -222,6 +222,10 @@ p {
     #game {
         background-color: rgb(250, 246, 241);
         border: 0.5vw solid #7f7f7f;
+    }
+
+    #sources>div>p {
+        padding-left: 25%;
     }
 
     #game>p,
@@ -332,7 +336,6 @@ p {
 
     #projects {
         max-width: 60vw;
-        grid-template-areas: 'projectTitle projectTitle' 'toGame tictactoe' 'projectPara projectPara ' 'projectPara projectPara' 'portfolio portfolio' 'leisure unitConverter';
     }
 
     #toGame,
@@ -487,16 +490,14 @@ p {
 
 #projects>p {
     grid-area: projectPara;
-    margin: 0;
 }
 
 #projects {
     display: grid;
     overflow: hidden;
-    align-items: center;
+    align-items: end;
     justify-items: center;
-    grid-template-rows: max-content;
-    background-color: rgba(31, 31, 31, 0.321);
+    grid-template-areas: 'projectTitle projectTitle' 'portfolio toGame' 'portfolio unitConverter' 'tictactoe leisure' 'projectPara projectPara ' 'projectPara projectPara';
 }
 
 #projects>h2 {
@@ -509,5 +510,4 @@ p {
 #unitConverter,
 #leisure {
     opacity: 0.8;
-    border: 0.15vw solid black;
 }
