@@ -4,6 +4,17 @@ const navBar = document.querySelector('#navBar');
 const gmail = document.querySelector('#gmail');
 const linkedIn = document.querySelector('#linkedIn');
 
+const toGame = document.querySelector('#toGame');
+const tictactoe = document.querySelector('#tictactoe');
+const portfolio = document.querySelector('#portfolio');
+const unitConverter = document.querySelector('#unitConverter');
+const leisure = document.querySelector('#leisure');
+const toGameLink = document.querySelector('#toGameLink');
+const tictactoeLink = document.querySelector('#tictactoeLink');
+const portfolioLink = document.querySelector('#portfolioLink');
+const unitConverterLink = document.querySelector('#unitConverterLink');
+const leisureLink = document.querySelector('#leisureLink');
+
 let navDisplay = 0;
 
 function showNavBar() {
@@ -42,6 +53,101 @@ function reachMe(platform) {
     }
 }
 
+function opacityAndGlow(image, show, isLink, link) {
+    if (show == 1 && isLink == 1) {
+        image.style.opacity = 1;
+        image.style.boxShadow = '0 0 10px black';
+        image.style.transition = '400ms';
+    } else if (show == 0 && isLink == 1) {
+        image.style.opacity = 0.5;
+        image.style.boxShadow = 'none';
+    } else if (show == 1 && isLink == 0) {
+        link.style.backgroundColor = "yellow";
+        link.style.transition = '200ms';
+    } else if (show == 0 && isLink == 0) {
+        link.style.backgroundColor = "white";
+    }
+}
+
+function onProjectLinkHover(link, image) {
+
+    link.addEventListener('mouseover', function () {
+        switch (link) {
+            case toGameLink: opacityAndGlow(toGame, 1, 1, 0);
+                break;
+
+            case tictactoeLink: opacityAndGlow(tictactoe, 1, 1, 0);
+                break;
+
+            case portfolioLink: opacityAndGlow(portfolio, 1, 1, 0);
+                break;
+
+            case unitConverterLink: opacityAndGlow(unitConverter, 1, 1, 0);
+                break;
+
+            case leisureLink: opacityAndGlow(leisure, 1, 1, 0);
+                break;
+        }
+    })
+
+    link.addEventListener('mouseout', function () {
+        switch (link) {
+            case toGameLink: opacityAndGlow(toGame, 0, 1, 0);
+                break;
+
+            case tictactoeLink: opacityAndGlow(tictactoe, 0, 1, 0);
+                break;
+
+            case portfolioLink: opacityAndGlow(portfolio, 0, 1, 0);
+                break;
+
+            case unitConverterLink: opacityAndGlow(unitConverter, 0, 1, 0);
+                break;
+
+            case leisureLink: opacityAndGlow(leisure, 0, 1, 0);
+                break;
+        }
+    })
+
+    image.addEventListener('mouseover', function () {
+        switch (image) {
+            case toGame: opacityAndGlow(0, 1, 0, toGameLink);
+                break;
+
+            case tictactoe: opacityAndGlow(0, 1, 0, tictactoeLink);
+                break;
+
+            case portfolio: opacityAndGlow(0, 1, 0, portfolioLink);
+                break;
+
+            case unitConverter: opacityAndGlow(0, 1, 0, unitConverterLink);
+                break;
+
+            case leisure: opacityAndGlow(0, 1, 0, leisureLink);
+                break;
+        }
+    })
+
+    image.addEventListener('mouseout', function () {
+        switch (image) {
+            case toGame: opacityAndGlow(0, 0, 0, toGameLink);
+                break;
+
+            case tictactoe: opacityAndGlow(0, 0, 0, tictactoeLink);
+                break;
+
+            case portfolio: opacityAndGlow(0, 0, 0, portfolioLink);
+                break;
+
+            case unitConverter: opacityAndGlow(0, 0, 0, unitConverterLink);
+                break;
+
+            case leisure: opacityAndGlow(0, 0, 0, leisureLink);
+                break;
+        }
+    })
+}
+
 
 window.addEventListener('load', function () {
     let details = navigator.userAgent;
@@ -67,4 +173,10 @@ window.addEventListener('load', function () {
     linkedIn.addEventListener('click', function () {
         reachMe('linkedIn');
     })
+
+    onProjectLinkHover(toGameLink, toGame);
+    onProjectLinkHover(tictactoeLink, tictactoe);
+    onProjectLinkHover(portfolioLink, portfolio);
+    onProjectLinkHover(unitConverterLink, unitConverter);
+    onProjectLinkHover(leisureLink, leisure);
 });
