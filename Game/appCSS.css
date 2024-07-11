@@ -4,18 +4,11 @@
     box-sizing: border-box;
     font-family: "Sedan SC", serif;
     font-weight: 400;
-    font-size: 15px;
     font-style: normal;
 }
 
 body {
     background-color: #464646;
-}
-
-h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 1.5rem 1.5rem;
 }
 
 #startGame {
@@ -82,10 +75,6 @@ h1 {
     cursor: pointer;
 }
 
-button {
-    font-size: 1rem;
-}
-
 #switch {
     background-color: rgb(163, 247, 163);
     grid-area: switch;
@@ -125,7 +114,6 @@ button {
 #back {
     width: 100%;
     height: 100%;
-    font-size: 1.5em;
     grid-area: back;
     border: 0px;
     font-weight: 600;

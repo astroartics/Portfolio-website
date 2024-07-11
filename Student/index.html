@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Sedan+SC&family=Special+Elite&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -59,6 +65,7 @@
                         <p style="grid-area: dropEmail; padding: 0;">Drop me an email 📧 : </p><button id="gmail"
                             style="background-image: url('../Recruiter/gmail.png'); background-size: cover; grid-area: gmail;"
                             title="Send me an email"></button>
+                        <p style="grid-area: emailID;" id="emailID">sanjanajoshi2023@gmail.com</p>
                         <p style="grid-area: connect; padding: 0.1vw 0vw 3vw 0vw;">Let's connect 🔗 : </p><button
                             id="linkedIn"
                             style="background-image: url('../Recruiter/linkedIn.png'); background-size: cover; grid-area: LI;"
@@ -107,17 +114,17 @@
                 <div id="projects">
                     <h2>My projects</h2>
                     <p>
-                        <big>Here are some of my projects : </big><br /><br />
-                        1) <a href="../Recruiter/index.html#p1" id="tictactoeLink"><i>Android Studio : Tic Tac
-                                Toe</i></a><br />
-                        2) <a href="../Recruiter/index.html#projects" id="unitConverterLink"><i>Android Studio : Unit
-                                Converter</i></a><br />
-                        3) <a href="../Recruiter/index.html#projects" id="leisureLink"><i>Website : Leisure ActiviTEAs
-                                (...tea for the
-                                brain)</i></a><br />
-                        4) <a href="../index.html" id="portfolioLink"><i>Website : Portfolio Website</i></a><br />
-                        5) <a href="../Recruiter/index.html#projects2" id="toGameLink"><i>2D Game : Using HTML
-                                Canvas</i></a><br />
+                        <big>Here are some of my projects : </big><br /><br /><br />
+                        1) <a href="../index.html" id="portfolioLink">Website : Portfolio Website</a><br /><br />
+                        2) <a href="../Recruiter/index.html#p1" id="tictactoeLink">Android Studio : Tic Tac
+                            Toe</a><br /><br />
+                        3) <a href="../Recruiter/index.html#projects" id="unitConverterLink">Android Studio : Unit
+                            Converter</a><br /><br />
+                        4) <a href="../Recruiter/index.html#projects2" id="toGameLink">2D Game : Using HTML
+                            Canvas</a><br /><br />
+                        5) <a href="../Recruiter/index.html#projects" id="leisureLink">Website : Leisure ActiviTEAs
+                            (...tea for the
+                            brain)</a><br />
                     </p>
 
                     <img id="toGame" src="ProjectImages/toGameBack.png" style="grid-area: toGame;">
@@ -132,15 +139,10 @@
             <div class="lightBack">
                 <div id="game">
                     <h2 style="background-color: #ee999a;">Check it out : A 2D Game</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum unde vitae tempora, quos
-                        vel
-                        veniam optio! Eum magni, natus explicabo sint quam modi mollitia accusantium impedit ea
-                        doloribus
-                        alias!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ab officia facilis
-                        recusandae
-                        id cum sunt, laborum sapiente explicabo, quis commodi quae odio ducimus nemo deserunt velit
-                        laboriosam voluptatibus itaque.
+                    <p id="gamePara">
+                        <small>[The experience will definitely be better on a laptop or a computer, than on a mobile
+                            device]</small><br /><br />
+                        <button id="gameBtn" onclick="toGameScreen()" title="Go To 2D Game">PLAY GAME</button>
                     </p>
                 </div>
             </div>
@@ -173,6 +175,10 @@
 
         function toHome() {
             window.location.href = "../";
+        }
+
+        function toGameScreen() {
+            window.location.href = "../Game/Game.html";
         }
     </script>
 

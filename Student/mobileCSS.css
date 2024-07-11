@@ -458,6 +458,11 @@ p {
     border-radius: 20%;
 }
 
+#emailID {
+    padding: 0vw 0vw 2vw 0vw;
+    display: none;
+}
+
 #linkedIn {
     margin-bottom: 3vw;
 }
@@ -466,7 +471,7 @@ p {
     width: max-content;
     margin: 0 auto;
     display: grid;
-    grid-template-areas: 'dropEmail gmail' 'connect LI';
+    grid-template-areas: 'dropEmail gmail' 'emailID emailID'  'connect LI';
     align-items: center;
     justify-items: center;
     text-align: start;
@@ -510,4 +515,13 @@ p {
 #unitConverter,
 #leisure {
     opacity: 0.8;
+}
+
+#gameBtn {
+    font-size: 3.5vw;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    padding: 1vw 2vw;
+    background-color: rgb(154, 215, 251);
+    color: rgb(50, 50, 50);
 }

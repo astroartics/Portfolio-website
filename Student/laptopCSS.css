@@ -28,7 +28,8 @@ body {
 
 #show:hover,
 #gmail:hover,
-#linkedIn:hover {
+#linkedIn:hover,
+#gameBtn {
     cursor: pointer;
 }
 
@@ -79,8 +80,6 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     padding: 1.5vw 2vw;
-    /* background-color: #F2E9D9; */
-    /* border: 0.3vw solid rgb(114, 92, 63); */
     grid-area: message;
 }
 
@@ -301,6 +300,11 @@ p {
     border-radius: 20%;
 }
 
+#emailID {
+    padding: 0vw 0vw 2vw 0vw;
+    display: none;
+}
+
 #linkedIn {
     margin-bottom: 3vw;
 }
@@ -309,7 +313,7 @@ p {
     width: max-content;
     margin: 0 auto;
     display: grid;
-    grid-template-areas: 'dropEmail gmail' 'connect LI';
+    grid-template-areas: 'dropEmail gmail' 'emailID emailID' 'connect LI';
     align-items: center;
     justify-items: center;
     font-size: 1.2vw;
@@ -339,4 +343,16 @@ p {
 #leisure {
     max-width: 20vw;
     opacity: 0.5;
+}
+
+#gameBtn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 1.3vw;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    padding: 1vw 2vw;
+    background-color: rgb(154, 215, 251);
+    color: rgb(50, 50, 50);
 }

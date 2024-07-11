@@ -3,6 +3,7 @@ const showNavDiv = document.querySelector('#showNav');
 const navBar = document.querySelector('#navBar');
 const gmail = document.querySelector('#gmail');
 const linkedIn = document.querySelector('#linkedIn');
+const emailID = document.querySelector('#emailID');
 
 const toGame = document.querySelector('#toGame');
 const tictactoe = document.querySelector('#tictactoe');
@@ -16,11 +17,12 @@ const unitConverterLink = document.querySelector('#unitConverterLink');
 const leisureLink = document.querySelector('#leisureLink');
 
 let navDisplay = 0;
+let emailShow = 0;
 
 function showNavBar() {
     navBar.style.display = 'none';
     showNavDiv.style.padding = "1.5vw 0";
-    console.log(navDisplay);
+
     showNavBtn.addEventListener('click', function () {
         showNavBtn.style.display = "none";
         navBar.style.display = "block";
@@ -47,7 +49,14 @@ function showNavBar() {
 
 function reachMe(platform) {
     if (platform == 'gmail') {
-        window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Asanjanajoshi2023%40gmail.com", '_blank');
+        // window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Asanjanajoshi2023%40gmail.com", '_blank');
+        if (emailShow == 0) {
+            emailID.style.display = "block";
+            emailShow = 1;
+        } else {
+            emailID.style.display = "none";
+            emailShow = 0;
+        }
     } else if (platform == 'linkedIn') {
         window.open("http://www.linkedin.com/in/sanjana-joshi-533853278", '_blank');
     }
