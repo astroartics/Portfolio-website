@@ -20,6 +20,7 @@ h1 {
 }
 
 h2 {
+    max-width: 100%;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
@@ -201,6 +202,18 @@ p {
         border-radius: 3vw;
     }
 
+    #projects {
+        grid-template-areas: 'projectTitle projectTitle' 'toGame tictactoe' 'projectPara projectPara ' 'projectPara projectPara' 'portfolio portfolio' 'leisure unitConverter';
+    }
+
+    #toGame,
+    #tictactoe,
+    #portfolio,
+    #unitConverter,
+    #leisure {
+        max-width: 45vw;
+    }
+
     #letsLearn {
         margin-top: 15vw;
     }
@@ -315,6 +328,19 @@ p {
         margin: -7vw 0 -8vw 0;
         border: 0.4vw solid #343434;
         border-radius: 3vw;
+    }
+
+    #projects {
+        max-width: 60vw;
+        grid-template-areas: 'projectTitle projectTitle' 'toGame tictactoe' 'projectPara projectPara ' 'projectPara projectPara' 'portfolio portfolio' 'leisure unitConverter';
+    }
+
+    #toGame,
+    #tictactoe,
+    #portfolio,
+    #unitConverter,
+    #leisure {
+        max-width: 30vw;
     }
 
     #letsLearn {
@@ -453,4 +479,35 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10%;
+}
+
+#projects>h2 {
+    grid-area: projectTitle;
+}
+
+#projects>p {
+    grid-area: projectPara;
+    margin: 0;
+}
+
+#projects {
+    display: grid;
+    overflow: hidden;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: max-content;
+    background-color: rgba(31, 31, 31, 0.321);
+}
+
+#projects>h2 {
+    width: 100%;
+}
+
+#toGame,
+#tictactoe,
+#portfolio,
+#unitConverter,
+#leisure {
+    opacity: 0.8;
+    border: 0.15vw solid black;
 }
