@@ -165,6 +165,10 @@ video {
     border-radius: 0.8vw;
 }
 
+#game {
+    height: 17vw;
+}
+
 #wordcloud {
     max-width: 5vw;
     position: relative;
@@ -355,4 +359,19 @@ p {
     padding: 1vw 2vw;
     background-color: rgb(154, 215, 251);
     color: rgb(50, 50, 50);
+    animation: shrink 1.3s infinite;
+}
+
+@keyframes shrink {
+    0% {
+        font-size: 1.3vw;
+    }
+
+    50% {
+        font-size: 1.1vw;
+    }
+
+    100% {
+        font-size: 1.3vw;
+    }
 }

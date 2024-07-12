@@ -292,6 +292,26 @@ p {
     #contact {
         grid-template-rows: 4.5vw;
     }
+
+    #gameBtn {
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 3.5vw;
+    }
+
+    @keyframes shrink {
+        0% {
+            font-size: 3.5vw;
+        }
+
+        50% {
+            font-size: 3.3vw;
+        }
+
+        100% {
+            font-size: 3.5vw;
+        }
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -440,6 +460,26 @@ p {
     #contact {
         grid-template-rows: 3.5vw;
     }
+
+    #gameBtn {
+        left: 25%;
+        transform: translate(-25%, 0);
+        font-size: 2.5vw;
+    }
+
+    @keyframes shrink {
+        0% {
+            font-size: 2.5vw;
+        }
+
+        50% {
+            font-size: 2.3vw;
+        }
+
+        100% {
+            font-size: 2.5vw;
+        }
+    }
 }
 
 
@@ -471,7 +511,7 @@ p {
     width: max-content;
     margin: 0 auto;
     display: grid;
-    grid-template-areas: 'dropEmail gmail' 'emailID emailID'  'connect LI';
+    grid-template-areas: 'dropEmail gmail' 'emailID emailID' 'connect LI';
     align-items: center;
     justify-items: center;
     text-align: start;
@@ -518,10 +558,15 @@ p {
 }
 
 #gameBtn {
-    font-size: 3.5vw;
     font-family: "Sedan SC", serif;
     font-weight: 400;
     padding: 1vw 2vw;
     background-color: rgb(154, 215, 251);
     color: rgb(50, 50, 50);
+    animation: shrink 1.3s infinite;
+    position: absolute;
+}
+
+#game>p {
+    padding: 5vw 1vw 10vw 1vw;
 }
