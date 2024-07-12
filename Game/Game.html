@@ -65,7 +65,7 @@
             $(document).ready(function () {
                 setInterval(function () {
                     // window.history.go(-1);
-                    location.href = document.referrer; return false;
+                    window.history.back;
                 }, 300);
                 $('body').addClass('transitionOut');
             });
