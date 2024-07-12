@@ -110,10 +110,6 @@ li a {
     background-color: white;
 }
 
-.transitionOut {
-    transform: translateX(100%);
-}
-
 .transitionIn {
     transform: translateX(0%);
     transition: 400ms;
@@ -140,7 +136,8 @@ hr {
 #hideTicTacToe:hover,
 #hideUnitConverter:hover,
 #hideLeisureActiviteas:hover,
-.goToGithub:hover {
+.goToGithub:hover,
+.otherPage:hover {
     cursor: pointer;
 }
 
@@ -386,4 +383,8 @@ footer {
     height: auto;
     padding: 0% 10%;
     display: none;
+}
+
+.otherPage {
+    font-size: 1vw;
 }

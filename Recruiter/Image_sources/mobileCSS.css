@@ -42,3 +42,10 @@ button:hover {
     cursor: pointer;
     background-color: #ababab;
 }
+
+p {
+    width: 100vw;
+    text-align: center;
+    margin: 3vw 0vw;
+    font-size: 3vw;
+}

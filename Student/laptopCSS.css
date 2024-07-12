@@ -406,3 +406,11 @@ p {
     transform: translate(-50%, 15%);
     border: 0.1vw solid black;
 }
+
+.increaseFontSize {
+    font-size: 1.3vw;
+}
+
+.normalFontSize {
+    font-size: 1.2vw;
+}

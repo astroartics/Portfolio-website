@@ -73,12 +73,12 @@ function opacityAndGlow(image, show, isLink, link) {
         image.style.opacity = 0.5;
         image.style.boxShadow = 'none';
     } else if (show == 1 && isLink == 0) {
-        // link.style.backgroundColor = "#fef284";
         link.style.transition = '200ms';
         link.style.fontWeight = '800';
+        link.setAttribute('class', 'increaseFontSize');
     } else if (show == 0 && isLink == 0) {
-        // link.style.backgroundColor = "white";
         link.style.fontWeight = '400';
+        link.setAttribute('class', 'normalFontSize');
     }
 }
 
@@ -172,6 +172,8 @@ window.addEventListener('load', function () {
 
     if (!isMobileDevice) {
         link.setAttribute('href', 'laptopCSS.css');
+        const gameMessageForDevice = document.querySelector('#gameMessageForDevice');
+        gameMessageForDevice.style.display = "none";
     } else {
         link.setAttribute('href', 'mobileCSS.css');
     }

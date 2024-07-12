@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruiter</title>
 
+    <style>
+        .otherPage {
+            width: max-content;
+            padding: 0;
+            background-color: white;
+            border: 0;
+            text-decoration: underline;
+            color: rgb(82, 36, 208);
+            margin: 0.3vw 0;
+        }
+
+        .otherPage:hover {
+            color: rgb(0, 105, 225);
+        }
+
+        .otherPage:focus {
+            color: red;
+        }
+    </style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -151,7 +171,8 @@
             <h3>Resumé</h3>
             <img id="resumeImg" src="Resume/Resume_preview.png">
             <div id="resumeHover" title="View my resumé">
-                <h5 style=" margin: 0 auto; background-color: #e2a7a9; color: black; padding: 1vw 0;" id="viewResume">View Resumé</h5>
+                <h5 style=" margin: 0 auto; background-color: #e2a7a9; color: black; padding: 1vw 0;" id="viewResume">
+                    View Resumé</h5>
                 <img id="resumePreview" src="Resume/Resume_preview.png">
             </div>
         </div>
@@ -163,6 +184,14 @@
                 <button id="toGame" onclick="goToGame()">Play a 2D game!</button>
             </p>
         </div>
+
+        <h5 style="margin: 0 auto; padding: 4vw; font-weight: 200;">
+            <big>Check these out</big><br />
+            1) <button title="Go to Student page" class="otherPage"
+                onclick="otherPage('../Student/index.html')">'Student'</button> page   
+            2) <button title="Go to Other page" class="otherPage"
+                onclick="otherPage('../Other/index.html')">'Other'</button> page
+        </h5>
     </div>
 
     <footer>
@@ -226,6 +255,24 @@
             } else if (certNo == 2) {
                 window.location = "Certificates/certificate2.html";
             }
+        }
+
+        function otherPage(pageURL) {
+            $(document).ready(function () {
+                $.ajax({
+                    url: `${pageURL}`,
+                    success: function () {
+
+                        setInterval(function () {
+                            window.location = `${pageURL}`;
+                        }, 1000);
+                        $('body').addClass('transitionOut');
+                    },
+                    error: function (jqXHR, err) {
+                        console.log("Error");
+                    }
+                });
+            });
         }
 
     </script>

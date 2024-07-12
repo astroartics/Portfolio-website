@@ -307,7 +307,7 @@ footer {
         max-width: 5vw;
     }
 
-    .toGitText {
+    .toGitText,.otherPage {
         font-size: 3.5vw;
     }
 
@@ -424,7 +424,7 @@ footer {
         max-width: 3vw;
     }
 
-    .toGitText {
+    .toGitText,.otherPage {
         font-size: 2vw;
     }
 
@@ -457,4 +457,9 @@ footer {
     max-height: max-content;
     margin: 0 auto;
     padding: 3vw 0 5vw;
+}
+
+.transitionOut {
+    transform: translateX(-100%);
+    transition: 400ms;
 }

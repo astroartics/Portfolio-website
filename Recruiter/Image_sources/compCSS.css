@@ -2,6 +2,7 @@ body {
     background-color: #464646;
     color: white;
     text-align: center;
+    overflow-x: hidden;
 }
 
 hr {
@@ -43,4 +44,11 @@ button {
 button:hover {
     cursor: pointer;
     background-color: #ababab;
+}
+
+p {
+    width: 100vw;
+    text-align: center;
+    margin: 3vw 0vw;
+    font-size: 1.5vw;
 }

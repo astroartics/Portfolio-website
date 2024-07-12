@@ -238,6 +238,15 @@ p {
         font-size: 3.5vw;
     }
 
+
+    .increaseFontSize {
+        font-size: 3.6vw;
+    }
+
+    .normalFontSize {
+        font-size: 3.5vw;
+    }
+
     #popUp {
         max-width: 70vw;
         position: relative;
@@ -409,6 +418,15 @@ p {
     }
 
     p {
+        font-size: 2vw;
+    }
+
+
+    .increaseFontSize {
+        font-size: 2.1vw;
+    }
+
+    .normalFontSize {
         font-size: 2vw;
     }
 
