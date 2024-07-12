@@ -73,10 +73,12 @@ function opacityAndGlow(image, show, isLink, link) {
         image.style.opacity = 0.5;
         image.style.boxShadow = 'none';
     } else if (show == 1 && isLink == 0) {
-        link.style.backgroundColor = "#fef284";
+        // link.style.backgroundColor = "#fef284";
         link.style.transition = '200ms';
+        link.style.fontWeight = '800';
     } else if (show == 0 && isLink == 0) {
-        link.style.backgroundColor = "white";
+        // link.style.backgroundColor = "white";
+        link.style.fontWeight = '400';
     }
 }
 
