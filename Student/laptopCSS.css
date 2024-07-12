@@ -398,3 +398,11 @@ p {
         opacity: 1;
     }
 }
+
+#csAsChoice {
+    max-width: 30vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    border: 0.1vw solid black;
+}
