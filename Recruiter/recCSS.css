@@ -120,11 +120,6 @@ hr {
     border-radius: 50%;
 }
 
-.transitionOut {
-    transform: translateX(-100%);
-    transition: 400ms;
-}
-
 #toGame:hover,
 #navBarForPC li:hover,
 .viewCert:hover,
