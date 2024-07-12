@@ -53,9 +53,11 @@ function reachMe(platform) {
         if (emailShow == 0) {
             emailID.style.display = "block";
             emailShow = 1;
+            gmail.setAttribute('title', 'Hide email ID');
         } else {
             emailID.style.display = "none";
             emailShow = 0;
+            gmail.setAttribute('title', 'Show email ID');
         }
     } else if (platform == 'linkedIn') {
         window.open("http://www.linkedin.com/in/sanjana-joshi-533853278", '_blank');

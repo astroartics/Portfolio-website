@@ -501,6 +501,7 @@ p {
 #emailID {
     padding: 0vw 0vw 2vw 0vw;
     display: none;
+    animation: appear 0.14s;
 }
 
 #linkedIn {
@@ -569,4 +570,26 @@ p {
 
 #game>p {
     padding: 5vw 1vw 10vw 1vw;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
