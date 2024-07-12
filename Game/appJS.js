@@ -302,6 +302,12 @@ window.addEventListener('load', function () {
         mobileSettings();
     } else {
         levelText.innerText = "Level : " + level + "      Score : " + score;
+        document.querySelector('button').style.fontSize = '1.2vw';
+        restart.style.fontSize = '1.2vw';
+        help.style.fontSize = '1.2vw';
+        document.querySelector('#back').style.fontSize = '1.2vw';
+        close.style.fontSize = '1.2vw';
+        levelText.style.fontSize = '1.2vw';
     }
 
     canvas.width = 1700;

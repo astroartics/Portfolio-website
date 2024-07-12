@@ -169,6 +169,10 @@ body {
     text-align: center;
 }
 
+#help{
+    padding: 1vw;
+}
+
 @media screen and (orientation: portrait) {
     #tiltScreen {
         display: block;
