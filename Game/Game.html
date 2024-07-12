@@ -64,7 +64,11 @@
         function backToPortfolio() {
             $(document).ready(function () {
                 setInterval(function () {
-                    window.history.go(-1);
+                    if (sessionStorage.getItem('pageNo') == 1) {
+                        window.location.href = "../Recruiter/index.html#toGameImage";
+                    } else if (sessionStorage.getItem('pageNo') == 2) {
+                        window.location.href = "../Student/index.html#game";
+                    }
                 }, 300);
                 $('body').addClass('transitionOut');
             });
