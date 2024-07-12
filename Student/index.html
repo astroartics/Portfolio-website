@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Home</title>
 
+    <style>
+        .transitionOut {
+            transform: translateX(-100%);
+            transition: 400ms;
+        }
+    </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Sedan+SC&family=Special+Elite&display=swap"
         rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -140,7 +149,7 @@
                 <div id="game">
                     <h2 style="background-color: #ee999a;">Check it out : A 2D Game</h2>
                     <p id="gamePara">
-                        <small id="gameMessageForDevice" style="background-color:rgb(249, 243, 195);">[Using a laptop or
+                        <small id="gameMessageForDevice">[Using a laptop or
                             a computer will definitely result in a better experience than using a mobile
                             device.]</small><br /><br />
                         <button id="gameBtn" onclick="toGameScreen()" title="Go To 2D Game">PLAY GAME</button>
@@ -180,7 +189,12 @@
         }
 
         function toGameScreen() {
-            window.location.href = "../Game/Game.html";
+            $(document).ready(function () {
+                setInterval(function () {
+                    window.location = "../Game/Game.html";
+                }, 300);
+                $('body').addClass('transitionOut');
+            });
         }
     </script>
 
