@@ -64,7 +64,8 @@
         function backToPortfolio() {
             $(document).ready(function () {
                 setInterval(function () {
-                    window.history.go(-1);
+                    // window.history.go(-1);
+                    location.href = document.referrer; return false;
                 }, 300);
                 $('body').addClass('transitionOut');
             });
