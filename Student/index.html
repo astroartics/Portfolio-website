@@ -188,12 +188,13 @@
             window.location.href = "../";
         }
 
+        sessionStorage.setItem('pageNo', 2);
+
         function toGameScreen() {
             $(document).ready(function () {
                 setInterval(function () {
                     window.location = "../Game/Game.html";
                 }, 300);
-                sessionStorage.setItem('pageNo', 2);
                 $('body').addClass('transitionOut');
             });
         }
