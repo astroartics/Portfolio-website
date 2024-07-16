@@ -49,6 +49,7 @@ div ul {
     padding: 0;
     overflow: hidden;
     text-align: center;
+    animation: appear 0.1s linear forwards;
 }
 
 div ul li {
@@ -598,28 +599,6 @@ p {
 
 #game>p {
     padding: 5vw 1vw 10vw 1vw;
-}
-
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 0.25;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    75% {
-        opacity: 0.75;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 #csAsChoice {

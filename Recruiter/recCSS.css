@@ -371,6 +371,7 @@ footer {
     height: auto;
     padding: 0% 32%;
     display: none;
+    animation: appear 0.15s;
 }
 
 #p3_video {
@@ -378,6 +379,7 @@ footer {
     height: auto;
     padding: 0% 10%;
     display: none;
+    animation: appear 0.1s;
 }
 
 .otherPage {

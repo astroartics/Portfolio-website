@@ -43,6 +43,7 @@ div ul {
     padding: 0;
     overflow: hidden;
     text-align: center;
+    animation: appear 0.1s linear forwards;
 }
 
 div ul li {
@@ -175,6 +176,7 @@ footer {
 #p2_video,
 #p3_video {
     display: none;
+    animation: appear 0.15s;
 }
 
 .goToGithub {
@@ -307,7 +309,8 @@ footer {
         max-width: 5vw;
     }
 
-    .toGitText,.otherPage {
+    .toGitText,
+    .otherPage {
         font-size: 3.5vw;
     }
 
@@ -424,7 +427,8 @@ footer {
         max-width: 3vw;
     }
 
-    .toGitText,.otherPage {
+    .toGitText,
+    .otherPage {
         font-size: 2vw;
     }
 
