@@ -93,15 +93,6 @@ p {
     padding: 0.5vw;
 }
 
-#sources>div {
-    max-width: 100%;
-}
-
-#sources>div>p {
-    max-width: 100%;
-    text-align: start;
-}
-
 #ex1 {
     animation: enter .8s linear forwards;
 }
@@ -412,9 +403,10 @@ p {
     }
 
     #sourceInfo {
-        width: 100%;
+        width: 55vw;
         display: grid;
         grid-template-areas: 'sourceP1 sourceP2';
+        grid-template-columns: 50% 50%;
         justify-items: center;
     }
 
@@ -509,6 +501,16 @@ p {
         max-width: 40vw;
         transform: translate(-50%, 30%);
     }
+}
+
+
+#sources>div {
+    max-width: 100%;
+}
+
+#sources>div>p {
+    max-width: 100%;
+    text-align: start;
 }
 
 
