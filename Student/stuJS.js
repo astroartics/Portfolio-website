@@ -50,15 +50,25 @@ function showNavBar() {
 function reachMe(platform) {
     if (platform == 'gmail') {
         // window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Asanjanajoshi2023%40gmail.com", '_blank');
-        if (emailShow == 0) {
+        if (emailShow == 0 && isMobileDevice) {
             emailID.style.display = "block";
             emailShow = 1;
             gmail.setAttribute('title', 'Hide email ID');
-        } else {
+        } else if (emailShow == 1 && isMobileDevice) {
             emailID.style.display = "none";
             emailShow = 0;
             gmail.setAttribute('title', 'Show email ID');
         }
+
+        if (!isMobileDevice) {
+            navigator.clipboard.writeText("sanjanajoshi2023@gmail.com");
+            let toast = document.querySelector('#toast');
+            toast.style.display = "block";
+            setTimeout(function () {
+                toast.style.display = "none";
+            }, 2000);
+        }
+
     } else if (platform == 'linkedIn') {
         window.open("http://www.linkedin.com/in/sanjana-joshi-533853278", '_blank');
     }

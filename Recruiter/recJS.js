@@ -73,7 +73,21 @@ function resumeHover() {
 
 function reachMe(platform) {
     if (platform == 'gmail') {
-        window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com", '_blank');
+        if (isMobileDevice) {
+            window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com", '_blank');
+        } else {
+            navigator.clipboard
+                .writeText('joshisanjanana114@gmail.com')
+                .then(() => {
+                    let toast = document.querySelector('#toast');
+                    toast.style.display = "block";
+                    setTimeout(function () {
+                        toast.style.display = "none";
+                    }, 2000);
+                })
+                .catch(() => { });
+        }
+
     } else if (platform == 'linkedIn') {
         window.open("http://www.linkedin.com/in/sanjana-joshi-533853278", '_blank');
     }

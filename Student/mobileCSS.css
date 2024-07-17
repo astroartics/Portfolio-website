@@ -319,7 +319,7 @@ p {
         transform: translate(-50%, 30%);
     }
 
-    .otherPage{
+    .otherPage {
         font-size: 3.5vw;
     }
 }
@@ -510,7 +510,7 @@ p {
         transform: translate(-50%, 30%);
     }
 
-    .otherPage{
+    .otherPage {
         font-size: 2vw;
     }
 }
@@ -619,4 +619,8 @@ p {
     position: relative;
     left: 50%;
     border: 0.1vw solid black;
+}
+
+#toast {
+    display: none;
 }
