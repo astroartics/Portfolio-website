@@ -386,6 +386,10 @@ p {
         border-radius: 3vw;
     }
 
+    #sources {
+        overflow: hidden;
+    }
+
     #game>p,
     #sourceP1,
     #sourceP2 {
@@ -408,7 +412,6 @@ p {
         grid-template-areas: 'sourceP1 sourceP2';
         grid-template-columns: 50% 50%;
         justify-items: center;
-        padding: 0 0.1vw;
     }
 
     p {
