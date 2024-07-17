@@ -74,7 +74,9 @@ function resumeHover() {
 function reachMe(platform) {
     if (platform == 'gmail') {
         if (isMobileDevice) {
-            window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com", '_blank');
+            // window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Ajoshisanjanana114%40gmail.com", '_blank');
+            let goToGmail = document.querySelector('#goToGmail');
+            goToGmail.setAttribute('href', 'mailto:joshisanjanana114@gmail.com');
         } else {
             navigator.clipboard
                 .writeText('joshisanjanana114@gmail.com')

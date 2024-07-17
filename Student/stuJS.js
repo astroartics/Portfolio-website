@@ -50,15 +50,15 @@ function showNavBar() {
 function reachMe(platform) {
     if (platform == 'gmail') {
         // window.open("https://mail.google.com/mail/?extsrc=mailto&url=mailto%3Asanjanajoshi2023%40gmail.com", '_blank');
-        if (emailShow == 0 && isMobileDevice) {
-            emailID.style.display = "block";
-            emailShow = 1;
-            gmail.setAttribute('title', 'Hide email ID');
-        } else if (emailShow == 1 && isMobileDevice) {
-            emailID.style.display = "none";
-            emailShow = 0;
-            gmail.setAttribute('title', 'Show email ID');
-        }
+        // if (emailShow == 0 && isMobileDevice) {
+        //     emailID.style.display = "block";
+        //     emailShow = 1;
+        //     gmail.setAttribute('title', 'Hide email ID');
+        // } else if (emailShow == 1 && isMobileDevice) {
+        //     emailID.style.display = "none";
+        //     emailShow = 0;
+        //     gmail.setAttribute('title', 'Show email ID');
+        // }
 
         if (!isMobileDevice) {
             navigator.clipboard.writeText("sanjanajoshi2023@gmail.com");
@@ -67,6 +67,9 @@ function reachMe(platform) {
             setTimeout(function () {
                 toast.style.display = "none";
             }, 2000);
+        } else {
+            let goToGmail = document.querySelector('#goToGmail');
+            goToGmail.setAttribute('href', 'mailto:sanjanajoshi2023@gmail.com');
         }
 
     } else if (platform == 'linkedIn') {
