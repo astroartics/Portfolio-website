@@ -318,6 +318,10 @@ p {
         max-width: 60vw;
         transform: translate(-50%, 30%);
     }
+
+    .otherPage{
+        font-size: 3.5vw;
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -504,6 +508,10 @@ p {
     #csAsChoice {
         max-width: 40vw;
         transform: translate(-50%, 30%);
+    }
+
+    .otherPage{
+        font-size: 2vw;
     }
 }
 
