@@ -5,10 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Other Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Other page</h1>
+    <div id="container">
+        <div id="hello">
+            <h1 id="H">H</h1>
+            <h1 id="E">E</h1>
+            <h1 id="L1">L</h1>
+            <h1 id="L2">L</h1>
+            <h1 id="O">O</h1>
+        </div>
+
+        <div id="contact">
+            <h2>What brought you to my portfolio website?</h2>
+            <p>
+                Have anything tech related to talk about?<br />
+                I would love to discuss it too! 🤖💻<br />
+                Just reach out to me<br />
+            </p>
+
+            <div id="contactDetails">
+                <p style="grid-area: dropEmail; padding: 0;">Drop me an email 📧 : </p><a id="goToGmail"><button
+                        id="gmail"
+                        style="background-image: url('../Recruiter/gmail.png'); background-size: cover; grid-area: gmail;"
+                        title="Copy email ID"></button></a>
+
+                <p style="grid-area: connect; padding: 0.1vw 0vw 3vw 0vw;">Let's connect 🔗 : </p><button id="linkedIn"
+                    style="background-image: url('../Recruiter/linkedIn.png'); background-size: cover; grid-area: LI;"
+                    title="Go to my LinkedIn profile"></button>
+            </div>
+        </div>
+
+        <div id="game">
+            <h2>What brought you to my portfolio website?</h2>
+            <p>
+                Have anything tech related to talk about?
+            </p>
+        </div>
+
+        <div id="projects">
+            <h2>What brought you to my portfolio website?</h2>
+            <p>
+                Have anything tech related to talk about?
+            </p>
+        </div>
+    </div>
+
+    <div id="toast">Email ID copied to clipboard</div>
+
+    <script>
+        document.querySelector("#hello").addEventListener('click', function () {
+            document.getAnimations().forEach(function (anim) {
+                anim.cancel();
+                anim.play();
+            })
+        })
+    </script>
+
+    <script src="othJS.js"></script>
 </body>
 
 </html>

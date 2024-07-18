@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    background-image: url('../body_background.jpg');
+    background-size: 30vw;
+    border-left: 1vw solid #464646;
+    border-right: 1vw solid #464646;
+    border-top: 2vh solid #464646;
+    border-bottom: 2vh solid #464646;
+}
+
+#container {
+    width: 98vw;
+    height: 96vh;
+    max-height: 96vh;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow-y: scroll;
+    display: grid;
+    grid-template-areas: 'title title' 'contact contact' 'game projects';
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    max-width: 100%;
+    margin: 0;
+    display: inline-block;
+    align-items: center;
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0vw 0.5vw;
+    opacity: 0;
+    -webkit-text-stroke: 0.1vw #331d11;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: #0f0f0f;
+    padding: 1.5vw 10vw;
+    background-color: #fca9ac;
+    text-align: center;
+    border-radius: 0.5vw 0.5vw 0 0;
+}
+
+#hello {
+    width: max-content;
+    text-align: center;
+    margin: 4vw auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.677);
+    grid-area: title;
+}
+
+#hello:hover {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+@keyframes letterDrop {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    65% {
+        transform: translateY(15%);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(17%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes letterDropDeeper {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    65% {
+        transform: translateY(22%);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(25%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#H {
+    animation: letterDrop 0.4s linear forwards 0.2s;
+    color: #FEBE98;
+    font-size: 3.8vw;
+}
+
+#L1 {
+    animation: letterDrop 0.4s linear forwards 0.3s;
+    color: #c67546;
+    font-size: 4vw;
+}
+
+#E {
+    animation: letterDropDeeper 0.4s linear forwards 0.45s;
+    color: #f3ab81;
+    font-size: 4.5vw;
+}
+
+#L2 {
+    animation: letterDrop 0.4s linear forwards 0.6s;
+    color: #f3ab81;
+    font-size: 3.1vw;
+}
+
+
+#O {
+    animation: letterDropDeeper 0.4s linear forwards 0.75s;
+    color: #FEBE98;
+    font-size: 4.3vw;
+}
+
+#contact {
+    width: 70vw;
+    max-width: 70vw;
+    background-color: white;
+    border: 0.2vw solid #343434;
+    border-radius: 0.8vw;
+    margin: 4vw auto;
+    text-align: center;
+    grid-area: contact;
+}
+
+#game,
+#projects {
+    width: 40vw;
+    max-width: 40vw;
+    background-color: white;
+    border: 0.2vw solid #343434;
+    border-radius: 0.8vw;
+    margin: 3vw auto;
+    text-align: center;
+}
+
+#game {
+    grid-area: game;
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#contact>p {
+    padding: 2vw;
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+#gmail:hover,
+#linkedIn:hover {
+    cursor: pointer;
+}
+
+#gmail:hover,
+#linkedIn:hover {
+    opacity: 0.8;
+}
+
+#gmail,
+#linkedIn {
+    width: 2.1vw;
+    height: 2.1vw;
+    border: 0.1vw solid #464646;
+    margin: 0.3vw;
+    border-radius: 20%;
+}
+
+#linkedIn {
+    margin-bottom: 3vw;
+}
+
+#contactDetails {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 'dropEmail gmail' 'emailID emailID' 'connect LI';
+    align-items: center;
+    justify-items: center;
+    font-size: 1.2vw;
+}
+
+#toast {
+    max-width: max-content;
+    position: fixed;
+    bottom: 1.5vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    background-color: #1a1919a6;
+    color: rgb(255, 255, 255);
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    animation: appear 0.2s;
+    display: none;
+}
