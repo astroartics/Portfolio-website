@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: url('../body_background.jpg');
+    background-size: 70vw;
+}
+
+#container {
+    max-height: 96vh;
+    text-align: center;
+}
+
+h1 {
+    max-width: 100%;
+    margin: 0;
+    display: inline-block;
+    align-items: center;
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5vw 0.5vw 0vw 0.5vw;
+    opacity: 0;
+    -webkit-text-stroke: 0.1vw #331d11;
+}
+
+#H {
+    animation: letterDrop 0.4s linear forwards 0.2s;
+    color: #FEBE98;
+}
+
+#L1 {
+    animation: letterDrop 0.4s linear forwards 0.3s;
+    color: #c67546;
+}
+
+#E {
+    animation: letterDropDeeper 0.4s linear forwards 0.45s;
+    color: #f3ab81;
+}
+
+#L2 {
+    animation: letterDrop 0.4s linear forwards 0.6s;
+    color: #f3ab81;
+}
+
+
+#O {
+    animation: letterDropDeeper 0.4s linear forwards 0.75s;
+    color: #FEBE98;
+}
+
+@media screen and (orientation: portrait) {
+    #H {
+        font-size: 8.3vw;
+    }
+    
+    #L1 {
+        font-size: 8.6vw;
+    }
+    
+    #E {
+        font-size: 9vw;
+    }
+    
+    #L2 {
+        font-size: 7vw;
+    }
+    
+    
+    #O {
+        font-size: 8.9vw;
+    }
+}
+
+@media screen and (orientation: landscape) {}

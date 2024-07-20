@@ -9,6 +9,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+
+    <style>
+        @keyframes letterDrop {
+            0% {
+                transform: translateY(-200%);
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+
+            65% {
+                transform: translateY(15%);
+                opacity: 1;
+            }
+
+            75% {
+                transform: translateY(17%);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
+        @keyframes letterDropDeeper {
+            0% {
+                transform: translateY(-200%);
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+
+            65% {
+                transform: translateY(22%);
+                opacity: 1;
+            }
+
+            75% {
+                transform: translateY(25%);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -22,9 +86,20 @@
         </div>
 
         <div id="contact">
-            <h2>What brought you to my portfolio website?</h2>
-            <p>
-                Have anything tech related to talk about?<br />
+            <h2 id="contactTitle">What brought you to my portfolio website?</h2>
+
+            <!-- <div id="fallingLettersLeft">
+                <h3>Algorithms</h3>
+                <h3>C</h3>
+                <h3>Programming</h3>
+                <h3>AI</h3>
+                <h3>ML</h3>
+                <h3>Data Science</h3>
+                <h3>Java</h3>
+            </div> -->
+
+            <p id="contactPara">
+                Have anything tech-related to talk about?<br />
                 I would love to discuss it too! 🤖💻<br />
                 Just reach out to me<br />
             </p>
@@ -44,7 +119,7 @@
         <div id="game">
             <h2>What brought you to my portfolio website?</h2>
             <p>
-                Have anything tech related to talk about?
+                Have anything tech-related to talk about?
             </p>
         </div>
 
