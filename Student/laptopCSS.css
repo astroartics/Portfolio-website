@@ -198,7 +198,7 @@ p {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    padding-bottom: 2vw;
+    padding: 1vw;
     background-color: rgb(250, 246, 241);
 }
 
@@ -346,7 +346,6 @@ p {
     overflow: hidden;
     align-items: center;
     grid-template-areas: 'projectTitle projectTitle projectTitle' 'projectPara projectPara toGame' 'projectPara projectPara tictactoe' 'projectPara projectPara portfolio' 'leisure unitConverter portfolio';
-    /* grid-template-areas: 'projectTitle projectTitle' 'portfolio toGame' 'portfolio unitConverter' 'tictactoe leisure' 'projectPara projectPara ' 'projectPara projectPara'; */
 }
 
 #toGame,

@@ -263,10 +263,12 @@ hr {
 
 .viewCert {
     font-size: 1vw;
+    background-color:rgb(233, 233, 233);
 }
 
 .viewCert:hover {
-    background-color: #bbbbbb;
+    /* background-color: #bbbbbb; */
+    background-color: rgb(215, 215, 215);
 }
 
 #toGame {
