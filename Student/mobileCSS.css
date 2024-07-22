@@ -29,11 +29,26 @@ h2 {
     text-align: center;
 }
 
+h5>div{
+    max-width: 70%;
+    margin: auto;
+    background-color: #6a6a6a;
+    padding: 4vw;
+}
+
+#main {
+    padding-top: 6%;
+}
+
 #showNav {
     width: 100%;
-    background-color: #e8878a;
+    background-color: #ea8488;
     /* background-color: #c67d52; */
     /* background-color: #fbaa7b; */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border: 0.1vw solid #464646;
 }
 
 #show {
@@ -242,7 +257,7 @@ p {
     #popUp {
         max-width: 70vw;
         position: relative;
-        top: 10vw;
+        top: 14vw;
         left: 43%;
         transform: translate(-50%, 0);
     }
@@ -254,7 +269,7 @@ p {
     }
 
     #welcomeMsg {
-        top: 10vw;
+        top: 15vw;
         left: 50%;
         transform: translate(-50%, 0);
     }

@@ -12,11 +12,20 @@ body {
     background-size: 30vw;
 }
 
+#main {
+    padding-top: 4%;
+}
+
 #showNav {
     width: 100%;
-    background-color: #e8878a;
+    height: 3%;
+    background-color: #ea8488;
     /* background-color: #fcb68e; */
     /* background-color: #c1825e; */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border: 0.1vw solid #464646;
 }
 
 #show {
@@ -67,7 +76,7 @@ div ul li a {
 
 
 #vector {
-    max-width: 13vw;
+    max-width: 12vw;
     grid-area: image;
     margin: auto;
 }
@@ -100,7 +109,7 @@ h1 {
     grid-template-areas: 'image' 'message';
     justify-content: center;
     position: absolute;
-    top: 4vw;
+    top: 5vw;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -117,16 +126,23 @@ h2 {
     font-weight: 100;
     color: #0f0f0f;
     padding: 1.5vw 10vw;
-    background-color: #ec8c8f;
+    background-color: #fbbebf;
     text-align: center;
     border-radius: 0.5vw 0.5vw 0 0;
 }
 
 h5 {
-    max-width: 40vw;
+    max-width: 100vw;
     font-size: 0.9vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
+}
+
+h5>div {
+    max-width: 70%;
+    margin: auto;
+    background-color: #6a6a6a;
+    padding: 2vw;
 }
 
 #letsLearn,
