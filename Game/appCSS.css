@@ -123,6 +123,7 @@ body {
 #instructions {
     grid-area: instruc;
     background-color: beige;
+    padding: 10px 0px;
 }
 
 #settings {
@@ -167,10 +168,6 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-}
-
-#help{
-    padding: 1vw;
 }
 
 @media screen and (orientation: portrait) {
