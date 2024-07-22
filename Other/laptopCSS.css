@@ -55,8 +55,9 @@ h2 {
     width: max-content;
     text-align: center;
     margin: 4vw auto 0 auto;
-    background-color: rgba(255, 255, 255, 0.677);
+    background-color: rgba(255, 255, 255, 0.668);
     grid-area: title;
+    border-radius: 1vw;
 }
 
 #hello:hover {
@@ -98,6 +99,14 @@ p {
     font-size: 4.3vw;
 }
 
+#contactVid {
+    max-width: 20vw;
+    outline: 3px solid white;
+    outline-offset: -2px;
+    grid-area: video;
+    margin: 2.5vw;
+}
+
 #contactPara {
     grid-area: contactPara;
 }
@@ -113,7 +122,7 @@ p {
 } */
 
 #contact {
-    width: 70vw;
+    width: max-content;
     max-width: 70vw;
     background-color: white;
     border: 0.2vw solid #343434;
@@ -121,9 +130,9 @@ p {
     margin: 4vw auto;
     text-align: center;
     grid-area: contact;
-    /* display: grid;
-    grid-template-areas: 'contactTitle contactTitle' 'fallingLettersLeft contactPara' 'fallingLettersLeft details';
-    overflow: hidden; */
+    display: grid;
+    grid-template-areas: 'contactTitle contactTitle' 'contactPara video' 'details video';
+    column-gap: 2vw;
 }
 
 #game,
@@ -153,7 +162,7 @@ p {
 }
 
 #contact>p {
-    padding: 2vw;
+    padding: 3vw;
     font-size: 1.2vw;
     margin: 0;
 }
@@ -170,8 +179,8 @@ p {
 
 #gmail,
 #linkedIn {
-    width: 2.1vw;
-    height: 2.1vw;
+    width: 2.2vw;
+    height: 2.2vw;
     border: 0.1vw solid #464646;
     margin: 0.3vw;
     border-radius: 20%;

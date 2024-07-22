@@ -52,3 +52,7 @@ p {
     margin: 3vw 0vw;
     font-size: 1.5vw;
 }
+
+p>mark{
+    padding: 1vw;
+}
