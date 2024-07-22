@@ -65,7 +65,7 @@ ul {
 }
 
 li {
-    width: 20%;
+    width: 16.667%;
     max-height: 100%;
     float: left;
     margin: 0;
@@ -96,6 +96,7 @@ li a {
 #skills,
 #projects,
 #resume,
+#extraCurr,
 #projects2 {
     max-width: 70vw;
     padding: 6vw 3vw 7vw 3vw;
@@ -125,6 +126,7 @@ hr {
 .viewCert:hover,
 #toGameImage:hover,
 #resumeHover:hover,
+#extracurriculars:hover,
 #showProjects:hover,
 #gmailImg:hover,
 #linkedInImg:hover,
@@ -263,7 +265,7 @@ hr {
 
 .viewCert {
     font-size: 1vw;
-    background-color:rgb(233, 233, 233);
+    background-color: rgb(233, 233, 233);
 }
 
 .viewCert:hover {
@@ -305,12 +307,19 @@ hr {
 #gmailImg,
 #linkedInImg {
     max-width: 3vw;
-    border-radius: 0.5vw;
+    border-radius: 0.6vw;
+    border: 0.1vw solid #464646;
 }
 
 #linkedIn {
     grid-area: linkedIn;
     padding: 1vw 2vw 2vw 2vw;
+}
+
+#gmail:hover,
+#linkedIn:hover {
+    opacity: 0.8;
+    transition: 0.2s;
 }
 
 #footerTitle {

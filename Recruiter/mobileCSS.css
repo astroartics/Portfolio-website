@@ -246,6 +246,7 @@ footer {
     #skills,
     #projects,
     #resume,
+    #extraCurr,
     #projects2 {
         padding: 15vw 5vw;
         margin: 0 auto;
@@ -362,8 +363,9 @@ footer {
     #about,
     #skills,
     #projects,
-    #projects1,
-    #projects2 {
+    #resume,
+    #extraCurr,
+    #projects2{
         padding: 4vw 5vw;
         margin: 0 auto;
     }
