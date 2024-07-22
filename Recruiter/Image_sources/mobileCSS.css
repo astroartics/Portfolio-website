@@ -9,10 +9,6 @@ hr {
 }
 
 #container {
-    display: grid;
-    grid-template-areas: 'Img1 link1' 'Img2 link2' 'Img3 link3' 'Img4 link4' 'Img5 link5' 'Img6 link6';
-    grid-template-columns: 30% 60%;
-    
     overflow-x: hidden;
 }
 
