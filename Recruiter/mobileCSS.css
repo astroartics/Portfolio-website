@@ -25,6 +25,15 @@ h3 {
     background-color: #F0CFBA;
 }
 
+h4 {
+    width: max-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    color: #242424;
+    background-color: rgb(253, 240, 223);
+    margin: 0 auto;
+}
+
 #showNav {
     width: 100%;
     background-color: #df7f82;
@@ -227,6 +236,12 @@ footer {
         font-size: 4.5vw;
     }
 
+    h4 {
+        font-size: 3.5vw;
+        padding: 1vw 1.5vw;
+        border-radius: 1vw;
+    }
+
     h5 {
         max-width: 80vw;
     }
@@ -345,6 +360,12 @@ footer {
         font-size: 2.5vw;
     }
 
+    h4 {
+        font-size: 2vw;
+        padding: 0.5vw 0.8vw;
+        border-radius: 0.5vw;
+    }
+
     h5 {
         max-width: 50vw;
     }
@@ -365,7 +386,7 @@ footer {
     #projects,
     #resume,
     #extraCurr,
-    #projects2{
+    #projects2 {
         padding: 4vw 5vw;
         margin: 0 auto;
     }
