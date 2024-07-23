@@ -11,6 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-image: url('../body_background.jpg');
+        }
+
         @keyframes letterDrop {
             0% {
                 transform: translateY(-200%);
@@ -73,11 +82,25 @@
             }
         }
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+
+    <img id="tv" src="tv.png"><video id="helloWorld" autoplay muted loop style="grid-area: helloWorld;"
+        poster="OtherBack.jpg">
+        <source src="HelloWorld_Other.mp4">
+    </video>
+    <div id="buttons">
+        <button id="home" title="Home">HOME</button>
+        <button id="stopVideo" title="Stop video">🟥</button>
+        <button id="startVideo" title="Start video">▶️</button>
+    </div>
+
     <div id="container">
-        <div id="hello">
+
+        <div id="hello" style="grid-area: title;">
             <h1 id="H">H</h1>
             <h1 id="E">E</h1>
             <h1 id="L1">L</h1>
@@ -85,20 +108,20 @@
             <h1 id="O">O</h1>
         </div>
 
-        <div id="contact">
-            <h2 id="contactTitle">What brought you to my<br />portfolio website?</h2>
+        <div id="contact" style="grid-area: contact;">
+            <h2 id="contactTitle" style="grid-area: contactTitle;">What brought you to my<br />portfolio website?</h2>
 
-            <video autoplay loop id="contactVid" muted>
+            <video autoplay loop id="contactVid" muted style="grid-area: video;">
                 <source src="contactVideo.mp4">
             </video>
 
-            <p id="contactPara">
+            <p id="contactPara" style="grid-area: contactPara;">
                 Have anything tech-related to talk about?<br />
                 I would love to discuss it too! 🤖💻<br />
                 Just reach out to me<br />
             </p>
 
-            <div id="contactDetails">
+            <div id="contactDetails" style="grid-area: details;">
                 <p style="grid-area: dropEmail; padding: 0;">Drop me an email 📧 : </p><a id="goToGmail"><button
                         id="gmail"
                         style="background-image: url('../Recruiter/gmail.png'); background-size: cover; grid-area: gmail;"
@@ -110,14 +133,14 @@
             </div>
         </div>
 
-        <div id="game">
+        <div id="game" style="grid-area: game;">
             <h2>What brought you to my portfolio website?</h2>
             <p>
                 Have anything tech-related to talk about?
             </p>
         </div>
 
-        <div id="projects">
+        <div id="projects" style="grid-area: projects;">
             <h2>What brought you to my portfolio website?</h2>
             <p>
                 Have anything tech related to talk about?
@@ -134,6 +157,7 @@
                 anim.play();
             })
         })
+
     </script>
 
     <script src="othJS.js"></script>

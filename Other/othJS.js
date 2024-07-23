@@ -1,3 +1,9 @@
+const startVideo = document.querySelector("#startVideo");
+const stopVideo = document.querySelector("#stopVideo");
+const helloWorld = document.querySelector("#helloWorld");
+const home = document.querySelector("#home");
+
+
 function reachMe(platform) {
     if (platform == 'gmail') {
         if (!isMobileDevice) {
@@ -16,6 +22,9 @@ function reachMe(platform) {
         window.open("http://www.linkedin.com/in/sanjana-joshi-533853278", '_blank');
     }
 }
+
+
+
 
 window.addEventListener('load', function () {
     let details = navigator.userAgent;
@@ -40,4 +49,19 @@ window.addEventListener('load', function () {
     linkedIn.addEventListener('click', function () {
         reachMe('linkedIn');
     })
+
+
+    stopVideo.addEventListener('click', function () {
+        helloWorld.pause();
+        helloWorld.currentTime = 11;
+    });
+
+    startVideo.addEventListener('click', function () {
+        helloWorld.play();
+        helloWorld.currentTime = 0;
+    });
+
+    home.addEventListener('click', function () {
+        window.location.href = "../index.html";
+    });
 });

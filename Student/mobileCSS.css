@@ -570,11 +570,9 @@ p {
     width: max-content;
     margin: 0 auto;
     display: grid;
-    grid-template-areas: 'dropEmail gmail' 'emailID emailID' 'connect LI';
+    grid-template-areas: 'dropEmail gmail' 'connect LI';
     align-items: center;
     justify-items: center;
-    text-align: start;
-    font-size: 1.2vw;
 }
 
 #videoBack {

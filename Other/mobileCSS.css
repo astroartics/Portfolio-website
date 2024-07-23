@@ -1,16 +1,14 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    margin: 0;
-    background-image: url('../body_background.jpg');
     background-size: 70vw;
 }
 
 #container {
-    max-height: 96vh;
-    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'title title' 'contact contact' 'game projects';
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
 }
 
 h1 {
@@ -24,6 +22,82 @@ h1 {
     padding: 5vw 0.5vw 0vw 0.5vw;
     opacity: 0;
     -webkit-text-stroke: 0.1vw #331d11;
+}
+
+h2 {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: #0f0f0f;
+    padding: 1.5vw 10vw;
+    background-color: #fca9ac;
+    text-align: center;
+    border-radius: 0.5vw 0.5vw 0 0;
+}
+
+#tv {
+    width: 96%;
+    grid-area: tv;
+    position: relative;
+    top: 2vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+}
+
+#stopVideo {
+    font-size: 2vw;
+    margin: 0 0.5vw;
+}
+
+#startVideo {
+    font-size: 2vw;
+    margin: 0 0.5vw;
+}
+
+#home {
+    position: absolute;
+    left: 2%;
+    font-size: 2vw;
+}
+
+#buttons {
+    width: 60%;
+    height: max-content;
+    background-color: #281206;
+    border: 0.05vw solid rgb(196, 196, 196);
+    margin: 0 auto;
+    padding: 0.5vw;
+    position: relative;
+    top: 0.1vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#helloWorld {
+    max-width: 65%;
+    grid-area: helloWorld;
+    outline: 3px solid white;
+    outline-offset: -2px;
+    position: absolute;
+    top: 5vw;
+    left: 41%;
+    transform: translate(-50%, 0%);
+    z-index: -1;
+}
+
+#hello {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 4vw auto;
+}
+
+p {
+    margin: 0;
 }
 
 #H {
@@ -52,26 +126,111 @@ h1 {
     color: #FEBE98;
 }
 
+#contactVid {
+    max-width: 50vw;
+    outline: 3px solid white;
+    outline-offset: -2px;
+    margin: 2.5vw auto;
+}
+
+#contact {
+    width: 80vw;
+    max-width: 80vw;
+    background-color: white;
+    border: 0.2vw solid #343434;
+    border-radius: 0.8vw;
+    margin: 4vw auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 'contactTitle' 'contactPara' 'details' 'video';
+    column-gap: 2vw;
+}
+
+#game,
+#projects {
+    width: 40vw;
+    max-width: 40vw;
+    background-color: white;
+    border: 0.2vw solid #343434;
+    border-radius: 0.8vw;
+    margin: 3vw auto;
+    text-align: center;
+}
+
+#game>h2,
+#projects>h2 {
+    /* background-color: rgb(96, 200, 165); */
+    /* background-color: rgb(252, 225, 188); */
+    background-color: #ffcbad;
+}
+
+#contact>p {
+    padding: 3vw;
+    margin: 0;
+}
+
+#gmail:hover,
+#linkedIn:hover {
+    cursor: pointer;
+}
+
+#gmail:hover,
+#linkedIn:hover {
+    opacity: 0.8;
+}
+
+#gmail,
+#linkedIn {
+    width: 2.2vw;
+    height: 2.2vw;
+    border: 0.1vw solid #464646;
+    margin: 0.3vw;
+    border-radius: 20%;
+}
+
+#linkedIn {
+    margin-bottom: 3vw;
+}
+
+#contactDetails {
+    width: 80vw;
+    height: max-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 'dropEmail gmail' 'connect LI';
+    align-items: center;
+    justify-items: center;
+}
+
 @media screen and (orientation: portrait) {
+
+    h2 {
+        font-size: 4.5vw;
+    }
+
     #H {
         font-size: 8.3vw;
     }
-    
+
     #L1 {
         font-size: 8.6vw;
     }
-    
+
     #E {
         font-size: 9vw;
     }
-    
+
     #L2 {
         font-size: 7vw;
     }
-    
-    
+
+
     #O {
         font-size: 8.9vw;
+    }
+
+    p{
+        font-size: 3.5vw;
     }
 }
 
