@@ -1,6 +1,7 @@
 const startVideo = document.querySelector("#startVideo");
 const stopVideo = document.querySelector("#stopVideo");
 const helloWorld = document.querySelector("#helloWorld");
+const helloWorldGlitch = document.querySelector("#helloWorldGlitch");
 const home = document.querySelector("#home");
 const tv = document.querySelector("#tv");
 const repair = document.querySelector("#repair");
@@ -58,11 +59,15 @@ window.addEventListener('load', function () {
     stopVideo.addEventListener('click', function () {
         helloWorld.pause();
         helloWorld.currentTime = 11;
+        helloWorldGlitch.pause();
+        helloWorldGlitch.currentTime = 11;
     });
 
     startVideo.addEventListener('click', function () {
         helloWorld.play();
         helloWorld.currentTime = 0;
+        helloWorldGlitch.play();
+        helloWorldGlitch.currentTime = 0;
     });
 
     home.addEventListener('click', function () {

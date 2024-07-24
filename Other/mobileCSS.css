@@ -19,6 +19,33 @@ h2 {
     width: 96%;
 }
 
+#crack {
+    max-width: 25vw;
+    position: absolute;
+    top: 10vw;
+    left: 52%;
+    transform: translate(-50%, 0%);
+    z-index: 4;
+}
+
+#crack2 {
+    max-width: 10vw;
+    position: absolute;
+    top: 27vw;
+    left: 33%;
+    transform: translate(-50%, 0%);
+    z-index: 4;
+}
+
+#repair {
+    position: relative;
+    top: 1.5vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 1vw 3vw;
+    background-color: rgb(154, 215, 251);
+}
+
 #stopVideo {
     font-size: 2vw;
     margin: 0 0.5vw;
@@ -35,9 +62,11 @@ h2 {
     font-size: 2vw;
 }
 
-#helloWorld {
+#helloWorld,
+#helloWorldGlitch {
     max-width: 65%;
     left: 41%;
+    top: 6vw;
 }
 
 #H {
@@ -183,6 +212,10 @@ h2 {
         border: 0.5vw solid #343434;
         border-radius: 3vw;
     }
+
+    #repair{
+        font-size: 3.5vw;
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -226,5 +259,9 @@ h2 {
         max-width: 80vw;
         border: 0.5vw solid #343434;
         border-radius: 3vw;
+    }
+
+    #repair{
+        font-size: 2vw;
     }
 }

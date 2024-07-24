@@ -60,10 +60,10 @@
             background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
         }
 
-        #helloWorld {
+        #helloWorld,
+        #helloWorldGlitch {
             grid-area: helloWorld;
             position: absolute;
-            top: 5vw;
             transform: translate(-50%, 0%);
             z-index: -1;
         }
@@ -178,8 +178,11 @@
 <body>
 
     <img id="crack2" src="crack2.png"><img id="crack" src="crack.png"><img id="tv" src="tv.png"><video id="helloWorld"
-        autoplay muted loop style="grid-area: helloWorld;" poster="OtherBack.jpg">
+        autoplay muted loop poster="OtherBack.jpg">
         <source src="HelloWorld_Other.mp4">
+    </video>
+    <video id="helloWorldGlitch" autoplay muted loop poster="OtherBack.jpg">
+        <source src="Glitch_helloWorld.mp4">
     </video>
 
     <div id="buttons">
@@ -259,6 +262,7 @@
         $('document').ready(function () {
             $('#crack').hide();
             $('#crack2').hide();
+            $('#helloWorldGlitch').hide();
         })
 
         document.querySelector("#tv").addEventListener('click', function () {
@@ -266,6 +270,8 @@
                 setTimeout(function () {
                     $("#crack").fadeIn(100);
                     $("#crack2").fadeIn(100);
+                    document.querySelector('#helloWorldGlitch').currentTime = document.querySelector('#helloWorld').currentTime;
+                    $("#helloWorldGlitch").fadeIn(100);
                     broken = 1;
                 }, 380);
 
@@ -277,8 +283,10 @@
             if (broken == 1) {
                 $("#crack").fadeOut('slow');
                 $("#crack2").fadeOut('slow');
+                $("#helloWorldGlitch").fadeOut('slow');
                 $('#crack').hide();
                 $('#crack2').hide();
+                $('#helloWorldGlitch').hide();
 
                 glassShatter.pause();
                 glassShatter.currentTime = 0;
