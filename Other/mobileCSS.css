@@ -49,6 +49,7 @@ h3 {
     transform: translate(-50%, 0%);
     padding: 1vw 3vw;
     background-color: rgb(154, 215, 251);
+    border-radius: 1.5vw;
 }
 
 #stopVideo {
