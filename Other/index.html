@@ -56,7 +56,7 @@
             margin: 1vw auto 0vw auto;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #fe4141;
-            background-color: antiquewhite;
+            background-color: rgb(251, 239, 225);
             text-align: center;
             border-radius: 0.5vw 0.5vw 0 0;
         }
@@ -277,7 +277,7 @@
             $('#crack2').hide();
             $('#helloWorldGlitch').hide();
             $('#repair').hide();
-            document.querySelector('#broken_note').innerText = "[Note : Do not touch the TV, it is very old and might break. In case you're curious, try it.]";
+            document.querySelector('#broken_note').innerText = "[Note : Do not touch the TV, it is very old and might break. In case you're curious, try it, ONCE.]";
             document.querySelector('#repair').innerText = "Repair the TV";
         })
 
@@ -292,16 +292,16 @@
                     broken = 1;
                     brokeCount += 1;
                     if (brokeCount == 1) {
-                        document.querySelector('#broken_note').innerText = "Told you so...\nPlease get it repaired now\n⮟";
+                        document.querySelector('#broken_note').innerText = "Told you so...\nPlease get it repaired now\n▼";
                     } else if (brokeCount > 1) {
                         if (brokeCount == 2) {
-                            document.querySelector('#broken_note').innerText = "I see you're starting to enjoy this...\nPlease get the TV repaired\n⮟";
+                            document.querySelector('#broken_note').innerText = "I see you're starting to enjoy this...\nPlease get the TV repaired\n▼";
                         } else if (brokeCount == 3) {
-                            document.querySelector('#broken_note').innerText = "You broke it the third time?! Damn, my TV technician is getting rich...\nWilling to get it repaired?\n⮟";
+                            document.querySelector('#broken_note').innerText = "You broke it the third time?! Damn, my TV technician is getting rich...\nWilling to get it repaired?\n▼";
                         } else if (brokeCount == 4) {
-                            document.querySelector('#broken_note').innerText = "My grandparents will see this any minute now!\nPlease get it fixed\n⮟";
+                            document.querySelector('#broken_note').innerText = "My grandparents will see this any minute now!\nPlease get it fixed\n▼";
                         } else if (brokeCount == 5) {
-                            document.querySelector('#broken_note').innerText = "Ah! I give up!\nGet it fixed so that you'll get to break it again\n⮟";
+                            document.querySelector('#broken_note').innerText = "Ah! I give up!\nGet it fixed so that you'll get to break it again\n▼";
                         } else {
                             document.querySelector('#broken_note').innerText = "I have given up...\nEnjoy :)";
                         }
@@ -309,6 +309,8 @@
                 }, 380);
 
                 glassShatter.play();
+            } else {
+                document.querySelector('#broken_note').innerText = "It is already broken!\nGet it fixed\n▼";
             }
         });
 
