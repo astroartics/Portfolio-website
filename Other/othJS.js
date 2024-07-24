@@ -2,6 +2,10 @@ const startVideo = document.querySelector("#startVideo");
 const stopVideo = document.querySelector("#stopVideo");
 const helloWorld = document.querySelector("#helloWorld");
 const home = document.querySelector("#home");
+const tv = document.querySelector("#tv");
+const repair = document.querySelector("#repair");
+const crack1 = document.querySelector("#crack");
+const crack2 = document.querySelector("#crack2");
 
 
 function reachMe(platform) {

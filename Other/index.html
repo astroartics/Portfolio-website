@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+
 
     <style>
         html {
@@ -20,9 +22,86 @@
             background-image: url('../body_background.jpg');
         }
 
-        @keyframes letterDrop {
+        #container {
+            width: 100%;
+            display: grid;
+            grid-template-areas: 'title title' 'contact contact' 'game projects';
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            max-width: 100%;
+            margin: 0;
+            display: inline-block;
+            align-items: center;
+            /* font-family: "Slackey", sans-serif; */
+            font-family: "Happy Monkey", system-ui;
+            font-weight: 800;
+            font-style: normal;
+            opacity: 0;
+        }
+
+        h2 {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #0f0f0f;
+            background-color: #fca9ac;
+            text-align: center;
+            border-radius: 0.5vw 0.5vw 0 0;
+        }
+
+        #tv {
+            position: relative;
+            top: 2vw;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            z-index: 0;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+        }
+
+        #helloWorld {
+            grid-area: helloWorld;
+            position: absolute;
+            top: 5vw;
+            transform: translate(-50%, 0%);
+            z-index: -1;
+        }
+
+        #buttons {
+            width: 60%;
+            height: max-content;
+            background-color: #281206;
+            border: 0.05vw solid rgb(196, 196, 196);
+            margin: 0 auto;
+            padding: 0.5vw;
+            position: relative;
+            top: 0.1vw;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #hello {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin: 4vw auto;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        video {
+            outline: 3px solid white;
+            outline-offset: -2px;
+        }
+
+        @keyframes letterLeft {
             0% {
-                transform: translateY(-200%);
+                transform: translateX(-300%);
                 opacity: 0;
             }
 
@@ -31,29 +110,29 @@
             }
 
             50% {
-                transform: translateY(0%);
+                transform: translateX(0%);
                 opacity: 1;
             }
 
             65% {
-                transform: translateY(15%);
+                transform: translateX(15%);
                 opacity: 1;
             }
 
             75% {
-                transform: translateY(17%);
+                transform: translateX(20%);
                 opacity: 1;
             }
 
             100% {
-                transform: translateY(0%);
+                transform: translateX(0%);
                 opacity: 1;
             }
         }
 
-        @keyframes letterDropDeeper {
+        @keyframes letterRight {
             0% {
-                transform: translateY(-200%);
+                transform: translateX(300%);
                 opacity: 0;
             }
 
@@ -62,23 +141,33 @@
             }
 
             50% {
-                transform: translateY(0%);
+                transform: translateX(0%);
                 opacity: 1;
             }
 
             65% {
-                transform: translateY(22%);
+                transform: translateX(-15%);
                 opacity: 1;
             }
 
             75% {
-                transform: translateY(25%);
+                transform: translateX(-20%);
                 opacity: 1;
             }
 
             100% {
-                transform: translateY(0%);
+                transform: translateX(0%);
                 opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
             }
         }
     </style>
@@ -88,15 +177,18 @@
 
 <body>
 
-    <img id="tv" src="tv.png"><video id="helloWorld" autoplay muted loop style="grid-area: helloWorld;"
-        poster="OtherBack.jpg">
+    <img id="crack2" src="crack2.png"><img id="crack" src="crack.png"><img id="tv" src="tv.png"><video id="helloWorld"
+        autoplay muted loop style="grid-area: helloWorld;" poster="OtherBack.jpg">
         <source src="HelloWorld_Other.mp4">
     </video>
+
     <div id="buttons">
         <button id="home" title="Home">HOME</button>
         <button id="stopVideo" title="Stop video">🟥</button>
         <button id="startVideo" title="Start video">▶️</button>
     </div>
+
+    <button id="repair">Repair the TV</button>
 
     <div id="container">
 
@@ -106,6 +198,7 @@
             <h1 id="L1">L</h1>
             <h1 id="L2">L</h1>
             <h1 id="O">O</h1>
+            <h1 id="exclamation">!</h1>
         </div>
 
         <div id="contact" style="grid-area: contact;">
@@ -157,6 +250,42 @@
                 anim.play();
             })
         })
+
+
+        let broken = 0;
+        let glassShatter = new Audio();
+        glassShatter.src = "glass_break.mp3";
+
+        $('document').ready(function () {
+            $('#crack').hide();
+            $('#crack2').hide();
+        })
+
+        document.querySelector("#tv").addEventListener('click', function () {
+            if (broken == 0) {
+                setTimeout(function () {
+                    $("#crack").fadeIn(100);
+                    $("#crack2").fadeIn(100);
+                    broken = 1;
+                }, 380);
+
+                glassShatter.play();
+            }
+        });
+
+        document.querySelector("#repair").addEventListener('click', function () {
+            if (broken == 1) {
+                $("#crack").fadeOut('slow');
+                $("#crack2").fadeOut('slow');
+                $('#crack').hide();
+                $('#crack2').hide();
+
+                glassShatter.pause();
+                glassShatter.currentTime = 0;
+
+                broken = 0;
+            }
+        });
 
     </script>
 
