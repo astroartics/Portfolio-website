@@ -48,6 +48,15 @@ h3 {
     z-index: 4;
 }
 
+#hole {
+    max-width: 8vw;
+    position: absolute;
+    top: 10vw;
+    right: 15%;
+    transform: translate(-50%, 0%);
+    z-index: 4;
+}
+
 #repair {
     position: relative;
     top: 1.5vw;
