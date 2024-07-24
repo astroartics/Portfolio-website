@@ -51,6 +51,16 @@
             border-radius: 0.5vw 0.5vw 0 0;
         }
 
+        h3 {
+            width: max-content;
+            margin: 1vw auto 0vw auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fe4141;
+            background-color: antiquewhite;
+            text-align: center;
+            border-radius: 0.5vw 0.5vw 0 0;
+        }
+
         #tv {
             position: relative;
             top: 2vw;
@@ -187,11 +197,13 @@
 
     <div id="buttons">
         <button id="home" title="Home">HOME</button>
-        <button id="stopVideo" title="Stop video">🟥</button>
-        <button id="startVideo" title="Start video">▶️</button>
+        <button id="stopVideo" title="Stop the video">🟥</button>
+        <button id="startVideo" title="Restart the video">▶️</button>
     </div>
 
-    <button id="repair">Repair the TV</button>
+    <h3 id="broken_note"></h3>
+
+    <button id="repair"></button>
 
     <div id="container">
 
@@ -256,6 +268,7 @@
 
 
         let broken = 0;
+        let brokeCount = 0;
         let glassShatter = new Audio();
         glassShatter.src = "glass_break.mp3";
 
@@ -263,16 +276,36 @@
             $('#crack').hide();
             $('#crack2').hide();
             $('#helloWorldGlitch').hide();
+            $('#repair').hide();
+            document.querySelector('#broken_note').innerText = "[Note : Do not touch the TV, it is very old and might break. In case you're curious, try it.]";
+            document.querySelector('#repair').innerText = "Repair the TV";
         })
 
         document.querySelector("#tv").addEventListener('click', function () {
             if (broken == 0) {
                 setTimeout(function () {
-                    $("#crack").fadeIn(100);
-                    $("#crack2").fadeIn(100);
+                    $("#crack").fadeIn(200);
+                    $("#crack2").fadeIn(200);
                     document.querySelector('#helloWorldGlitch').currentTime = document.querySelector('#helloWorld').currentTime;
-                    $("#helloWorldGlitch").fadeIn(100);
+                    $("#helloWorldGlitch").fadeIn(200);
+                    $("#repair").fadeIn(400);
                     broken = 1;
+                    brokeCount += 1;
+                    if (brokeCount == 1) {
+                        document.querySelector('#broken_note').innerText = "Told you so...\nPlease get it repaired now\n⮟";
+                    } else if (brokeCount > 1) {
+                        if (brokeCount == 2) {
+                            document.querySelector('#broken_note').innerText = "I see you're starting to enjoy this...\nPlease get the TV repaired\n⮟";
+                        } else if (brokeCount == 3) {
+                            document.querySelector('#broken_note').innerText = "You broke it the third time?! Damn, my TV technician is getting rich...\nWilling to get it repaired?\n⮟";
+                        } else if (brokeCount == 4) {
+                            document.querySelector('#broken_note').innerText = "My grandparents will see this any minute now!\nPlease get it fixed\n⮟";
+                        } else if (brokeCount == 5) {
+                            document.querySelector('#broken_note').innerText = "Ah! I give up!\nGet it fixed so that you'll get to break it again\n⮟";
+                        } else {
+                            document.querySelector('#broken_note').innerText = "I have given up...\nEnjoy :)";
+                        }
+                    }
                 }, 380);
 
                 glassShatter.play();
@@ -284,9 +317,27 @@
                 $("#crack").fadeOut('slow');
                 $("#crack2").fadeOut('slow');
                 $("#helloWorldGlitch").fadeOut('slow');
-                $('#crack').hide();
-                $('#crack2').hide();
-                $('#helloWorldGlitch').hide();
+                $("#repair").fadeOut(400);
+                setTimeout(function () {
+                    if (brokeCount == 1) {
+                        document.querySelector('#broken_note').innerText = "Thank you for getting it fixed, but please do not touch it again.";
+                    } else if (brokeCount > 1) {
+                        if (brokeCount == 2) {
+                            document.querySelector('#broken_note').innerText = "Did you know that Liquid Crystals were accidentally\ndiscovered while studying Carrots!";
+                        } else if (brokeCount == 3) {
+                            document.querySelector('#broken_note').innerText = "It's not nice to break things, you know...";
+                        } else if (brokeCount == 4) {
+                            document.querySelector('#broken_note').innerText = "Oh, come on! DO NOT TOUCH THE TV!";
+                        } else if (brokeCount > 4) {
+                            document.querySelector('#broken_note').innerText = "I have given up...\nEnjoy :)";
+                            document.querySelector('#repair').innerText = "Repair the TV if you want";
+                        }
+                    }
+                }, 300);
+                // $('#crack').hide();
+                // $('#crack2').hide();
+                // $('#helloWorldGlitch').hide();
+                // $('#repair').hide();
 
                 glassShatter.pause();
                 glassShatter.currentTime = 0;
