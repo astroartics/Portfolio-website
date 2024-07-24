@@ -21,7 +21,9 @@ h2 {
 h3 {
     font-size: 1vw;
     font-weight: 100;
-    padding: 0.5vw 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: 0.2vw solid #464646;
 }
 
 #tv {
