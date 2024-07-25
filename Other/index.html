@@ -358,15 +358,15 @@
                         document.querySelector('#broken_note').innerHTML = "<marquee>Told you so. Please get it repaired now ▼</marquee>";
                     } else if (brokeCount > 1) {
                         if (brokeCount == 2) {
-                            document.querySelector('#broken_note').innerHTML = "<marquee>I see you're starting to enjoy this. Please get the TV repaired ▼<marquee>";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>I see you're starting to enjoy this. Please get the TV repaired ▼</marquee>";
                         } else if (brokeCount == 3) {
-                            document.querySelector('#broken_note').innerText = "You broke it the third time?! Damn, my TV technician is getting rich...\nWilling to get it repaired?\n▼";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>You broke it the third time?! Damn, my TV technician is getting rich... Willing to get it repaired? ▼</marquee>";
                         } else if (brokeCount == 4) {
-                            document.querySelector('#broken_note').innerText = "My grandparents will see this any minute now!\nPlease get it fixed\n▼";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>My grandparents will see this any minute now! Please get it fixed ASAP ▼</marquee>";
                         } else if (brokeCount == 5) {
-                            document.querySelector('#broken_note').innerText = "Ah! I give up!\nGet it fixed so that you'll get to break it again\n▼";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>Ah! I give up! Get it fixed so that you'll get to break it again ▼</marquee>";
                         } else {
-                            document.querySelector('#broken_note').innerText = "I have given up...\nEnjoy :)";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>I have given up... Enjoy :)</marquee>";
                         }
                     }
 
@@ -381,7 +381,7 @@
 
                 glassShatter.play();
             } else {
-                document.querySelector('#broken_note').innerText = "It is already broken!\nGet it fixed\n▼";
+                document.querySelector('#broken_note').innerHTML = "<marquee>It is already broken! Get it fixed ▼</marquee>";
             }
         });
 
@@ -395,16 +395,16 @@
                 $("#repair").fadeOut(400);
                 setTimeout(function () {
                     if (brokeCount == 1) {
-                        document.querySelector('#broken_note').innerText = "Thank you for getting it fixed, but please do not touch it again.";
+                        document.querySelector('#broken_note').innerHTML = "<marquee>Thank you for getting it fixed, but please do not touch it again.</marquee>";
                     } else if (brokeCount > 1) {
                         if (brokeCount == 2) {
-                            document.querySelector('#broken_note').innerText = "Did you know that Liquid Crystals were accidentally\ndiscovered while studying Carrots!";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>Did you know that Liquid Crystals were accidentally discovered while studying Carrots!</marquee>";
                         } else if (brokeCount == 3) {
-                            document.querySelector('#broken_note').innerText = "It's not nice to break things, you know...";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>It's not nice to break things, you know...</marquee>";
                         } else if (brokeCount == 4) {
-                            document.querySelector('#broken_note').innerText = "Oh, come on! DO NOT TOUCH THE TV!";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>Oh, come on! DO NOT TOUCH THE TV!</marquee>";
                         } else if (brokeCount > 4) {
-                            document.querySelector('#broken_note').innerText = "I have given up...\nEnjoy :)";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>I have given up... Enjoy :)</marquee>";
                             document.querySelector('#repair').innerText = "Repair the TV if you want";
                         }
                     }
