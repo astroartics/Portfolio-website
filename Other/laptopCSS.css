@@ -1,9 +1,10 @@
 body {
-    background-size: 30vw;
+    /* background-size: 30vw; */
 }
 
 #container {
     column-gap: 2vw;
+    background-size: 30vw;
 }
 
 h1 {
@@ -24,6 +25,7 @@ h3 {
     padding: 1vw;
     border-radius: 1vw;
     border: 0.2vw solid #464646;
+    margin-bottom: 2vw;
 }
 
 #tv {
@@ -51,21 +53,33 @@ h3 {
 #hole {
     max-width: 8vw;
     position: absolute;
-    top: 10vw;
+    top: 12vw;
     right: 15%;
     transform: translate(-50%, 0%);
     z-index: 4;
+    opacity: 0.8;
+}
+
+#hole2 {
+    max-width: 3.5vw;
+    position: absolute;
+    top: 5vw;
+    right: 14%;
+    transform: translate(-50%, 0%);
+    z-index: 4;
+    opacity: 0.8;
 }
 
 #repair {
     position: relative;
-    top: 1.5vw;
+    /* top: 1.5vw; */
     left: 50%;
     transform: translate(-50%, 0%);
     font-size: 1.3vw;
     padding: 0.5vw 1vw;
     background-color: rgb(154, 215, 251);
     border-radius: 0.5vw;
+    margin: -1vw 0 1vw 0;
 }
 
 #stopVideo {

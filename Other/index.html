@@ -19,10 +19,11 @@
 
         body {
             margin: 0;
-            background-image: url('../body_background.jpg');
+            /* background-image: url('../body_background.jpg'); */
         }
 
         #container {
+            background-image: url('../body_background.jpg');
             width: 100%;
             display: grid;
             grid-template-areas: 'title title' 'contact contact' 'game projects';
@@ -186,8 +187,8 @@
 
 <body>
 
-    <img id="hole" src="hole.png"><img id="crack2" src="crack2.png"><img id="crack" src="crack.png"><img id="tv"
-        src="tv.png"><video id="helloWorld" autoplay muted loop poster="OtherBack.jpg">
+    <img id="hole2" src="hole2.png"><img id="hole" src="hole.png"><img id="crack2" src="crack2.png"><img id="crack"
+        src="crack.png"><img id="tv" src="tv.png"><video id="helloWorld" autoplay muted loop poster="OtherBack.jpg">
         <source src="HelloWorld_Other.mp4">
     </video>
     <video id="helloWorldGlitch" autoplay muted loop poster="OtherBack.jpg">
@@ -269,12 +270,16 @@
         let broken = 0;
         let brokeCount = 0;
         let glassShatter = new Audio();
+        var static = new Audio();
         glassShatter.src = "glass_break.mp3";
+        static.src = "static-noise.mp3";
+        glassShatter.volume = static.volume = 0.6;
 
         $('document').ready(function () {
             $('#crack').hide();
             $('#crack2').hide();
             $('#hole').hide();
+            $('#hole2').hide();
             $('#helloWorldGlitch').hide();
             $('#repair').hide();
             document.querySelector('#broken_note').innerText = "[Note : Do not touch the TV, it is very old and might break. In case you're curious, try it, ONCE.]";
@@ -287,6 +292,7 @@
                     $("#crack").fadeIn(200);
                     $("#crack2").fadeIn(200);
                     $("#hole").fadeIn(200);
+                    $("#hole2").fadeIn(200);
                     document.querySelector('#helloWorldGlitch').currentTime = document.querySelector('#helloWorld').currentTime;
                     $("#helloWorldGlitch").fadeIn(200);
                     $("#repair").fadeIn(400);
@@ -310,6 +316,13 @@
 
                 }, 380);
 
+                setTimeout(function () {
+                    glassShatter.pause();
+                    glassShatter.currentTime = 0;
+
+                    static.play();
+                }, 1200);
+
                 glassShatter.play();
             } else {
                 document.querySelector('#broken_note').innerText = "It is already broken!\nGet it fixed\n▼";
@@ -321,6 +334,7 @@
                 $("#crack").fadeOut('slow');
                 $("#crack2").fadeOut('slow');
                 $("#hole").fadeOut('slow');
+                $("#hole2").fadeOut('slow');
                 $("#helloWorldGlitch").fadeOut('slow');
                 $("#repair").fadeOut(400);
                 setTimeout(function () {
@@ -346,6 +360,8 @@
 
                 glassShatter.pause();
                 glassShatter.currentTime = 0;
+                static.pause();
+                static.currentTime = 0;
 
                 broken = 0;
             }
