@@ -10,6 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Electrolize&family=Happy+Monkey&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 
     <style>
@@ -19,11 +25,14 @@
 
         body {
             margin: 0;
+            border-top: 0;
             /* background-image: url('../body_background.jpg'); */
         }
 
         #container {
-            background-image: url('../body_background.jpg');
+            /* background-image: url('background1.jpg');
+            background-repeat: no-repeat; */
+            background-image: linear-gradient(to right, #b2b9b7, #5f7973);
             width: 100%;
             display: grid;
             grid-template-areas: 'title title' 'contact contact' 'game projects';
@@ -37,7 +46,8 @@
             display: inline-block;
             align-items: center;
             /* font-family: "Slackey", sans-serif; */
-            font-family: "Happy Monkey", system-ui;
+            /* font-family: "Happy Monkey", system-ui; */
+            font-family: "Poppins", sans-serif;
             font-weight: 800;
             font-style: normal;
             opacity: 0;
@@ -47,17 +57,21 @@
             margin: 0;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #0f0f0f;
-            background-color: #fca9ac;
+            /* background-color: #fca9ac; */
+            background-color: #222121;
+            color: white;
             text-align: center;
             border-radius: 0.5vw 0.5vw 0 0;
         }
 
         h3 {
-            width: max-content;
-            margin: 1vw auto 0vw auto;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #fe4141;
-            background-color: rgb(252, 246, 239);
+            width: 20%;
+            padding: 0.5vw 0.5vw;
+            /* margin: 0vw auto 0vw auto; */
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            font-family: "Electrolize", sans-serif;
+            color: #00ff4c;
+            background-color: rgb(37, 38, 91);
             text-align: center;
         }
 
@@ -66,8 +80,12 @@
             top: 2vw;
             left: 50%;
             transform: translate(-50%, 0%);
-            z-index: 0;
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+            z-index: 1;
+        }
+
+        #tvDiv {
+            width: 100%;
+            position: absolute;
         }
 
         #helloWorld,
@@ -75,14 +93,14 @@
             grid-area: helloWorld;
             position: absolute;
             transform: translate(-50%, 0%);
-            z-index: -1;
+            z-index: 0;
         }
 
         #buttons {
-            width: 60%;
+            width: 55%;
             height: max-content;
             background-color: #281206;
-            border: 0.05vw solid rgb(196, 196, 196);
+            /* border: 0.05vw solid rgb(167, 166, 166); */
             margin: 0 auto;
             padding: 0.5vw;
             position: relative;
@@ -91,13 +109,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 0.3vw 0.3vw 0 0;
         }
 
         #hello {
             width: 100%;
-            height: auto;
+            height: 7vw;
             text-align: center;
-            margin: 4vw auto;
+            background-color: #647470;
+            /* margin: 4vw auto; */
         }
 
         p {
@@ -187,34 +207,45 @@
 
 <body>
 
-    <img id="hole2" src="hole2.png"><img id="hole" src="hole.png"><img id="crack2" src="crack2.png"><img id="crack"
-        src="crack.png"><img id="tv" src="tv.png"><video id="helloWorld" autoplay muted loop poster="OtherBack.jpg">
-        <source src="HelloWorld_Other.mp4">
-    </video>
-    <video id="helloWorldGlitch" autoplay muted loop poster="OtherBack.jpg">
-        <source src="Glitch_helloWorld.mp4">
-    </video>
+    <!-- <div id="hello" style="grid-area: title;">
+        <h1 id="H">H</h1>
+        <h1 id="E">E</h1>
+        <h1 id="L1">L</h1>
+        <h1 id="L2">L</h1>
+        <h1 id="O">O</h1>
+        <h1 id="exclamation">!</h1>
+    </div> -->
 
-    <div id="buttons">
-        <button id="home" title="Go to Home Page">HOME</button>
-        <button id="stopVideo" title="Stop the video">🟥</button>
-        <button id="startVideo" title="Restart the video">▶️</button>
-    </div>
+    <!-- <div id="tvDiv">
+        <img id="hole2" src="hole2.png"><img id="hole" src="hole.png"><img id="crack2" src="crack2.png"><img id="crack"
+            src="crack.png"><img id="tv" src="tv.png"><video id="helloWorld" autoplay muted loop poster="OtherBack.jpg">
+            <source src="HelloWorld_Other.mp4">
+        </video>
+        <video id="helloWorldGlitch" autoplay muted loop poster="OtherBack.jpg">
+            <source src="Glitch_helloWorld.mp4">
+        </video>
 
-    <h3 id="broken_note"></h3>
+        <div id="buttons">
+            <button id="home" title="Go to Home Page">HOME</button>
+            <button id="stopVideo" title="Stop the video">🟥</button>
+            <button id="startVideo" title="Restart the video">▶️</button>
+        </div>
 
-    <button id="repair"></button>
+        <h3 id="broken_note"></h3>
+
+        <button id="repair"></button>
+    </div> -->
 
     <div id="container">
 
-        <div id="hello" style="grid-area: title;">
+        <!-- <div id="hello" style="grid-area: title;">
             <h1 id="H">H</h1>
             <h1 id="E">E</h1>
             <h1 id="L1">L</h1>
             <h1 id="L2">L</h1>
             <h1 id="O">O</h1>
             <h1 id="exclamation">!</h1>
-        </div>
+        </div> -->
 
         <div id="contact" style="grid-area: contact;">
             <h2 id="contactTitle" style="grid-area: contactTitle;">What brought you to my<br />portfolio website?</h2>
@@ -241,7 +272,7 @@
             </div>
         </div>
 
-        <div id="game" style="grid-area: game;">
+        <!-- <div id="game" style="grid-area: game;">
             <h2>What brought you to my portfolio website?</h2>
             <p>
                 Have anything tech-related to talk about?
@@ -253,18 +284,42 @@
             <p>
                 Have anything tech related to talk about?
             </p>
+        </div> -->
+    </div>
+
+    <div id="tvDiv">
+        <img id="hole2" src="hole2.png"><img id="hole" src="hole.png"><img id="crack2" src="crack2.png"><img id="crack"
+            src="crack.png"><img id="tv" src="tv.png"><video id="helloWorld" autoplay muted loop poster="OtherBack.jpg">
+            <source src="HelloWorld_Other.mp4">
+        </video>
+        <video id="helloWorldGlitch" autoplay muted loop poster="OtherBack.jpg">
+            <source src="Glitch_helloWorld.mp4">
+        </video>
+
+        <div id="buttons">
+            <button id="home" title="Go to Home Page">HOME</button>
+            <button id="stopVideo" title="Stop the video">🟥</button>
+            <button id="startVideo" title="Restart the video">▶️</button>
         </div>
+
+        <div id="cdNote">
+            <img src="cdPlayer.jpg" id="cdPlayer">
+            <h3 id="broken_note"></h3>
+        </div>
+
+        <button id="repair"></button>
     </div>
 
     <div id="toast">Email ID copied to clipboard</div>
 
     <script>
-        document.querySelector("#hello").addEventListener('click', function () {
-            document.getAnimations().forEach(function (anim) {
-                anim.cancel();
-                anim.play();
-            })
-        })
+
+        // document.querySelector("#hello").addEventListener('click', function () {
+        //     document.getAnimations().forEach(function (anim) {
+        //         anim.cancel();
+        //         anim.play();
+        //     })
+        // })
 
 
         let broken = 0;
@@ -282,8 +337,9 @@
             $('#hole2').hide();
             $('#helloWorldGlitch').hide();
             $('#repair').hide();
-            document.querySelector('#broken_note').innerText = "[Note : Do not touch the TV, it is very old and might break. In case you're curious, try it, ONCE.]";
+            document.querySelector('#broken_note').innerHTML = "<marquee>[Note : Do not touch the TV, it is very old and might break. In case you're curious, try it, ONCE.]</marquee>";
             document.querySelector('#repair').innerText = "Repair the TV";
+            document.querySelector('marquee').setAttribute('scrollamount', '4');
         })
 
         document.querySelector("#tv").addEventListener('click', function () {
@@ -299,10 +355,10 @@
                     broken = 1;
                     brokeCount += 1;
                     if (brokeCount == 1) {
-                        document.querySelector('#broken_note').innerText = "Told you so...\nPlease get it repaired now\n▼";
+                        document.querySelector('#broken_note').innerHTML = "<marquee>Told you so. Please get it repaired now ▼</marquee>";
                     } else if (brokeCount > 1) {
                         if (brokeCount == 2) {
-                            document.querySelector('#broken_note').innerText = "I see you're starting to enjoy this...\nPlease get the TV repaired\n▼";
+                            document.querySelector('#broken_note').innerHTML = "<marquee>I see you're starting to enjoy this. Please get the TV repaired ▼<marquee>";
                         } else if (brokeCount == 3) {
                             document.querySelector('#broken_note').innerText = "You broke it the third time?! Damn, my TV technician is getting rich...\nWilling to get it repaired?\n▼";
                         } else if (brokeCount == 4) {

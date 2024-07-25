@@ -4,13 +4,12 @@ body {
 
 #container {
     column-gap: 2vw;
-    background-size: 30vw;
 }
 
 h1 {
     padding: 0vw 0.5vw;
     font-weight: 900;
-    -webkit-text-stroke: 0.05px #432b1d;
+    -webkit-text-stroke: 1px #432b1d;
 }
 
 h2 {
@@ -19,17 +18,32 @@ h2 {
     padding: 1.5vw 10vw;
 }
 
+#cdPlayer {
+    width: 56%;
+    height: 5vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-bottom: 4vw;
+}
+
 h3 {
     font-size: 1vw;
-    font-weight: 100;
-    padding: 1vw;
-    border-radius: 1vw;
-    border: 0.2vw solid #464646;
+    font-weight: 400;
+    /* border: 0.2vw solid #464646; */
     margin-bottom: 2vw;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#cdNote {
+    display: flex;
 }
 
 #tv {
-    width: 75%;
+    width: 50%;
 }
 
 #crack {
@@ -102,9 +116,9 @@ h3 {
 
 #helloWorld,
 #helloWorldGlitch {
-    max-width: 50%;
-    left: 43%;
-    top: 5vw;
+    max-width: 34%;
+    left: 45%;
+    top: 4vw;
 }
 
 #hello:hover,
