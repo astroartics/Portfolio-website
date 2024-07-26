@@ -95,11 +95,12 @@
     </div>
 
     <div id="main">
-        <div id="welcome">
-            <img id="popUp" src="popUp.png">
-            <div id="welcomeMsg">
-                <img id="vector" src="sanjana_vector.png">
-                <h1 id="hello">
+        <!-- <div id="welcome"> -->
+        <img id="popUp" src="Hola.png">
+        <img id="popUp2" src="Hola2.png">
+        <!-- <div id="welcomeMsg">
+             <img id="vector" src="sanjana_vector.png"> -->
+        <!-- <h1 id="hello">
                     <div class="hola" id="ex1"><small>¡</small></div>
                     <div class="hola" id="H">H</div>
                     <div class="hola" id="O">O</div>
@@ -107,11 +108,11 @@
                     <div class="hola" id="A">A</div>
                     <div class="hola" id="ex2"><small>!</small></div>
                 </h1>
-            </div>
-        </div>
+        </div> -->
+        <!-- </div> -->
 
         <div id="container">
-            <div class="darkBack" style="padding-top: 10vw;">
+            <div id="darkBack1" class="darkBack">
                 <div id="letsLearn">
                     <h2>Let's learn, build and grow<br />together...</h2>
                     <p>
@@ -242,12 +243,12 @@
     <div id="toast">Email ID copied to clipboard</div>
 
     <script>
-        document.querySelector("#hello").addEventListener('click', function () {
-            document.getAnimations().forEach(function (anim) {
-                anim.cancel();
-                anim.play();
-            })
-        })
+        // document.querySelector("#hello").addEventListener('click', function () {
+        //     document.getAnimations().forEach(function (anim) {
+        //         anim.cancel();
+        //         anim.play();
+        //     })
+        // })
 
         function toHome() {
             window.location.href = "../";
@@ -281,6 +282,23 @@
                 });
             });
         }
+
+
+
+        document.querySelector("#popUp").addEventListener('click', function () {
+            document.getAnimations().forEach(function (anim) {
+                console.log("hi");
+                anim.cancel();
+                anim.play();
+            })
+        })
+
+        document.querySelector("#popUp2").addEventListener('click', function () {
+            document.getAnimations().forEach(function (anim2) {
+                anim2.cancel();
+                anim2.play();
+            })
+        })
     </script>
 
     <script src="stuJS.js"></script>

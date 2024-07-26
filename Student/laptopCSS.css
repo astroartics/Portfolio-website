@@ -38,7 +38,9 @@ body {
 #show:hover,
 #gmail:hover,
 #linkedIn:hover,
-#gameBtn {
+#gameBtn,
+#popUp:hover,
+#popUp2:hover {
     cursor: pointer;
 }
 
@@ -94,11 +96,24 @@ h1 {
 }
 
 #popUp {
-    max-width: 45vw;
-    position: relative;
-    top: 4vw;
-    left: 45%;
+    max-width: 33vw;
+    position: absolute;
+    top: 8vw;
+    left: 40%;
     transform: translate(-50%, 0);
+    transform-origin: 0%;
+    animation: pop1 0.5s linear forwards;
+    opacity: 0;
+}
+
+#popUp2 {
+    max-width: 20vw;
+    position: absolute;
+    top: 18vw;
+    left: 63%;
+    transform: translate(-50%, 0);
+    animation: pop2 0.5s linear forwards 0.45s;
+    opacity: 0;
 }
 
 #welcomeMsg {
@@ -115,8 +130,7 @@ h1 {
 }
 
 #welcome {
-    position: relative;
-    right: 21vw;
+    width: 100%;
 }
 
 h2 {
@@ -156,6 +170,11 @@ h5>div {
     transform: translate(-100%, 0);
     border: 0.3vw solid #343434;
     border-radius: 0.8vw;
+}
+
+#darkBack1 {
+    margin-top: 20vw;
+    padding-top: 17vw;
 }
 
 video {
@@ -237,77 +256,6 @@ p {
     display: grid;
     grid-template-areas: 'sourceP1 sourceP2';
     justify-items: center;
-}
-
-.hola {
-    display: inline;
-    opacity: 0;
-    padding: 0.5vw;
-}
-
-#ex1 {
-    animation: enter .8s linear forwards;
-}
-
-#H {
-    animation: enter .4s linear forwards .2s;
-}
-
-#O {
-    animation: enter .4s linear forwards .4s;
-}
-
-#L {
-    animation: enter .4s linear forwards .6s;
-}
-
-#A {
-    animation: enter .4s linear forwards .8s;
-}
-
-#H,
-#L {
-    color: #F87472;
-}
-
-#O,
-#A {
-    color: #ff995e;
-}
-
-#ex2 {
-    animation: enter .4s linear forwards 1s;
-}
-
-@keyframes enter {
-    0% {
-        transform: translateX(200%);
-        opacity: 0;
-    }
-
-    5% {
-        opacity: 0.7;
-    }
-
-    50% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-
-    65% {
-        transform: translateX(19%);
-        opacity: 1;
-    }
-
-    75% {
-        transform: translateX(24%);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
 }
 
 .darkBack {
@@ -435,3 +383,122 @@ p {
     animation: appear 0.2s;
     display: none;
 }
+
+
+
+@keyframes pop1 {
+
+    0% {
+        opacity: 0;
+        max-width: 10vw;
+    }
+
+    50% {
+        opacity: 1;
+        max-width: 35vw;
+    }
+
+    70% {
+        max-width: 29vw;
+    }
+
+    100% {
+        max-width: 33vw;
+        opacity: 1;
+    }
+}
+
+@keyframes pop2 {
+    0% {
+        opacity: 0;
+        max-width: 10vw;
+    }
+
+    50% {
+        opacity: 1;
+        max-width: 22vw;
+    }
+
+    70% {
+        max-width: 18vw;
+    }
+
+    100% {
+        max-width: 20vw;
+        opacity: 1;
+    }
+}
+
+
+/*
+.hola {
+    display: inline;
+    opacity: 0;
+    padding: 0.5vw;
+}
+
+#ex1 {
+    animation: enter .8s linear forwards;
+}
+
+#H {
+    animation: enter .4s linear forwards .2s;
+}
+
+#O {
+    animation: enter .4s linear forwards .4s;
+}
+
+#L {
+    animation: enter .4s linear forwards .6s;
+}
+
+#A {
+    animation: enter .4s linear forwards .8s;
+}
+
+#H,
+#L {
+    color: #F87472;
+}
+
+#O,
+#A {
+    color: #ff995e;
+}
+
+#ex2 {
+    animation: enter .4s linear forwards 1s;
+}
+
+@keyframes enter {
+    0% {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    65% {
+        transform: translateX(19%);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateX(24%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+    */
