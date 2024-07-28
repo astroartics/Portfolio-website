@@ -5,7 +5,6 @@ const settings = document.querySelector('#settings');
 const buttons = document.querySelector('#buttons');
 const close = document.querySelector('#close');
 const instructions = document.querySelector('#instructions');
-const help = document.querySelector('#help');
 const levelText = document.querySelector('#level');
 const Game = document.querySelector('#Game');
 const switchToKeyboard = document.querySelector('#switch');
@@ -153,7 +152,6 @@ function checkCollision(object1, object2) {
         switchToKeyboard.setAttribute('disabled', true);
 
         instructions.removeAttribute('disabled');
-        help.setAttribute('href', 'instructions.html');
         instructions.style.backgroundColor = 'beige';
         fakeContext.fillText("Image may take some time to load...", 600, 300);
         //fakeContext.fillText("COLLISION DETECTED!", 600, 250);
@@ -304,7 +302,7 @@ window.addEventListener('load', function () {
         levelText.innerText = "Level : " + level + "      Score : " + score;
         document.querySelector('button').style.fontSize = '1.2vw';
         restart.style.fontSize = '1.2vw';
-        help.style.fontSize = '1.2vw';
+        instructions.style.fontSize = '1.2vw';
         document.querySelector('#back').style.fontSize = '1.2vw';
         close.style.fontSize = '1.2vw';
         levelText.style.fontSize = '1.2vw';
@@ -320,7 +318,6 @@ window.addEventListener('load', function () {
         level = 1;
         score = 0;
         instructions.setAttribute('disabled', true);
-        help.setAttribute('href', '#');
         instructions.style.backgroundColor = 'rgb(203, 203, 182)';
         restart.removeAttribute('disabled');
         switchToKeyboard.removeAttribute('disabled');
@@ -459,7 +456,6 @@ window.addEventListener('load', function () {
 
     restart.addEventListener('click', function () {
         instructions.setAttribute('disabled', true);
-        help.setAttribute('href', '#');
         instructions.style.backgroundColor = 'rgb(203, 203, 182)';
         restartGame(0, 0);
     });
