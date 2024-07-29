@@ -1,11 +1,10 @@
 body {
-    /* background-size: 70vw; */
     margin: 0;
 }
 
 #container {
     column-gap: 4vw;
-    /* background-size: 70vw; */
+    background-size: 70vw;
 }
 
 #toast {
@@ -13,7 +12,7 @@ body {
 }
 
 h1 {
-    padding: 5vw 0.5vw 0vw 0.5vw;
+    padding: 2vw 0.5vw;
     -webkit-text-stroke: 0.1vw #331d11;
 }
 

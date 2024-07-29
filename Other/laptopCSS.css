@@ -1,15 +1,17 @@
 body {
-    /* background-size: 30vw; */
+    margin: 0;
 }
 
 #container {
+    background-size: 30vw;
     column-gap: 2vw;
 }
 
 h1 {
     padding: 0vw 0.5vw;
     font-weight: 900;
-    -webkit-text-stroke: 1px #432b1d;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 0.05vw 0.05vw 0.2vw rgb(0, 0, 0), 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 0.434);
 }
 
 h2 {
@@ -93,7 +95,7 @@ h3 {
     padding: 0.5vw 1vw;
     background-color: rgb(154, 215, 251);
     border-radius: 0.5vw;
-    margin: 2vw 0 0 0;
+    margin: 1vw 0 0 0;
 }
 
 #stopVideo {
@@ -132,7 +134,7 @@ h3 {
 #H {
     animation: letterLeft 0.4s linear forwards 0.45s;
     color: #FEBE98;
-    font-size: 3.8vw;
+    font-size: 3.6vw;
 }
 
 #E {
@@ -157,22 +159,28 @@ h3 {
 #O {
     animation: letterRight 0.4s linear forwards 0.3s;
     color: #FEBE98;
-    font-size: 4.3vw;
+    font-size: 4.5vw;
 }
 
 #exclamation {
     animation: letterRight 0.4s linear forwards 0.45s;
-    color: #713d1e;
-    font-size: 4.5vw;
+    color: #925836;
+    font-size: 4vw;
+}
+
+#contactVidBack {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0.477)), url('contactVidBack.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #contactVid {
     max-width: 20vw;
-    margin: 2.5vw;
+    margin: 1vw auto 0 auto;
 }
 
 #contact {
-    width: max-content;
+    width: 50vw;
     max-width: 70vw;
     background-color: white;
     border: 0.2vw solid #343434;
@@ -180,7 +188,7 @@ h3 {
     margin: 4vw auto;
     text-align: center;
     display: grid;
-    grid-template-areas: 'contactTitle contactTitle' 'contactPara video' 'details video';
+    grid-template-areas: 'contactTitle' 'video' 'contactPara' 'details';
     column-gap: 2vw;
 }
 
@@ -227,16 +235,16 @@ h3 {
     border-radius: 20%;
 }
 
-#linkedIn {
-    margin-bottom: 3vw;
+#gmail {
+    margin-right: 4vw;
 }
 
 #contactDetails {
     width: max-content;
     height: max-content;
-    margin: 0 auto;
+    margin: 0 auto 2vw auto;
     display: grid;
-    grid-template-areas: 'dropEmail gmail' 'connect LI';
+    grid-template-areas: 'dropEmail gmail connect LI';
     align-items: center;
     justify-items: center;
     font-size: 1.2vw;

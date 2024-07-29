@@ -212,6 +212,10 @@ p {
         border-radius: 2.5vw 2.5vw 0 0;
     }
 
+    h5 {
+        font-size: 3vw;
+    }
+
     #container {
         margin-top: 40vw;
         max-width: 100vw;
@@ -275,7 +279,7 @@ p {
         top: 20vw;
         left: 40%;
     }
-    
+
     #popUp2 {
         max-width: 35vw;
         top: 40vw;
@@ -288,37 +292,37 @@ p {
             opacity: 0;
             max-width: 30vw;
         }
-    
+
         50% {
             opacity: 1;
             max-width: 57vw;
         }
-    
+
         70% {
             max-width: 48vw;
         }
-    
+
         100% {
             max-width: 55vw;
             opacity: 1;
         }
     }
-    
+
     @keyframes pop2 {
         0% {
             opacity: 0;
             max-width: 15vw;
         }
-    
+
         50% {
             opacity: 1;
             max-width: 37vw;
         }
-    
+
         70% {
             max-width: 31vw;
         }
-    
+
         100% {
             max-width: 35vw;
             opacity: 1;
@@ -425,6 +429,10 @@ p {
         border-radius: 2.7vw 2.7vw 0 0;
     }
 
+    h5 {
+        font-size: 1.7vw;
+    }
+
     #container {
         margin-top: 20vw;
         max-width: 100%;
@@ -515,7 +523,7 @@ p {
         top: 13vw;
         left: 40%;
     }
-    
+
     #popUp2 {
         max-width: 25vw;
         top: 23vw;
@@ -528,37 +536,37 @@ p {
             opacity: 0;
             max-width: 20vw;
         }
-    
+
         50% {
             opacity: 1;
             max-width: 43vw;
         }
-    
+
         70% {
             max-width: 38vw;
         }
-    
+
         100% {
             max-width: 40vw;
             opacity: 1;
         }
     }
-    
+
     @keyframes pop2 {
         0% {
             opacity: 0;
             max-width: 10vw;
         }
-    
+
         50% {
             opacity: 1;
             max-width: 28vw;
         }
-    
+
         70% {
             max-width: 21vw;
         }
-    
+
         100% {
             max-width: 25vw;
             opacity: 1;
@@ -593,7 +601,7 @@ p {
     }
 
     div ul li a {
-        font-size: 2vw;
+        font-size: 1.7vw;
         padding: 2vw 0;
     }
 
