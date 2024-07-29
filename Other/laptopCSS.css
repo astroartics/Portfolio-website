@@ -256,6 +256,7 @@ h3 {
     bottom: 1.5vw;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 10;
     text-align: center;
     background-color: #1a1919a6;
     color: rgb(255, 255, 255);
