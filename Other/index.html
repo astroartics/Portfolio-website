@@ -35,7 +35,7 @@
             /* background-color: #F2E9D9; */
             width: 100%;
             display: grid;
-            grid-template-areas: 'title' 'tvDiv' 'contact';
+            grid-template-areas: 'title' 'tvDiv' 'facts' 'contact';
             grid-template-columns: 100%;
             align-items: center;
             justify-content: center;
@@ -92,7 +92,7 @@
             width: 100%;
             margin: 0 auto;
             /* position: absolute; */
-            padding-bottom: 2vw;
+            padding: 1vw 0vw 2vw 0vw;
             background-color: white;
             grid-area: tvDiv;
         }
@@ -233,7 +233,7 @@
             <h1 id="exclamation">!</h1>
         </div>
 
-        
+
 
         <div id="tvDiv">
             <img id="hole2" src="hole2.png"><img id="hole" src="hole.png"><img id="crack2" src="crack2.png"><img
@@ -259,7 +259,22 @@
             <button id="repair"></button>
         </div>
 
-        
+
+
+
+        <div id="facts" style="grid-area: facts;">
+            <h2 id="factsTitle" style="grid-area: factsTitle;">Here are some random<br />facts for you
+            </h2>
+            <div id="radioButtons" style="background-color: white; text-align: center;">
+                <input type="radio" name="factType" value="insect" id="insectFactsRadio"><label
+                    for="insectFactsRadio">Insect facts</label>
+                <input type="radio" name="factType" value="photoFactsRadio"><label for="photoFactsRadio">Photography
+                    facts</label>
+                <input type="radio" name="factType" value="artFactsRadio"><label for="artFactsRadio">Art-e-facts</label>
+            </div>
+        </div>
+
+
 
         <div id="contact" style="grid-area: contact;">
             <h2 id="contactTitle" style="grid-area: contactTitle;">What brought you to my<br />portfolio website?</h2>

@@ -14,6 +14,7 @@ body {
 h1 {
     padding: 1vw 0.5vw;
     -webkit-text-stroke: 0.1vw #331d11;
+    text-shadow: 0.5vw 0.5vw 0.4vw rgb(0, 0, 0), 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 0.434);
 }
 
 h2,
@@ -235,23 +236,23 @@ h3 {
 
     #crack {
         max-width: 23vw;
-        top: 28vw;
+        top: 29vw;
     }
 
     #crack2 {
         max-width: 10vw;
-        top: 45vw;
+        top: 46vw;
     }
 
     #hole {
         max-width: 11vw;
-        top: 21vw;
+        top: 22vw;
         right: 5%;
     }
 
     #hole2 {
         max-width: 5vw;
-        top: 33vw;
+        top: 34vw;
         right: 4%;
     }
 
@@ -268,7 +269,7 @@ h3 {
     #helloWorldGlitch {
         max-width: 65%;
         left: 41%;
-        top: 22vw;
+        top: 23vw;
     }
 
     #repair {
@@ -343,23 +344,23 @@ h3 {
 
     #crack {
         max-width: 20vw;
-        top: 21vw;
+        top: 22vw;
     }
 
     #crack2 {
         max-width: 7vw;
-        top: 33vw;
+        top: 34vw;
     }
 
     #hole {
         max-width: 8vw;
-        top: 18vw;
+        top: 19vw;
         right: 16%;
     }
 
     #hole2 {
         max-width: 3vw;
-        top: 26vw;
+        top: 27vw;
         right: 18%;
     }
 
@@ -377,7 +378,7 @@ h3 {
     #helloWorldGlitch {
         max-width: 48%;
         left: 43%;
-        top: 17vw;
+        top: 18vw;
     }
 
     #repair {
