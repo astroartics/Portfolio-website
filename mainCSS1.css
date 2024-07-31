@@ -1,6 +1,7 @@
 body {
     margin: 0;
     max-height: 100vh;
+    background-color: #464646;
 }
 
 video {
@@ -75,6 +76,7 @@ h2 {
 }
 
 #info {
+    width: 100%;
     grid-area: info;
 }
 

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #fefefe;
+    background-color: #464646;
     max-height: 100vh;
     overflow-x: hidden;
 }
@@ -69,6 +69,7 @@ h2 {
 }
 
 #info {
+    width: 100%;
     grid-area: info;
 }
 
@@ -102,14 +103,14 @@ h2 {
     background-color: #464646;
 }
 
-#footer {
+/* #footer {
     width: 100vw;
     height: 30vh;
     position: absolute;
     bottom: 0;
     margin: 0;
     background-color: #464646;
-}
+} */
 
 @media screen and (orientation: portrait) {
 
@@ -139,9 +140,9 @@ h2 {
         padding: 3% 5%;
     }
 
-    #footer {
+    /* #footer {
         display: block;
-    }
+    } */
 }
 
 @media screen and (orientation: landscape) {
@@ -176,7 +177,7 @@ h2 {
         padding: 2% 5%;
     }
 
-    #footer {
+    /* #footer {
         display: none;
-    }
+    } */
 }
