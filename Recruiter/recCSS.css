@@ -52,6 +52,7 @@ h4 {
 }
 
 h5 {
+    width: 40vw;
     max-width: 40vw;
     font-size: 0.9vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -299,7 +300,8 @@ hr {
     color: rgb(194, 194, 247);
 }
 
-#resumeImg {
+.resumePreview {
+    width: 40vw;
     max-width: 40vw;
     margin: 0 auto;
 }
@@ -349,7 +351,7 @@ hr {
     grid-area: moreLinksTitle;
     font-size: 1.2vw;
     background-color: rgb(255, 216, 193);
-    margin: auto;
+    margin: 0 auto;
     padding: 1.5vw;
 }
 
@@ -362,6 +364,8 @@ hr {
 }
 
 .footerH5 {
+    display: inline;
+    width: max-content;
     padding: 0vw 3vw;
     margin: 0.2vw;
 }
@@ -384,7 +388,7 @@ footer {
     background-size: contain;
     display: grid;
     grid-template-areas: 'footerTitle footerSymbols footerLinks . . . . .';
-    grid-template-columns: max-content auto;
+    grid-template-columns: max-content;
     overflow: hidden;
 }
 
