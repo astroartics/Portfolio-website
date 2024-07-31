@@ -153,11 +153,14 @@ hr {
     grid-area: footerLinks;
     background-color: rgb(245, 192, 162);
     padding: 2vw;
+    display: grid;
+    grid-template-areas: 'moreLinksTitle' 'footerh51' 'footerh52';
 }
 
 .footerH5 {
     padding: 0vw 3vw;
     margin: 0.3vw;
+    display: inline;
 }
 
 

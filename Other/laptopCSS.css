@@ -196,24 +196,6 @@ h3 {
     column-gap: 2vw;
 }
 
-#game,
-#projects {
-    width: 40vw;
-    max-width: 40vw;
-    background-color: white;
-    border: 0.2vw solid #343434;
-    border-radius: 0.8vw;
-    margin: 3vw auto;
-    text-align: center;
-}
-
-#game>h2,
-#projects>h2 {
-    /* background-color: rgb(96, 200, 165); */
-    /* background-color: rgb(252, 225, 188); */
-    background-color: #ffcbad;
-}
-
 #contact>p {
     padding: 3vw;
     font-size: 1.2vw;

@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    padding: 2vw 0.5vw;
+    padding: 1vw 0.5vw;
     -webkit-text-stroke: 0.1vw #331d11;
 }
 
@@ -43,38 +43,28 @@ h3 {
 }
 
 #crack {
-    max-width: 23vw;
     position: absolute;
-    top: 30vw;
     left: 52%;
     transform: translate(-50%, 0%);
     z-index: 4;
 }
 
 #crack2 {
-    max-width: 10vw;
     position: absolute;
-    top: 47vw;
     left: 33%;
     transform: translate(-50%, 0%);
     z-index: 4;
 }
 
 #hole {
-    max-width: 11vw;
     position: absolute;
-    top: 23vw;
-    right: 5%;
     transform: translate(-50%, 0%);
     z-index: 4;
     opacity: 0.85;
 }
 
 #hole2 {
-    max-width: 5vw;
     position: absolute;
-    top: 35vw;
-    right: 4%;
     transform: translate(-50%, 0%);
     z-index: 4;
     opacity: 0.85;
@@ -130,17 +120,12 @@ h3 {
 
 #O {
     animation: letterRight 0.4s linear forwards 0.3s;
-    color: #FEBE98;
+    color: #fdc5a5;
 }
 
 #exclamation {
     animation: letterRight 0.4s linear forwards 0.45s;
-    color: #713d1e;
-}
-
-#contactVid {
-    max-width: 50vw;
-    margin: 2.5vw auto;
+    color: #db956c;
 }
 
 #contact {
@@ -148,26 +133,8 @@ h3 {
     margin: 4vw auto;
     text-align: center;
     display: grid;
-    grid-template-areas: 'contactTitle' 'contactPara' 'details' 'video';
+    grid-template-areas: 'contactTitle' 'video' 'contactPara' 'details';
     column-gap: 2vw;
-}
-
-#game,
-#projects {
-    width: 40vw;
-    max-width: 40vw;
-    background-color: white;
-    border: 0.2vw solid #343434;
-    border-radius: 0.8vw;
-    margin: 3vw auto;
-    text-align: center;
-}
-
-#game>h2,
-#projects>h2 {
-    /* background-color: rgb(96, 200, 165); */
-    /* background-color: rgb(252, 225, 188); */
-    background-color: #ffcbad;
 }
 
 #contact>p {
@@ -194,18 +161,21 @@ h3 {
     border-radius: 20%;
 }
 
-#linkedIn {
-    margin-bottom: 3vw;
-}
-
 #contactDetails {
-    width: 80vw;
+    width: max-content;
     height: max-content;
     margin: 0 auto;
     display: grid;
     grid-template-areas: 'dropEmail gmail' 'connect LI';
     align-items: center;
     justify-items: center;
+    padding-bottom: 3vw;
+}
+
+#contactVidBack {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0.477)), url('contactVidBack.png');
+    background-repeat: no-repeat;
+    background-size: 90vw 40vw;
 }
 
 @media screen and (orientation: portrait) {
@@ -224,11 +194,11 @@ h3 {
     }
 
     #H {
-        font-size: 8.3vw;
+        font-size: 7.5vw;
     }
 
     #L1 {
-        font-size: 8.6vw;
+        font-size: 8.5vw;
     }
 
     #E {
@@ -263,6 +233,28 @@ h3 {
         width: 96%;
     }
 
+    #crack {
+        max-width: 23vw;
+        top: 28vw;
+    }
+
+    #crack2 {
+        max-width: 10vw;
+        top: 45vw;
+    }
+
+    #hole {
+        max-width: 11vw;
+        top: 21vw;
+        right: 5%;
+    }
+
+    #hole2 {
+        max-width: 5vw;
+        top: 33vw;
+        right: 4%;
+    }
+
     #buttons {
         width: 90%;
     }
@@ -276,11 +268,22 @@ h3 {
     #helloWorldGlitch {
         max-width: 65%;
         left: 41%;
-        top: 24vw;
+        top: 22vw;
     }
 
     #repair {
         font-size: 3.5vw;
+    }
+
+    #gmail,
+    #linkedIn {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    #contactVid {
+        max-width: 50vw;
+        margin: 2.5vw auto;
     }
 }
 
@@ -299,28 +302,28 @@ h3 {
     }
 
     #H {
-        font-size: 6.3vw;
+        font-size: 6vw;
     }
 
     #L1 {
-        font-size: 6.6vw;
+        font-size: 6.3vw;
     }
 
     #E {
-        font-size: 7vw;
+        font-size: 6.7vw;
     }
 
     #L2 {
-        font-size: 5vw;
+        font-size: 4.8vw;
     }
 
 
     #O {
-        font-size: 6.9vw;
+        font-size: 6.5vw;
     }
 
     #exclamation {
-        font-size: 7.5vw;
+        font-size: 7.1vw;
     }
 
     p {
@@ -328,7 +331,7 @@ h3 {
     }
 
     #contact {
-        width: 80vw;
+        width: 70vw;
         max-width: 80vw;
         border: 0.5vw solid #343434;
         border-radius: 3vw;
@@ -336,6 +339,28 @@ h3 {
 
     #tv {
         width: 70%;
+    }
+
+    #crack {
+        max-width: 20vw;
+        top: 21vw;
+    }
+
+    #crack2 {
+        max-width: 7vw;
+        top: 33vw;
+    }
+
+    #hole {
+        max-width: 8vw;
+        top: 18vw;
+        right: 16%;
+    }
+
+    #hole2 {
+        max-width: 3vw;
+        top: 26vw;
+        right: 18%;
     }
 
     #buttons {
@@ -352,10 +377,21 @@ h3 {
     #helloWorldGlitch {
         max-width: 48%;
         left: 43%;
-        top: 20vw;
+        top: 17vw;
     }
 
     #repair {
         font-size: 2vw;
+    }
+
+    #gmail,
+    #linkedIn {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    #contactVid {
+        max-width: 30vw;
+        margin: 2.5vw auto;
     }
 }
