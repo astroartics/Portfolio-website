@@ -45,6 +45,13 @@ window.addEventListener('load', function () {
         link.setAttribute('href', 'mobileCSS.css');
     }
 
+    // let x = window.matchMedia("(min-width: 487px)");
+    // x.addEventListener('change', function () {
+    //     if (x.matches) {
+    //         link.setAttribute('href', 'laptopCSS.css');
+    //     }
+    // });
+
     document.querySelector('head').appendChild(link);
 
     gmail.addEventListener('click', function () {

@@ -35,9 +35,11 @@
             /* background-color: #F2E9D9; */
             width: 100%;
             display: grid;
-            grid-template-areas: 'title title' 'contact contact';
+            grid-template-areas: 'title' 'tvDiv' 'contact';
+            grid-template-columns: 100%;
             align-items: center;
             justify-content: center;
+            padding-bottom: 2vw;
         }
 
         h1 {
@@ -88,9 +90,11 @@
 
         #tvDiv {
             width: 100%;
-            position: absolute;
+            margin: 0 auto;
+            /* position: absolute; */
             padding-bottom: 2vw;
-            /* background-color: #464646; */
+            background-color: white;
+            grid-area: tvDiv;
         }
 
         #cdNote {
@@ -123,7 +127,6 @@
 
         #hello {
             width: 100%;
-            height: max-content;
             text-align: center;
             background-color: #464646;
             display: flex;
@@ -137,7 +140,7 @@
         }
 
         video {
-            outline: 3px solid white;
+            outline: 4px solid white;
             outline-offset: -2.5px;
         }
 
@@ -219,16 +222,40 @@
 
 <body>
 
-    <div id="hello" style="grid-area: title;">
-        <h1 id="H">H</h1>
-        <h1 id="E">E</h1>
-        <h1 id="L1">L</h1>
-        <h1 id="L2">L</h1>
-        <h1 id="O">O</h1>
-        <h1 id="exclamation">!</h1>
-    </div>
-
     <div id="container">
+
+        <div id="hello" style="grid-area: title;">
+            <h1 id="H">H</h1>
+            <h1 id="E">E</h1>
+            <h1 id="L1">L</h1>
+            <h1 id="L2">L</h1>
+            <h1 id="O">O</h1>
+            <h1 id="exclamation">!</h1>
+        </div>
+
+        <div id="tvDiv">
+            <img id="hole2" src="hole2.png"><img id="hole" src="hole.png"><img id="crack2" src="crack2.png"><img
+                id="crack" src="crack.png"><img id="tv" src="tv.png"><video id="helloWorld" autoplay muted loop
+                poster="OtherBack.jpg">
+                <source src="HelloWorld_Other.mp4">
+            </video>
+            <video id="helloWorldGlitch" autoplay muted loop poster="OtherBack.jpg">
+                <source src="Glitch_helloWorld.mp4">
+            </video>
+
+            <div id="buttons">
+                <button id="home" title="Go to Home Page">HOME</button>
+                <button id="stopVideo" title="Stop the video">🟥</button>
+                <button id="startVideo" title="Restart the video">▶️</button>
+            </div>
+
+            <div id="cdNote">
+                <img src="cdPlayer.jpg" id="cdPlayer">
+                <h3 id="broken_note"></h3>
+            </div>
+
+            <button id="repair"></button>
+        </div>
 
         <!-- <div id="hello" style="grid-area: title;">
             <h1 id="H">H</h1>
@@ -267,7 +294,7 @@
         </div>
     </div>
 
-    <div id="tvDiv">
+    <!-- <div id="tvDiv">
         <img id="hole2" src="hole2.png"><img id="hole" src="hole.png"><img id="crack2" src="crack2.png"><img id="crack"
             src="crack.png"><img id="tv" src="tv.png"><video id="helloWorld" autoplay muted loop poster="OtherBack.jpg">
             <source src="HelloWorld_Other.mp4">
@@ -288,7 +315,7 @@
         </div>
 
         <button id="repair"></button>
-    </div>
+    </div> -->
 
     <div id="toast">Email ID copied to clipboard</div>
 

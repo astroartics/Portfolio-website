@@ -4,7 +4,7 @@ body {
 
 #container {
     background-size: 30vw;
-    column-gap: 2vw;
+    /* column-gap: 2vw; */
 }
 
 h1 {
@@ -51,7 +51,7 @@ h3 {
 #crack {
     max-width: 13vw;
     position: absolute;
-    top: 6vw;
+    top: 13vw;
     left: 53%;
     transform: translate(-50%, 0%);
     z-index: 4;
@@ -60,7 +60,7 @@ h3 {
 #crack2 {
     max-width: 5vw;
     position: absolute;
-    top: 15vw;
+    top: 22vw;
     left: 40%;
     transform: translate(-50%, 0%);
     z-index: 4;
@@ -69,7 +69,7 @@ h3 {
 #hole {
     max-width: 5vw;
     position: absolute;
-    top: 8.5vw;
+    top: 15.5vw;
     left: 70%;
     transform: translate(-50%, 0%);
     z-index: 4;
@@ -79,7 +79,7 @@ h3 {
 #hole2 {
     max-width: 2.5vw;
     position: absolute;
-    top: 5vw;
+    top: 12vw;
     left: 68%;
     transform: translate(-50%, 0%);
     z-index: 4;
@@ -118,9 +118,13 @@ h3 {
 
 #helloWorld,
 #helloWorldGlitch {
-    max-width: 34%;
+    max-width: 35%;
     left: 45%;
-    top: 4vw;
+    top: 10.5vw;
+}
+
+#hello {
+    height: 7vw;
 }
 
 #hello:hover,
