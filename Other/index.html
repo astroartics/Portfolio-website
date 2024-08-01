@@ -128,7 +128,7 @@
         #hello {
             width: 100%;
             text-align: center;
-            background-color: #464646;
+            background-color: #565656;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -275,7 +275,7 @@
         <div id="facts" style="grid-area: facts;">
             <h2 id="factsTitle" style="grid-area: factsTitle;">Here are some random<br />facts for you
             </h2>
-            <div id="radioButtons" style="background-color: white; text-align: center;">
+            <div id="radioButtons">
                 <div class="radioGroup" id="RG1">
                     <input type="radio" name="factType" value="insect" id="insectFactsRadio" checked><label
                         for="insectFactsRadio">Insect facts</label>
@@ -291,28 +291,64 @@
             </div>
 
 
-            <p id="factsPara" class="factsPara" style="background-color: white; text-align: center;"></p>
+            <div id="factsPara" class="factsPara"></div>
 
 
-            <div id="insectPara" class="factsPara" style="background-color: white; text-align: center;">1)
+            <div id="insectPara" class="factsPara">
                 <ul>
-                    <li>Fact 1</li>
-                    <li>Fact 2</li>
-                    <li>Fact 3</li>
+                    <li>Ants can lift and carry more than fifty times their own weight.</li><br />
+                    <li>Insects have been present for about 350 million years, and humans for only 300,000 years.</li>
+                    <br />
+                    <li>Houseflies find sugar with their feet, which are 10 million times more sensitive than human
+                        tongues.</li><br />
+                    <li>It takes about one hundred Monarch Butterflies to weigh an ounce.</li><br />
+                    <li>There are nearly as many species of ants (8,800) as there are species of birds (9,000) in the
+                        world.</li><br />
+                    <li>A ladybird might eat more than 5,000 insects in its lifetime!</li><br />
+                    <li>Fruit flies were the first living creatures to be sent into space.</li><br />
+                    <li>A single honeybee colony can produce around 100kg of honey each year – that’s 220 jars!</li>
+                    <br />
+                    <li>Mantises Can Turn Their Heads a Full 180 Degrees</li><br />
+                    <li>The aphids provide honeydew to the ants while the ants will take the aphids into their nests at
+                        night to protect them from predators and escort them back to a plant the next morning.</li>
                 </ul>
             </div>
-            <div id="photoPara" class="factsPara" style="background-color: white; text-align: center;">2)
+            <div id="photoPara" class="factsPara">
                 <ul>
-                    <li>Fact 1</li>
-                    <li>Fact 2</li>
-                    <li>Fact 3</li>
+                    <li>The word “Photography” comes from the Greek, meaning to draw with light.</li><br />
+                    <li>Some of the most popular subjects of photography in the 1800s were corpses.</li><br />
+                    <li>The first digital camera was invented all the way back in 1975 by Steve Sasson.</li><br />
+                    <li>The most viewed photograph in the history is the Windows XP’s default wallpaper.</li><br />
+                    <li>The human eye equivalent of f-stop is f/8.3 in bright conditions and f/2 in dark conditions.
+                    </li><br />
+                    <li>The most liked image on Instagram is not some celebrity selfie or influencer post. It's an egg.
+                    </li><br />
+                    <li>The First Photo Booth Was Created in New York City in 1925.</li><br />
+                    <li>Each end of a panorama captures different points in time.</li><br />
+                    <li>The First Color Photo Wasn’t Taken Until 1861.</li><br />
+                    <li>Camera Obscura Literally Means Dark Room.</li>
                 </ul>
             </div>
-            <div id="artPara" class="factsPara" style="background-color: white; text-align: center;">3)
+            <div id="artPara" class="factsPara">
                 <ul>
-                    <li>Fact 1</li>
-                    <li>Fact 2</li>
-                    <li>Fact 3</li>
+                    <li>Art used to be an Olympic event.</li><br />
+                    <li>The Mona Lisa has her own mailbox in the Louvre because of all the love letters she receives.
+                    </li><br />
+                    <li>Roman Sculptures Were Designed With Removable Heads So That One Head Could Be Swapped Out For
+                        Another.</li><br />
+                    <li>Leonardo Da Vinci Was Ambidextrous - Able To Write With One Hand While Simultaneously Drawing
+                        With The Other.</li><br />
+                    <li>Recent Discovery Made In Spain Found That The Oldest Paintings Discovered To Date, Made By
+                        Humans, Were Made More Than 42,000 Years Ago.</li><br />
+                    <li>Leonardo Da Vinci Was A Procrastinator.</li><br />
+                    <li>Picasso Believed That Art Is Done To Wash Away The Dust Of Our Daily Lives From Our Souls.</li>
+                    <br />
+                    <li>'The Scream', The Most Well-Known Piece By Expressionist Artist Edvard Munch, Exists In Five
+                        Different Versions.</li><br />
+                    <li>Pablo Picasso Was A Prime Suspect In The Theft Of The Mona Lisa In 1911, But He Was Proven To Be
+                        Innocent After The Trials.</li><br />
+                    <li>Pablo Picasso Was An Animal Lover Who Had A Monkey, Goat, Owl, Turtle, Lots Of Cats And Dogs.
+                    </li>
                 </ul>
             </div>
         </div>
@@ -382,6 +418,7 @@
             document.querySelector('marquee').setAttribute('scrollamount', '4.5');
 
             document.querySelector('#factsPara').innerHTML = document.querySelector('#insectPara').innerHTML;
+            document.querySelector('#factsPara').style.backgroundImage = "url('insectBack.png')";
         })
 
         document.querySelector("#tv").addEventListener('click', function () {
@@ -479,8 +516,16 @@
                     setTimeout(function () {
                         $('#factsPara').fadeIn('fast');
                         document.querySelector('#factsPara').innerHTML = document.querySelector(`#${paraName}`).innerHTML;
-                    }, 400)
-                    $('#factsPara').fadeOut(400);
+                    }, 100)
+                    $('#factsPara').fadeOut(100);
+                }
+
+                if (radioBtn == 'insectFactsRadio') {
+                    document.querySelector('#factsPara').style.backgroundImage = "url('insectBack.png')";
+                } else if (radioBtn == 'photoFactsRadio') {
+                    document.querySelector('#factsPara').style.backgroundImage = "url('photoBack.png')";
+                } else if (radioBtn == 'artFactsRadio') {
+                    document.querySelector('#factsPara').style.backgroundImage = "url('artBack.png')";
                 }
             });
         }
@@ -502,8 +547,16 @@
                     setTimeout(function () {
                         $('#factsPara').fadeIn('fast');
                         document.querySelector('#factsPara').innerHTML = document.querySelector(`#${paraName}`).innerHTML;
-                    }, 400)
-                    $('#factsPara').fadeOut(400);
+                    }, 300)
+                    $('#factsPara').fadeOut(300);
+                }
+
+                if (setChecked == 'insectFactsRadio') {
+                    document.querySelector('#factsPara').style.backgroundImage = "url('insectBack.png')";
+                } else if (setChecked == 'photoFactsRadio') {
+                    document.querySelector('#factsPara').style.backgroundImage = "url('photoBack.png')";
+                } else if (setChecked == 'artFactsRadio') {
+                    document.querySelector('#factsPara').style.backgroundImage = "url('artBack.png')";
                 }
             });
         }
