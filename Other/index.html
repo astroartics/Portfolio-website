@@ -215,6 +215,15 @@
                 opacity: 0;
             }
         }
+
+        .radioGroup {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #0f0f0f;
+            border: 0.1vw solid #464646;
+        }
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -262,17 +271,54 @@
 
 
 
+
         <div id="facts" style="grid-area: facts;">
             <h2 id="factsTitle" style="grid-area: factsTitle;">Here are some random<br />facts for you
             </h2>
             <div id="radioButtons" style="background-color: white; text-align: center;">
-                <input type="radio" name="factType" value="insect" id="insectFactsRadio"><label
-                    for="insectFactsRadio">Insect facts</label>
-                <input type="radio" name="factType" value="photoFactsRadio"><label for="photoFactsRadio">Photography
-                    facts</label>
-                <input type="radio" name="factType" value="artFactsRadio"><label for="artFactsRadio">Art-e-facts</label>
+                <div class="radioGroup" id="RG1">
+                    <input type="radio" name="factType" value="insect" id="insectFactsRadio" checked><label
+                        for="insectFactsRadio">Insect facts</label>
+                </div>
+                <div class="radioGroup" id="RG2" onclick="document.querySelector('#photoFactsRadio').checked=true">
+                    <input type="radio" name="factType" value="photography" id="photoFactsRadio"><label
+                        for="photoFactsRadio">Photography
+                        facts</label>
+                </div>
+                <div class="radioGroup" id="RG3" onclick="document.querySelector('#artFactsRadio').checked=true"><input
+                        type="radio" name="factType" value="art" id="artFactsRadio"><label
+                        for="artFactsRadio">Art-e-facts</label></div>
+            </div>
+
+
+            <p id="factsPara" class="factsPara" style="background-color: white; text-align: center;"></p>
+
+
+            <div id="insectPara" class="factsPara" style="background-color: white; text-align: center;">1)
+                <ul>
+                    <li>Fact 1</li>
+                    <li>Fact 2</li>
+                    <li>Fact 3</li>
+                </ul>
+            </div>
+            <div id="photoPara" class="factsPara" style="background-color: white; text-align: center;">2)
+                <ul>
+                    <li>Fact 1</li>
+                    <li>Fact 2</li>
+                    <li>Fact 3</li>
+                </ul>
+            </div>
+            <div id="artPara" class="factsPara" style="background-color: white; text-align: center;">3)
+                <ul>
+                    <li>Fact 1</li>
+                    <li>Fact 2</li>
+                    <li>Fact 3</li>
+                </ul>
             </div>
         </div>
+
+
+
 
 
 
@@ -304,29 +350,6 @@
         </div>
     </div>
 
-    <!-- <div id="tvDiv">
-        <img id="hole2" src="hole2.png"><img id="hole" src="hole.png"><img id="crack2" src="crack2.png"><img id="crack"
-            src="crack.png"><img id="tv" src="tv.png"><video id="helloWorld" autoplay muted loop poster="OtherBack.jpg">
-            <source src="HelloWorld_Other.mp4">
-        </video>
-        <video id="helloWorldGlitch" autoplay muted loop poster="OtherBack.jpg">
-            <source src="Glitch_helloWorld.mp4">
-        </video>
-
-        <div id="buttons">
-            <button id="home" title="Go to Home Page">HOME</button>
-            <button id="stopVideo" title="Stop the video">🟥</button>
-            <button id="startVideo" title="Restart the video">▶️</button>
-        </div>
-
-        <div id="cdNote">
-            <img src="cdPlayer.jpg" id="cdPlayer">
-            <h3 id="broken_note"></h3>
-        </div>
-
-        <button id="repair"></button>
-    </div> -->
-
     <div id="toast">Email ID copied to clipboard</div>
 
     <script>
@@ -357,6 +380,8 @@
             document.querySelector('#broken_note').innerHTML = "<marquee>[Note : Do not touch the TV, it is very old and might break. In case you're curious, try it, ONCE.]</marquee>";
             document.querySelector('#repair').innerText = "Repair the TV";
             document.querySelector('marquee').setAttribute('scrollamount', '4.5');
+
+            document.querySelector('#factsPara').innerHTML = document.querySelector('#insectPara').innerHTML;
         })
 
         document.querySelector("#tv").addEventListener('click', function () {
@@ -443,6 +468,51 @@
                 broken = 0;
             }
         });
+
+
+
+
+        //NEW
+        function changeParaContent(radioBtn, paraName) {
+            document.querySelector(`#${radioBtn}`).addEventListener('click', function () {
+                if ((document.querySelector('#factsPara').innerHTML) != (document.querySelector(`#${paraName}`).innerHTML)) {
+                    setTimeout(function () {
+                        $('#factsPara').fadeIn('fast');
+                        document.querySelector('#factsPara').innerHTML = document.querySelector(`#${paraName}`).innerHTML;
+                    }, 400)
+                    $('#factsPara').fadeOut(400);
+                }
+            });
+        }
+
+        changeParaContent('insectFactsRadio', 'insectPara');
+        changeParaContent('photoFactsRadio', 'photoPara');
+        changeParaContent('artFactsRadio', 'artPara');
+
+        document.querySelector('#RG1').classList.add('radioGroupColor');
+
+        function radioGroupColor(addClassTo, setChecked, removeClassFrom1, removeClassFrom2, paraName) {
+            document.querySelector(`#${addClassTo}`).addEventListener('click', function () {
+                document.querySelector(`#${setChecked}`).checked = true;
+                document.querySelector(`#${addClassTo}`).classList.add('radioGroupColor');
+                document.querySelector(`#${removeClassFrom1}`).classList.remove('radioGroupColor');
+                document.querySelector(`#${removeClassFrom2}`).classList.remove('radioGroupColor');
+
+                if ((document.querySelector('#factsPara').innerHTML) != (document.querySelector(`#${paraName}`).innerHTML)) {
+                    setTimeout(function () {
+                        $('#factsPara').fadeIn('fast');
+                        document.querySelector('#factsPara').innerHTML = document.querySelector(`#${paraName}`).innerHTML;
+                    }, 400)
+                    $('#factsPara').fadeOut(400);
+                }
+            });
+        }
+
+        radioGroupColor('RG1', 'insectFactsRadio', 'RG2', 'RG3', 'insectPara');
+        radioGroupColor('RG2', 'photoFactsRadio', 'RG1', 'RG3', 'photoPara');
+        radioGroupColor('RG3', 'artFactsRadio', 'RG1', 'RG2', 'artPara');
+
+
 
     </script>
 
