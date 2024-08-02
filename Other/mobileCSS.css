@@ -297,7 +297,7 @@ h3 {
 
     .factsPara {
         font-size: 3vw;
-        padding: 7vw;
+        padding: 5vw 5vw 5vw 0;
     }
 }
 
@@ -419,7 +419,7 @@ h3 {
 
     .factsPara {
         font-size: 2vw;
-        padding: 3vw;
+        padding: 3vw 3vw 3vw 1vw;
     }
 }
 
@@ -454,7 +454,7 @@ h3 {
 }
 
 #facts {
-    width: 95%;
+    width: 90%;
     margin: 4vw auto 1vw auto;
     border-radius: 3.5vw;
     /* text-align: center; */

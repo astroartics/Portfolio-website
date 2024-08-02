@@ -80,4 +80,23 @@ window.addEventListener('load', function () {
     home.addEventListener('click', function () {
         window.location.href = "../index.html";
     });
+
+
+
+
+
+    // Laazy Loader Acquired !
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        isVisible = entry.isIntersecting;
+        let element = entry.target['id'];
+        if (isVisible) {
+            console.log(element);
+            document.querySelector(`#${element}Div`).style.animation = "appear 500ms linear forwards";
+            document.querySelector(`#${element}Div`).style.visibility = "visible";
+        } else {
+            document.querySelector(`#${element}Div`).style.animation = "";
+            document.querySelector(`#${element}Div`).style.visibility = "hidden";
+        }
+    }))
+    observer.observe(tv);
 });
