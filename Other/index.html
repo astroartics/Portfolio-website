@@ -30,7 +30,7 @@
         }
 
         #container {
-            background-image: url('../body_background.jpg');
+            /* background-image: url('../body_background.jpg'); */
             /* background-image: linear-gradient(to right, #b2b9b7, #5f7973); */
             /* background-color: #F2E9D9; */
             width: 100%;
@@ -92,7 +92,7 @@
             width: 100%;
             margin: 0 auto;
             /* position: absolute; */
-            padding: 1vw 0vw 2vw 0vw;
+            padding: 2vw 0vw;
             background-color: white;
             grid-area: tvDiv;
         }
@@ -216,6 +216,10 @@
             }
         }
 
+        input {
+            accent-color: black;
+        }
+
         .radioGroup {
             display: inline-flex;
             flex-direction: column;
@@ -223,6 +227,18 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #0f0f0f;
             border: 0.1vw solid #464646;
+        }
+
+        #facts>h2 {
+            background-color: #4c4c4c;
+            color: rgb(226, 226, 226);
+            margin: 0 auto;
+        }
+
+        #insectPara,
+        #photoPara,
+        #artPara {
+            display: none;
         }
     </style>
 
@@ -273,21 +289,20 @@
 
 
         <div id="facts" style="grid-area: facts;">
-            <h2 id="factsTitle" style="grid-area: factsTitle;">Here are some random<br />facts for you
+            <h2 id="factsTitle">Here are some random<br />facts for you
             </h2>
             <div id="radioButtons">
-                <div class="radioGroup" id="RG1">
+                <div class="radioGroup" id="RG1" style="grid-area: RG1;">
                     <input type="radio" name="factType" value="insect" id="insectFactsRadio" checked><label
                         for="insectFactsRadio">Insect facts</label>
                 </div>
-                <div class="radioGroup" id="RG2" onclick="document.querySelector('#photoFactsRadio').checked=true">
+                <div class="radioGroup" id="RG2" style="grid-area: RG2;">
                     <input type="radio" name="factType" value="photography" id="photoFactsRadio"><label
                         for="photoFactsRadio">Photography
                         facts</label>
                 </div>
-                <div class="radioGroup" id="RG3" onclick="document.querySelector('#artFactsRadio').checked=true"><input
-                        type="radio" name="factType" value="art" id="artFactsRadio"><label
-                        for="artFactsRadio">Art-e-facts</label></div>
+                <div class="radioGroup" id="RG3" style="grid-area: RG3;"><input type="radio" name="factType" value="art"
+                        id="artFactsRadio"><label for="artFactsRadio">Art-e-facts</label></div>
             </div>
 
 
@@ -390,6 +405,10 @@
 
     <script>
 
+        let details = navigator.userAgent;
+        let regexp = /android|iphone|kindle|ipad/i;
+        isMobileDevice = regexp.test(details);
+
         document.querySelector("#hello").addEventListener('click', function () {
             document.getAnimations().forEach(function (anim) {
                 anim.cancel();
@@ -418,7 +437,11 @@
             document.querySelector('marquee').setAttribute('scrollamount', '4.5');
 
             document.querySelector('#factsPara').innerHTML = document.querySelector('#insectPara').innerHTML;
-            document.querySelector('#factsPara').style.backgroundImage = "url('insectBack.png')";
+            if (isMobileDevice) {
+                document.querySelector('#factsPara').style.backgroundColor = "white";
+            } else {
+                document.querySelector('#factsPara').style.backgroundImage = "url('insectBack.png')";
+            }
         })
 
         document.querySelector("#tv").addEventListener('click', function () {
@@ -512,20 +535,25 @@
         //NEW
         function changeParaContent(radioBtn, paraName) {
             document.querySelector(`#${radioBtn}`).addEventListener('click', function () {
+
+                if (isMobileDevice) {
+                    document.querySelector('#factsPara').style.backgroundColor = "white";
+                }
+
+                if (radioBtn == 'insectFactsRadio' && !isMobileDevice) {
+                    document.querySelector('#factsPara').style.backgroundImage = "url('insectBack.png')";
+                } else if (radioBtn == 'photoFactsRadio' && !isMobileDevice) {
+                    document.querySelector('#factsPara').style.backgroundImage = "url('photoBack.png')";
+                } else if (radioBtn == 'artFactsRadio' && !isMobileDevice) {
+                    document.querySelector('#factsPara').style.backgroundImage = "url('artBack.png')";
+                }
+
                 if ((document.querySelector('#factsPara').innerHTML) != (document.querySelector(`#${paraName}`).innerHTML)) {
                     setTimeout(function () {
                         $('#factsPara').fadeIn('fast');
                         document.querySelector('#factsPara').innerHTML = document.querySelector(`#${paraName}`).innerHTML;
                     }, 100)
                     $('#factsPara').fadeOut(100);
-                }
-
-                if (radioBtn == 'insectFactsRadio') {
-                    document.querySelector('#factsPara').style.backgroundImage = "url('insectBack.png')";
-                } else if (radioBtn == 'photoFactsRadio') {
-                    document.querySelector('#factsPara').style.backgroundImage = "url('photoBack.png')";
-                } else if (radioBtn == 'artFactsRadio') {
-                    document.querySelector('#factsPara').style.backgroundImage = "url('artBack.png')";
                 }
             });
         }
@@ -551,11 +579,15 @@
                     $('#factsPara').fadeOut(300);
                 }
 
-                if (setChecked == 'insectFactsRadio') {
+                if (isMobileDevice) {
+                    document.querySelector('#factsPara').style.backgroundColor = "white";
+                }
+
+                if (setChecked == 'insectFactsRadio' && !isMobileDevice) {
                     document.querySelector('#factsPara').style.backgroundImage = "url('insectBack.png')";
-                } else if (setChecked == 'photoFactsRadio') {
+                } else if (setChecked == 'photoFactsRadio' && !isMobileDevice) {
                     document.querySelector('#factsPara').style.backgroundImage = "url('photoBack.png')";
-                } else if (setChecked == 'artFactsRadio') {
+                } else if (setChecked == 'artFactsRadio' && !isMobileDevice) {
                     document.querySelector('#factsPara').style.backgroundImage = "url('artBack.png')";
                 }
             });

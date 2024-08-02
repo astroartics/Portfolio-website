@@ -3,8 +3,8 @@ body {
 }
 
 #container {
-    background-size: 30vw;
-    /* column-gap: 2vw; */
+    /* background-size: 30vw; */
+    /* row-gap: 2vw; */
 }
 
 h1 {
@@ -51,7 +51,7 @@ h3 {
 #crack {
     max-width: 13vw;
     position: absolute;
-    top: 14vw;
+    top: 15vw;
     left: 53%;
     transform: translate(-50%, 0%);
     z-index: 4;
@@ -60,7 +60,7 @@ h3 {
 #crack2 {
     max-width: 5vw;
     position: absolute;
-    top: 23vw;
+    top: 24vw;
     left: 40%;
     transform: translate(-50%, 0%);
     z-index: 4;
@@ -69,7 +69,7 @@ h3 {
 #hole {
     max-width: 5vw;
     position: absolute;
-    top: 16.5vw;
+    top: 17.5vw;
     left: 70%;
     transform: translate(-50%, 0%);
     z-index: 4;
@@ -79,7 +79,7 @@ h3 {
 #hole2 {
     max-width: 2.5vw;
     position: absolute;
-    top: 13vw;
+    top: 14vw;
     left: 68%;
     transform: translate(-50%, 0%);
     z-index: 4;
@@ -120,7 +120,7 @@ h3 {
 #helloWorldGlitch {
     max-width: 35%;
     left: 45%;
-    top: 11.5vw;
+    top: 12.5vw;
 }
 
 #hello {
@@ -240,14 +240,6 @@ label:hover,
 
 
 
-input {
-    accent-color: black;
-}
-
-#facts>h2 {
-    background-color: #fec7a8;
-}
-
 #radioButtons {
     width: max-content;
     margin: 0.5vw auto;
@@ -283,26 +275,20 @@ input {
 }
 
 #facts {
-    width: 75vw;
+    width: 70%;
     margin: 3vw auto 1vw auto;
-    border: 0.2vw solid #343434;
+    border: 0.2vw solid #4c4c4c;
     border-radius: 0.8vw;
-    background-color: rgb(133, 133, 133);
+    /* background-color: rgb(133, 133, 133); */
 }
 
 .factsPara {
-    padding: 3vw;
+    padding: 1vw;
     border-radius: 0 0 0.7vw 0.7vw;
     background-color: rgb(243, 243, 243);
     font-size: 1vw;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-
-#insectPara,
-#photoPara,
-#artPara {
-    display: none;
 }
 
 ul {
