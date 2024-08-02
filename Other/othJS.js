@@ -86,17 +86,18 @@ window.addEventListener('load', function () {
 
 
     // Laazy Loader Acquired !
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-        isVisible = entry.isIntersecting;
-        let element = entry.target['id'];
-        if (isVisible) {
-            console.log(element);
-            document.querySelector(`#${element}Div`).style.animation = "appear 500ms linear forwards";
-            document.querySelector(`#${element}Div`).style.visibility = "visible";
-        } else {
-            document.querySelector(`#${element}Div`).style.animation = "";
-            document.querySelector(`#${element}Div`).style.visibility = "hidden";
-        }
-    }))
-    observer.observe(tv);
+    // const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    //     isVisible = entry.isIntersecting;
+    //     let element = entry.target['id'];
+    //     if (isVisible) {
+    //         console.log(element);
+    //         // document.querySelector(`#${element}Div`).style.animation = "appear 500ms linear forwards";
+    //         document.querySelector(`#${element}`).classList.add('appearClass');
+    //         document.querySelector(`#${element}`).style.visibility = "visible";
+    //     } else {
+    //         document.querySelector(`#${element}`).classList.remove('appearClass');
+    //         document.querySelector(`#${element}`).style.visibility = "hidden";
+    //     }
+    // }))
+    // observer.observe(document.querySelector('#facts'));
 });

@@ -43,6 +43,10 @@ h3 {
     width: 50%;
 }
 
+#tvDiv {
+    margin-bottom: 4vw;
+}
+
 #buttons {
     width: 55%;
     top: 0.1vw;
@@ -276,7 +280,7 @@ label:hover,
 
 #facts {
     width: 70%;
-    margin: 3vw auto 1vw auto;
+    margin: 0vw auto 1vw auto;
     border: 0.2vw solid #4c4c4c;
     border-radius: 0.8vw;
     /* background-color: rgb(133, 133, 133); */

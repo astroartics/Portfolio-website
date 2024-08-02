@@ -96,9 +96,9 @@ h1 {
 }
 
 #popUp {
-    max-width: 33vw;
+    max-width: 30vw;
     position: absolute;
-    top: 8vw;
+    top: 9vw;
     left: 40%;
     transform: translate(-50%, 0);
     transform-origin: 0%;
@@ -107,7 +107,7 @@ h1 {
 }
 
 #popUp2 {
-    max-width: 20vw;
+    max-width: 17vw;
     position: absolute;
     top: 18vw;
     left: 63%;
@@ -371,7 +371,7 @@ p {
 #toast {
     max-width: max-content;
     position: fixed;
-    bottom: 0.5vw;
+    bottom: 1vw;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;

@@ -287,7 +287,6 @@
 
         document.querySelector("#popUp").addEventListener('click', function () {
             document.getAnimations().forEach(function (anim) {
-                console.log("hi");
                 anim.cancel();
                 anim.play();
             })

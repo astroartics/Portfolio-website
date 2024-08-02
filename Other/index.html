@@ -216,6 +216,10 @@
             }
         }
 
+        /* .appearClass {
+            animation: appear 1s linear forwards;
+        }
+
         @keyframes appear {
             0% {
                 opacity: 0;
@@ -226,6 +230,7 @@
             }
 
             50% {
+                transition: 5s;
                 opacity: 0.5;
             }
 
@@ -236,7 +241,7 @@
             100% {
                 opacity: 1;
             }
-        }
+        } */
 
         input {
             accent-color: black;
@@ -271,7 +276,7 @@
 
     <div id="container">
 
-        <div id="hello" style="grid-area: title;">
+        <div id="hello" style="grid-area: title;" class="letterAnimation">
             <h1 id="H">H</h1>
             <h1 id="E">E</h1>
             <h1 id="L1">L</h1>
@@ -560,7 +565,7 @@
 
 
 
-        //NEW
+
         function changeParaContent(radioBtn, paraName) {
             document.querySelector(`#${radioBtn}`).addEventListener('click', function () {
 
@@ -625,6 +630,27 @@
         radioGroupColor('RG2', 'photoFactsRadio', 'RG1', 'RG3', 'photoPara');
         radioGroupColor('RG3', 'artFactsRadio', 'RG1', 'RG2', 'artPara');
 
+
+
+
+
+
+
+
+        //NEW
+        // const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        //     isVisible = entry.isIntersecting;
+        //     let element = entry.target['id'];
+
+        //     if (isVisible) {
+        //         // $(`#${element}`).fadeTo(500, 1);
+        //         $(`#${element}`).animate({ opacity: 1.0 }, 200);
+        //     } else {
+        //         // $(`#${element}`).fadeTo(300, 0);
+        //         $(`#${element}`).animate({ opacity: 0.0 });
+        //     }
+        // }))
+        // observer.observe(document.querySelector('#facts'));
 
 
     </script>
