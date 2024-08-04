@@ -315,7 +315,8 @@ h3 {
 
     #gameBtn,
     #viewProjects {
-        font-size: 3vw;
+        font-size: 3.5vw;
+        border: 0.2vw solid #464646;
     }
 }
 
