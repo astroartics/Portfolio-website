@@ -19,13 +19,19 @@
 
 
     <style>
+        .transitionOut {
+            transform: translateX(-100%);
+            transition: 400ms;
+        }
+
         html {
             scroll-behavior: smooth;
         }
 
         body {
             margin: 0;
-            border-top: 0;
+            border: 0;
+            padding: 0;
             /* background-image: url('../body_background.jpg'); */
         }
 
@@ -34,12 +40,10 @@
             /* background-image: linear-gradient(to right, #b2b9b7, #5f7973); */
             /* background-color: #F2E9D9; */
             width: 100%;
-            display: grid;
-            grid-template-areas: 'title' 'tvDiv' 'facts' 'contact';
-            grid-template-columns: 100%;
+            /* display: grid;
+            grid-template-areas: 'title title' 'tvDiv tvDiv' 'game projects' 'facts facts' 'contact contact';
             align-items: center;
-            justify-content: center;
-            padding-bottom: 2vw;
+            justify-content: center; */
         }
 
         h1 {
@@ -267,6 +271,49 @@
         #artPara {
             display: none;
         }
+
+        #activities {
+            display: grid;
+            justify-content: center;
+            background-image: url('../body_background.jpg');
+        }
+
+        #projects {
+            background-color: rgb(255, 246, 235);
+        }
+
+        #contactDiv {
+            display: grid;
+            grid-template-areas: 'contact';
+            background-image: url('../body_background.jpg');
+        }
+
+        h5 {
+            max-width: 100%;
+            text-align: center;
+            background-color: #535353;
+            color: rgb(241, 241, 241);
+        }
+
+        .otherPage {
+            width: max-content;
+            padding: 0;
+            background-color: #6a6a6a;
+            border: 0;
+            color: rgb(241, 246, 143);
+            margin: 0.3vw 0;
+        }
+
+        .otherPage:hover {
+            color: rgb(192, 193, 255);
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: medium;
+        }
+
+        .otherPage:focus {
+            color: rgb(255, 93, 93);
+        }
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -313,6 +360,21 @@
 
 
 
+
+
+
+
+        <div id="activities">
+            <div id="game" style="grid-area: game;">
+                <h2>Play a 2D Game</h2>
+                <button id="gameBtn" onclick="goToScreen('game')" title="Go to Game Screen">Play Game</button>
+            </div>
+
+            <div id="projects" style="grid-area: projects;">
+                <h2>Check out my projects</h2>
+                <button id="viewProjects" onclick="goToScreen('projects')" title="View Projects">My Projects</button>
+            </div>
+        </div>
 
 
 
@@ -405,33 +467,45 @@
 
 
 
+        <div id="contactDiv">
+            <div id="contact" style="grid-area: contact;">
+                <h2 id="contactTitle" style="grid-area: contactTitle;">What brought you to my<br />portfolio website?
+                </h2>
 
-        <div id="contact" style="grid-area: contact;">
-            <h2 id="contactTitle" style="grid-area: contactTitle;">What brought you to my<br />portfolio website?</h2>
+                <div id="contactVidBack">
+                    <video autoplay loop id="contactVid" muted style="grid-area: video;">
+                        <source src="contactVideo.mp4">
+                    </video>
+                </div>
 
-            <div id="contactVidBack">
-                <video autoplay loop id="contactVid" muted style="grid-area: video;">
-                    <source src="contactVideo.mp4">
-                </video>
-            </div>
+                <p id="contactPara" style="grid-area: contactPara;">
+                    Have anything tech-related to talk about?<br />
+                    I would love to discuss it too! 🤖💻<br />
+                    Just reach out to me<br />
+                </p>
 
-            <p id="contactPara" style="grid-area: contactPara;">
-                Have anything tech-related to talk about?<br />
-                I would love to discuss it too! 🤖💻<br />
-                Just reach out to me<br />
-            </p>
+                <div id="contactDetails" style="grid-area: details;">
+                    <p style="grid-area: dropEmail; padding: 0;">Drop me an email 📧 : </p><a id="goToGmail"><button
+                            id="gmail"
+                            style="background-image: url('../Recruiter/gmail.png'); background-size: cover; grid-area: gmail;"
+                            title="Copy email ID"></button></a>
 
-            <div id="contactDetails" style="grid-area: details;">
-                <p style="grid-area: dropEmail; padding: 0;">Drop me an email 📧 : </p><a id="goToGmail"><button
-                        id="gmail"
-                        style="background-image: url('../Recruiter/gmail.png'); background-size: cover; grid-area: gmail;"
-                        title="Copy email ID"></button></a>
-
-                <p style="grid-area: connect;">Let's connect 🔗 : </p><button id="linkedIn"
-                    style="background-image: url('../Recruiter/linkedIn.png'); background-size: cover; grid-area: LI;"
-                    title="Go to my LinkedIn profile"></button>
+                    <p style="grid-area: connect;">Let's connect 🔗 : </p><button id="linkedIn"
+                        style="background-image: url('../Recruiter/linkedIn.png'); background-size: cover; grid-area: LI;"
+                        title="Go to my LinkedIn profile"></button>
+                </div>
             </div>
         </div>
+
+        <h5 style="margin: 0 auto; padding: 2.5vw; font-weight: 200;">
+            <div>
+                <big>Make sure to check these out</big><br />
+                1) <button title="Go to Recruiter page" class="otherPage"
+                    onclick="otherPage('../Recruiter/index.html')">'Recruiter'</button> page   
+                2) <button title="Go to Student page" class="otherPage"
+                    onclick="otherPage('../Student/index.html')">'Student'</button> page
+            </div>
+        </h5>
     </div>
 
     <div id="toast">Email ID copied to clipboard</div>
@@ -471,7 +545,7 @@
 
             document.querySelector('#factsPara').innerHTML = document.querySelector('#insectPara').innerHTML;
             if (isMobileDevice) {
-                document.querySelector('#factsPara').style.backgroundColor = "white";
+                document.querySelector('#factsPara').style.backgroundColor = "rgb(255, 254, 246)";
             } else {
                 document.querySelector('#factsPara').style.backgroundImage = "url('insectBack.png')";
             }
@@ -570,7 +644,7 @@
             document.querySelector(`#${radioBtn}`).addEventListener('click', function () {
 
                 if (isMobileDevice) {
-                    document.querySelector('#factsPara').style.backgroundColor = "white";
+                    document.querySelector('#factsPara').style.backgroundColor = "rgb(255, 254, 246)";
                 }
 
                 if (radioBtn == 'insectFactsRadio' && !isMobileDevice) {
@@ -613,7 +687,7 @@
                 }
 
                 if (isMobileDevice) {
-                    document.querySelector('#factsPara').style.backgroundColor = "white";
+                    document.querySelector('#factsPara').style.backgroundColor = "rgb(255, 254, 246)";
                 }
 
                 if (setChecked == 'insectFactsRadio' && !isMobileDevice) {
@@ -652,6 +726,39 @@
         // }))
         // observer.observe(document.querySelector('#facts'));
 
+
+        sessionStorage.setItem('pageNo', 3);
+
+        function goToScreen(screen) {
+            $(document).ready(function () {
+                setInterval(function () {
+                    if (screen == 'game') {
+                        window.location = "../Game/Game.html";
+                    } else if (screen == 'projects') {
+                        window.location = "../Recruiter/index.html#projects";
+                    }
+                }, 300);
+                $('body').addClass('transitionOut');
+            });
+        }
+
+        function otherPage(pageURL) {
+            $(document).ready(function () {
+                $.ajax({
+                    url: `${pageURL}`,
+                    success: function () {
+
+                        setInterval(function () {
+                            window.location = `${pageURL}`;
+                        }, 1000);
+                        $('body').addClass('transitionOut');
+                    },
+                    error: function (jqXHR, err) {
+                        console.log("Error");
+                    }
+                });
+            });
+        }
 
     </script>
 

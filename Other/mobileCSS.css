@@ -299,6 +299,14 @@ h3 {
         font-size: 3vw;
         padding: 5vw 5vw 5vw 0;
     }
+
+    h5 {
+        font-size: 3vw;
+    }
+
+    .otherPage {
+        font-size: 3.5vw;
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -421,6 +429,14 @@ h3 {
         font-size: 2vw;
         padding: 3vw 3vw 3vw 1vw;
     }
+
+    h5 {
+        font-size: 1.7vw;
+    }
+
+    .otherPage {
+        font-size: 2vw;
+    }
 }
 
 
@@ -439,7 +455,7 @@ h3 {
 .radioGroup {
     padding: 2vw 3vw;
     margin: 0 0.5vw;
-    border-radius: 0.3vw;
+    border-radius: 0.6vw;
     box-shadow: inset -0.2vw -0.2vw 0.6vw #000000;
     background-color: rgb(255, 246, 234);
 }
@@ -457,13 +473,27 @@ h3 {
     width: 90%;
     margin: 4vw auto 1vw auto;
     border-radius: 3.5vw;
-    /* text-align: center; */
+    background-color: rgb(255, 254, 246);
     border: 0.5vw solid #404040;
 }
 
 .factsPara {
     border-radius: 0 0 3vw 3vw;
-    background-color: rgb(243, 243, 243);
+    /* background-color: rgb(243, 243, 243); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-color: rgb(255, 254, 246);
+}
+
+
+#activities {
+    grid-template-areas: 'game' 'projects';
+    row-gap: 5vw;
+}
+
+h5>div {
+    max-width: 70%;
+    margin: auto;
+    background-color: #6a6a6a;
+    padding: 4vw;
 }

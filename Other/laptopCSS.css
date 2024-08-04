@@ -44,7 +44,9 @@ h3 {
 }
 
 #tvDiv {
-    margin-bottom: 4vw;
+    /* margin-bottom: 4vw; */
+    padding-bottom: 4vw;
+    background-color: rgb(255, 246, 235);
 }
 
 #buttons {
@@ -142,7 +144,9 @@ h3 {
 label:hover,
 #gmail:hover,
 #linkedIn:hover,
-.radioGroup:hover {
+.radioGroup:hover,
+#gameBtn:hover,
+#viewProjects:hover {
     cursor: pointer;
 }
 
@@ -214,7 +218,8 @@ label:hover,
 }
 
 #gmail:hover,
-#linkedIn:hover {
+#linkedIn:hover,
+#viewProjects:hover {
     opacity: 0.8;
 }
 
@@ -268,7 +273,9 @@ label:hover,
     transition: 200ms;
 }
 
-.radioGroup:active {
+.radioGroup:active,
+#gameBtn:active,
+#viewProjects:active {
     box-shadow: inset 0.05vw 0.05vw 0.3vw #000000;
 }
 
@@ -280,7 +287,7 @@ label:hover,
 
 #facts {
     width: 70%;
-    margin: 0vw auto 1vw auto;
+    margin: 5vw auto 1vw auto;
     border: 0.2vw solid #4c4c4c;
     border-radius: 0.8vw;
     /* background-color: rgb(133, 133, 133); */
@@ -306,6 +313,72 @@ li {
     margin: 0 auto;
     list-style-type: square;
 }
+
+
+
+
+
+#activities,
+#contactDiv {
+    background-size: 30vw;
+}
+
+#contactDiv {
+    margin-top: 5vw;
+}
+
+#activities>div>h2 {
+    border-bottom: 0.1vw solid #929292;
+}
+
+#game,
+#projects {
+    width: 40vw;
+    border: 0.2vw solid #4c4c4c;
+    border-radius: 0.8vw;
+    margin: 5vw 0vw;
+}
+
+#game {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.297), rgba(255, 255, 255, 0.477)), url('toGameBack.png');
+    background-size: cover;
+}
+
+#gameBtn,
+#viewProjects {
+    background-color: rgb(154, 215, 251);
+    box-shadow: inset -0.01vw -0.01vw 0.1vw #000000;
+    padding: 1vw 3vw;
+    font-size: 1vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 2vw 0;
+}
+
+#gameBtn {
+    /* background-image: url('../Recruiter/toGameBack.png');
+    background-size: cover; */
+}
+
+.otherPage {
+    font-size: 1vw;
+}
+
+h5 {
+    max-width: 100vw;
+    font-size: 0.9vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+h5>div {
+    max-width: 70%;
+    margin: auto;
+    background-color: #6a6a6a;
+    padding: 2vw;
+}
+
 
 
 
