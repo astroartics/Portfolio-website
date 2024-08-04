@@ -97,7 +97,8 @@
             margin: 0 auto;
             /* position: absolute; */
             padding: 2vw 0vw;
-            background-color: white;
+            /* background-color: white; */
+            background-color: rgb(255, 246, 235);
             grid-area: tvDiv;
         }
 
@@ -275,11 +276,31 @@
         #activities {
             display: grid;
             justify-content: center;
+            align-items: center;
             background-image: url('../body_background.jpg');
         }
 
+        #activities>div>h2 {
+            border-bottom: 0.1vw solid #929292;
+        }
+
+        #game {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.297), rgba(255, 255, 255, 0.477)), url('toGameBack.png');
+            background-size: cover;
+        }
+
         #projects {
+            height: max-content;
             background-color: rgb(255, 246, 235);
+        }
+
+        #gameBtn,
+        #viewProjects {
+            background-color: rgb(154, 215, 251);
+            box-shadow: inset -0.01vw -0.01vw 0.1vw #000000;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
 
         #contactDiv {
@@ -366,12 +387,12 @@
 
         <div id="activities">
             <div id="game" style="grid-area: game;">
-                <h2>Play a 2D Game</h2>
+                <h2>Play a 2D Game<br />(One of my projects)</h2>
                 <button id="gameBtn" onclick="goToScreen('game')" title="Go to Game Screen">Play Game</button>
             </div>
 
             <div id="projects" style="grid-area: projects;">
-                <h2>Check out my projects</h2>
+                <h2>Check out my<br />projects</h2>
                 <button id="viewProjects" onclick="goToScreen('projects')" title="View Projects">My Projects</button>
             </div>
         </div>
