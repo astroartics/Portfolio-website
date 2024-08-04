@@ -29,7 +29,7 @@ h3 {
 
 #tvDiv {
     /* margin-bottom: 4vw; */
-    padding: 7vw 0;
+    padding: 7vw 0 10vw 0;
 }
 
 #hello {
@@ -136,7 +136,7 @@ h3 {
 
 #contact {
     background-color: white;
-    margin: 7vw auto 10vw auto;
+    margin: 10vw auto;
     text-align: center;
     display: grid;
     grid-template-areas: 'contactTitle' 'video' 'contactPara' 'details';
@@ -483,9 +483,9 @@ h3 {
 
 #facts {
     width: 90%;
-    margin: 7vw auto;
+    margin: 10vw auto;
     border-radius: 3.5vw;
-    background-color: rgb(255, 254, 246);
+    /* background-color: antiquewhite; */
     border: 0.5vw solid #404040;
 }
 
@@ -494,7 +494,7 @@ h3 {
     /* background-color: rgb(243, 243, 243); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-color: rgb(255, 254, 246);
+    /* background-color: rgb(255, 254, 246); */
 }
 
 
@@ -507,7 +507,7 @@ h3 {
 #activities {
     grid-template-areas: 'game' 'projects';
     row-gap: 5vw;
-    padding: 7vw;
+    padding: 10vw;
 }
 
 #activities>div>h2 {
