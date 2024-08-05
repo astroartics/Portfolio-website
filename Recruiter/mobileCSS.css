@@ -272,7 +272,7 @@ footer {
     }
 
     #about>p{
-        width: 80vw;
+        width: 85vw;
         margin: 0 auto;
     }
 
@@ -302,7 +302,7 @@ footer {
 
     #footerTitle {
         font-size: 3vw;
-        padding: 10vw 8vw;
+        padding: 10vw 5vw;
     }
 
     #moreLinksTitle {

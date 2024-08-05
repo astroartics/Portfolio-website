@@ -376,9 +376,8 @@ p {
         grid-template-rows: 4.5vw;
     }
 
-    #contact>p,
-    #csAsOption>p {
-        font-size: 3.5vw;
+    #contact>p {
+        font-size: 3.8vw;
     }
 
     #gameBtn {
@@ -624,9 +623,8 @@ p {
         grid-template-rows: 3.5vw;
     }
 
-    #contact>p,
-    #csAsOption>p {
-        font-size: 2vw;
+    #contact>p {
+        font-size: 2.5vw;
     }
 
     #gameBtn {
