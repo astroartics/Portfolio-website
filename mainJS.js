@@ -64,7 +64,7 @@ window.addEventListener('load', function () {
         window.location.reload();
     });
 
-    document.addEventListener('contextmenu', function (e) {
-        //e.preventDefault(); 
+    document.querySelector('video').addEventListener('contextmenu', function (e) {
+        e.preventDefault();
     });
 })

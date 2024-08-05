@@ -271,6 +271,11 @@ footer {
         margin: 0 auto;
     }
 
+    #about>p{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
     p {
         font-size: 3.5vw;
         padding: 5vw 0vw;
@@ -393,6 +398,11 @@ footer {
     #extraCurr,
     #projects2 {
         padding: 4vw 5vw;
+        margin: 0 auto;
+    }
+
+    #about>p{
+        width: 80vw;
         margin: 0 auto;
     }
 

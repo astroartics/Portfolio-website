@@ -95,6 +95,12 @@ function reachMe(platform) {
     }
 }
 
+function preventRightClick(element) {
+    document.querySelector(`${element}`).addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+}
+
 window.addEventListener('load', function () {
     let details = navigator.userAgent;
     let regexp = /android|iphone|kindle|ipad/i;
@@ -191,4 +197,14 @@ window.addEventListener('load', function () {
         viewLeisure.style.display = 'block';
         hideLeisure.style.display = 'none';
     });
+
+
+    preventRightClick('#aboutMeImage');
+    preventRightClick('#photoAndName');
+    preventRightClick('#p1_video');
+    preventRightClick('#p2_video');
+    preventRightClick('#p3_video');
+    preventRightClick('#resumeHover');
+    preventRightClick('#extracurriculars');
+    preventRightClick('#toGameImage');
 });

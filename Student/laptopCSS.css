@@ -296,6 +296,10 @@ p {
     font-size: 1.2vw;
 }
 
+#contact>p {
+    font-size: 1.2vw;
+}
+
 #projects>h2 {
     grid-area: projectTitle;
 }

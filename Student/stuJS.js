@@ -175,6 +175,13 @@ function onProjectLinkHover(link, image) {
 }
 
 
+function preventRightClick(element) {
+    document.querySelector(`${element}`).addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+}
+
+
 window.addEventListener('load', function () {
     let details = navigator.userAgent;
     let regexp = /android|iphone|kindle|ipad/i;
@@ -207,4 +214,12 @@ window.addEventListener('load', function () {
     onProjectLinkHover(portfolioLink, portfolio);
     onProjectLinkHover(unitConverterLink, unitConverter);
     onProjectLinkHover(leisureLink, leisure);
+
+
+    preventRightClick('#popUp');
+    preventRightClick('#popUp2');
+    preventRightClick('#videoBack');
+    preventRightClick('#wordcloud');
+    preventRightClick('#projects');
+    preventRightClick('#csAsChoice');
 });

@@ -376,6 +376,11 @@ p {
         grid-template-rows: 4.5vw;
     }
 
+    #contact>p,
+    #csAsOption>p {
+        font-size: 3.5vw;
+    }
+
     #gameBtn {
         left: 50%;
         transform: translate(-50%, 0);
@@ -617,6 +622,11 @@ p {
 
     #contact {
         grid-template-rows: 3.5vw;
+    }
+
+    #contact>p,
+    #csAsOption>p {
+        font-size: 2vw;
     }
 
     #gameBtn {

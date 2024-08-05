@@ -15,17 +15,13 @@ button:hover {
     background-color: #ababab;
 }
 
-object {
-    grid-area: pdf;
-}
-
 iframe {
     display: none;
 }
 
 #container {
     display: grid;
-    grid-template-areas: 'pdf' 'back';
+    grid-template-areas: 'img1' 'img2' 'back';
 }
 
 @media screen and (orientation: portrait) {
@@ -36,9 +32,9 @@ iframe {
     #container {
         row-gap: 5vw;
         position: absolute;
-        top: 50%;
+        top: 5%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
     }
 
     img {
@@ -54,6 +50,7 @@ iframe {
 
     #container {
         row-gap: 2vw;
+        padding-top: 5%;
     }
 
     img {

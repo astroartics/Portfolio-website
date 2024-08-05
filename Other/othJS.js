@@ -29,6 +29,13 @@ function reachMe(platform) {
 }
 
 
+function preventRightClick(element) {
+    document.querySelector(`${element}`).addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+}
+
+
 
 
 window.addEventListener('load', function () {
@@ -80,6 +87,10 @@ window.addEventListener('load', function () {
     home.addEventListener('click', function () {
         window.location.href = "../index.html";
     });
+
+
+    preventRightClick('#tvDiv');
+    preventRightClick('#contactVidBack');
 
 
 

@@ -13,4 +13,8 @@ window.addEventListener('load', function () {
     }
 
     document.querySelector('head').appendChild(link);
+
+    document.querySelector('img').addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
 });
